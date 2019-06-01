@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.furniture.ui.activity.MainActivity">
+
+    <data>
+
+        <import type="com.furniture.Config" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.furniture.ui.view.NoScrollSelectableViewPager
+            android:id="@+id/vp_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/line_color"
+            android:visibility="@{Config.APP_TYPE==Config.TYPE_DEMO_SIMPLE?View.GONE:View.VISIBLE}" />
+
+        <FrameLayout
+            android:id="@+id/fl_bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_bottom_bar_height"
+            android:background="@color/white"
+            android:visibility="@{Config.APP_TYPE==Config.TYPE_DEMO_SIMPLE?View.GONE:View.VISIBLE}">
+
+        </FrameLayout>
+
+    </LinearLayout>
+</layout>

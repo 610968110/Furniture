@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingEnd="@dimen/top_bar_textView_p"
+            android:paddingStart="@dimen/top_bar_textView_p"
+            android:singleLine="true"
+            android:text="XX"
+            android:textColor="#343434"
+            android:textSize="@dimen/top_bar_title_size" />
+
+        <ImageView
+            android:id="@+id/iv_bar"
+            android:layout_width="@dimen/top_bar_back_icon_w"
+            android:layout_height="match_parent"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:src="@drawable/back"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/top_bar_right_text_p"
+            android:paddingStart="@dimen/top_bar_right_text_p"
+            android:textColor="#343434"
+            android:textSize="@dimen/top_bar_right_text_size"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</layout>

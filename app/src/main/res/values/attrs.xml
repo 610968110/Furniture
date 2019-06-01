@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="smallTextColor" format="color" />
+    <attr name="smallTextSize" format="dimension" />
+    <attr name="bigTextColor" format="color" />
+    <attr name="bigTextSize" format="dimension" />
+
+    <declare-styleable name="DescViewAttrs">
+        <attr name="DescViewText" format="string" />
+        <attr name="DescViewSymbol" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="MyProgressBarAttrs">
+        <attr name="MyProgressBarTopText" format="string" />
+        <attr name="MyProgressBarBottomText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="TemperatureTextViewAttrs">
+        <attr name="smallTextColor" />
+        <attr name="smallTextSize" />
+        <attr name="bigTextColor" />
+        <attr name="bigTextSize" />
+    </declare-styleable>
+
+    <declare-styleable name="LimitTextViewAttrs">
+        <attr name="smallTextColor" />
+        <attr name="smallTextSize" />
+        <attr name="bigTextColor" />
+        <attr name="bigTextSize" />
+    </declare-styleable>
+
+    <declare-styleable name="HorizontalIconLayoutAttrs">
+        <attr name="HorizontalIconLayoutImg" format="reference" />
+        <attr name="HorizontalIconLayoutText" format="string" />
+    </declare-styleable>
+    <declare-styleable name="BigCardViewAttrs">
+        <attr name="BigCardViewTopImg" format="reference" />
+        <attr name="BigCardViewTopImgSize" format="dimension" />
+        <attr name="BigCardViewBottomText" format="string" />
+        <attr name="BigCardViewBottomTextSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleSeekBar">
+        <attr name="android:thumb" />
+        <attr name="progress_width" format="dimension" />
+        <attr name="progress_background" format="color" />
+        <attr name="progress_front" format="color" />
+        <attr name="progress_max" format="integer" />
+        <attr name="show_progress_text" format="boolean" />
+        <attr name="progress_text_stroke_width" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+        <attr name="progress_text_size" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ImgEditTextAttrs">
+        <attr name="left_icon" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="UserInfoEditViewAttrs">
+        <attr name="left_text" format="string" />
+        <attr name="right_text" format="string" />
+        <attr name="input_type" format="enum">
+            <enum name="text" value="0" />
+            <enum name="number" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="bean"
+            type="com.furniture.bean.ActionBean" />
+    </data>
+
+    <com.furniture.ui.view.BigCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:BigCardViewBottomTextSize="@dimen/action_text_size"
+        app:BigCardViewTopImgSize="@dimen/action_img_size"
+        app:bindData="@{bean}">
+
+    </com.furniture.ui.view.BigCardView>
+
+</layout>

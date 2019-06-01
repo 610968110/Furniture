@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:paddingEnd="@dimen/base_main_img_padding"
+        android:paddingStart="@dimen/base_main_img_padding"
+        app:contentScrim="@android:color/transparent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_img_min_height"
+            android:background="@color/transparent">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:minHeight="@dimen/base_img_auto_min_height"
+                app:contentScrim="@android:color/transparent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+                <ImageView
+                    android:id="@+id/im_room_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_collapseMode="parallax"
+                    app:layout_collapseParallaxMultiplier="0.5" />
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/top_action_close_height"
+                    android:background="@color/transparent"
+                    app:contentScrim="@android:color/transparent"
+                    app:layout_collapseMode="parallax">
+
+                </android.support.v7.widget.Toolbar>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.furniture.ui.view.BigTemperatureTextView
+                        android:id="@+id/tv_big_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/base_big_temp_view_h"
+                        android:layout_marginStart="@dimen/base_big_temp_view_m_s"
+                        android:layout_marginTop="@dimen/base_big_temp_view_m_t"
+                        android:visibility="invisible"
+                        app:layout_collapseMode="parallax"
+                        app:layout_collapseParallaxMultiplier="1">
+
+                    </com.furniture.ui.view.BigTemperatureTextView>
+
+                    <com.furniture.ui.view.DescView
+                        android:id="@+id/dv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="@dimen/base_big_temp_view_m_s"
+                        android:layout_marginTop="@dimen/base_big_temp_view_m_t"
+                        android:visibility="gone"
+                        app:DescViewText="PH值"
+                        app:DescViewSymbol=""
+                        app:layout_collapseMode="parallax"
+                        app:layout_collapseParallaxMultiplier="1">
+
+                    </com.furniture.ui.view.DescView>
+
+                    <com.furniture.ui.view.DescView
+                        android:id="@+id/dv_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="@dimen/base_big_temp_view_m_s"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"
+                        app:DescViewText="导电率"
+                        app:DescViewSymbol="μ s/cm"
+                        app:layout_collapseMode="parallax"
+                        app:layout_collapseParallaxMultiplier="1">
+
+                    </com.furniture.ui.view.DescView>
+
+                </LinearLayout>
+
+                <com.furniture.ui.view.EnvironmentView
+                    android:id="@+id/ev_room"
+                    android:layout_width="@dimen/environment_view_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="@dimen/environment_top_margin"
+                    app:layout_collapseMode="parallax"
+                    app:layout_collapseParallaxMultiplier="1">
+
+                </com.furniture.ui.view.EnvironmentView>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/sv_room"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.furniture.ui.view.NoScrollRecycleView
+                    android:id="@+id/rv_top"
+                    android:layout_width="@dimen/top_action_width"
+                    android:layout_height="@dimen/top_action_height"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/top_action_margin"
+                    android:layout_marginTop="@dimen/top_action_margin"
+                    android:background="@drawable/fangjian_di1">
+
+                </com.furniture.ui.view.NoScrollRecycleView>
+
+                <com.furniture.ui.view.NoScrollRecycleView
+                    android:id="@+id/rv_center"
+                    android:layout_width="@dimen/top_action_width"
+                    android:layout_height="@dimen/top_action_height"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/fangjian_di1">
+
+                </com.furniture.ui.view.NoScrollRecycleView>
+
+                <com.furniture.ui.view.NoScrollRecycleView
+                    android:id="@+id/rv_all"
+                    android:layout_width="@dimen/top_action_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/top_action_margin"
+                    android:layout_marginTop="@dimen/top_action_margin"
+                    android:background="@drawable/fangjian_di3" />
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</layout>

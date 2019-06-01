@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="info"
+            type="com.furniture.bean.UserInfo" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_conner_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.furniture.ui.view.UserInfoEditView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_item_height"
+            android:layout_marginTop="@dimen/edit_top_margin"
+            app:center_text="@={info.name}"
+            app:left_text="姓名:"
+            app:right_text="" />
+
+        <com.furniture.ui.view.UserInfoSelectView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_item_height"
+            app:left_text="性别:"
+            app:select="@={info.sex}" />
+
+        <com.furniture.ui.view.UserInfoEditView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_item_height"
+            app:center_text="@={info.age}"
+            app:left_text="年龄:"
+            app:right_text="岁" />
+
+        <com.furniture.ui.view.UserInfoEditView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_item_height"
+            app:center_text="@={info.height}"
+            app:left_text="身高:"
+            app:right_text="cm" />
+
+        <com.furniture.ui.view.UserInfoEditView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_item_height"
+            app:center_text="@={info.weight}"
+            app:left_text="体重:"
+            app:right_text="kg" />
+
+        <com.furniture.ui.view.UserInfoEditView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_item_height"
+            android:layout_marginBottom="10dp"
+            app:center_text="@={info.room}"
+            app:left_text="房间:"
+            app:right_text="" />
+
+        <com.furniture.ui.view.UserInfoEditView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_item_height"
+            android:layout_marginBottom="10dp"
+            app:center_text="@={info.account}"
+            app:left_text="账号:"
+            app:right_text="" />
+
+        <com.furniture.ui.view.UserInfoEditView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_item_height"
+            android:layout_marginBottom="10dp"
+            app:center_text="@={info.password}"
+            app:left_text="密码:"
+            app:right_text="" />
+
+        <View
+            android:layout_width="@dimen/edit_content_width"
+            android:layout_height="1dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="#cccccc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:text="取消"
+                android:textColor="#515151"
+                android:textSize="@dimen/button_text_size" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#cccccc" />
+
+            <Button
+                android:id="@+id/btn_sure"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:text="确定"
+                android:textColor="#11B9BB"
+                android:textSize="@dimen/button_text_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

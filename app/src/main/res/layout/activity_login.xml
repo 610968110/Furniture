@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="loginBean"
+            type="com.furniture.bean.LoginBean" />
+
+        <import type="com.furniture.Config" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_bg"
+        android:orientation="vertical"
+        tools:context="com.furniture.ui.activity.LoginActivity">
+
+        <com.furniture.ui.view.TopBar
+            android:id="@+id/tb_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_bar_height">
+
+        </com.furniture.ui.view.TopBar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/login_main_layout_margin"
+            android:background="@drawable/shebei_kapian"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/login_icon_size"
+                android:layout_height="@dimen/login_icon_size"
+                android:layout_marginBottom="@dimen/login_icon_margin_bottom"
+                android:src="@drawable/icon_logo" />
+
+            <com.furniture.ui.view.ImgEditText
+                android:layout_width="@dimen/login_view_width"
+                android:layout_height="@dimen/login_input_view_height"
+                android:hint="输入手机号"
+                android:text="@={loginBean.account}"
+                android:textColor="#000000"
+                android:textColorHint="#cccccc"
+                android:textSize="@dimen/login_input_text_size"
+                app:left_icon="@drawable/icon_shoujihao" />
+
+            <com.furniture.ui.view.ImgEditText
+                android:layout_width="@dimen/login_view_width"
+                android:layout_height="@dimen/login_input_view_height"
+                android:layout_marginTop="8dp"
+                android:hint="输入密码"
+                android:inputType="textPassword"
+                android:text="@={loginBean.password}"
+                android:textColor="#000000"
+                android:textColorHint="#cccccc"
+                android:textSize="@dimen/login_input_text_size"
+                app:left_icon="@drawable/icon_mima" />
+
+            <com.furniture.ui.view.ImgEditText
+                android:layout_width="@dimen/login_view_width"
+                android:layout_height="@dimen/login_input_view_height"
+                android:layout_marginTop="8dp"
+                android:hint="输入网关IP"
+                android:text="@={loginBean.ip}"
+                android:textColor="#000000"
+                android:textColorHint="#cccccc"
+                android:textSize="@dimen/login_input_text_size"
+                app:left_icon="@drawable/icon_wangguanip" />
+
+            <Button
+                android:layout_width="@dimen/login_view_width"
+                android:layout_height="@dimen/login_button_height"
+                android:layout_marginTop="@dimen/login_button_marginTop"
+                android:background="@drawable/login_bg"
+                android:onClick="login"
+                android:text="登录"
+                android:textColor="@color/white"
+                android:textSize="@dimen/login_button_text_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

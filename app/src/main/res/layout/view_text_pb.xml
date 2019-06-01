@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/pb_tv_p"
+            android:paddingStart="@dimen/pb_tv_p">
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/sb_control"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:max="100"
+            android:maxHeight="@dimen/pb_height"
+            android:minHeight="@dimen/pb_height"
+            android:progressDrawable="@drawable/po_seekbar" />
+
+    </LinearLayout>
+
+</layout>

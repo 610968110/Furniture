@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_bg"
+        android:orientation="vertical">
+
+        <com.furniture.ui.view.TopBar
+            android:id="@+id/tb_control"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_bar_height">
+
+        </com.furniture.ui.view.TopBar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/main_layout_top_margin"
+            android:layout_weight="1"
+            android:background="@drawable/shebei_kapian">
+
+
+            <LinearLayout
+                android:id="@+id/ll_select"
+                android:layout_width="@dimen/select_view_width"
+                android:layout_height="@dimen/select_view_height"
+                android:layout_marginStart="@dimen/select_view_marginStart"
+                android:layout_marginTop="@dimen/select_view_marginTop"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_select"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#8a8a8a"
+                    android:textSize="@dimen/select_view_text_size" />
+
+                <ImageView
+                    android:layout_width="@dimen/select_view_icon_size"
+                    android:layout_height="@dimen/select_view_icon_size"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/select_view_icon_margin_start"
+                    android:src="@drawable/sanjiao" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/fl_main_control"
+                    android:layout_width="@dimen/main_view_size"
+                    android:layout_height="@dimen/main_view_size"
+                    android:layout_marginBottom="@dimen/main_view_size_marginBottom">
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_desc"
+                    android:layout_width="@dimen/other_view_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/desc_view_marginBottom"
+                    android:gravity="center"
+                    android:textColor="@color/close_control_color"
+                    android:textSize="@dimen/desc_view_text_size" />
+
+                <FrameLayout
+                    android:id="@+id/fl_progress_control"
+                    android:layout_width="@dimen/other_view_width"
+                    android:layout_height="wrap_content">
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <com.furniture.ui.view.NoScrollRecycleView
+            android:id="@+id/rv_list_control"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/control_bottom_layout_height"
+            android:layout_gravity="center"
+            android:paddingBottom="5dp">
+
+        </com.furniture.ui.view.NoScrollRecycleView>
+
+    </LinearLayout>
+
+</layout>

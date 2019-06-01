@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ac000000"
+        android:gravity="center"
+        android:onClick="finishActivity"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+            <com.furniture.ui.view.WheelView
+                android:id="@+id/wv_1"
+                android:layout_width="80dp"
+                android:layout_height="match_parent">
+
+            </com.furniture.ui.view.WheelView>
+
+            <com.furniture.ui.view.WheelView
+                android:id="@+id/wv_2"
+                android:layout_width="80dp"
+                android:layout_height="match_parent">
+
+            </com.furniture.ui.view.WheelView>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_bg"
+            android:text="确定"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</layout>

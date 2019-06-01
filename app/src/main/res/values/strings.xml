@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">智能家居</string>
+    <string name="app123">测试</string>
+
+
+    <string name="main_1">智家</string>
+    <string name="main_1_2">生态谷</string>
+    <string name="main_2">社区</string>
+    <string name="main_3">我的</string>
+    <string name="test">开发中</string>
+</resources>

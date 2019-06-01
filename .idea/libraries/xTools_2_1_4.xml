@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="xTools-2.1.4">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/d1c5287e44f84c9b44577665d4b5ca8cd6f2984a/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/d1c5287e44f84c9b44577665d4b5ca8cd6f2984a/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.lbx/xTools/2.1.4/c8b40c434ae2f929c994fb9c1a4ec154db353d9e/xTools-2.1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

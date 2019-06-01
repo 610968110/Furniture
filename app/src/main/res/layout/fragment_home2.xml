@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_bg_2_1" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_bg_2_2" />
+
+                <!--<fragment-->
+                <!--android:id="@+id/HomeFirstFragment"-->
+                <!--android:name="com.furniture.ui.fragment.room2.home.HomeFirstFragment"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:tag="HomeFirstFragment" />-->
+
+                <!--<fragment-->
+                <!--android:id="@+id/HomeSecondFragment"-->
+                <!--android:name="com.furniture.ui.fragment.room2.home.HomeSecondFragment"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1.2"-->
+                <!--android:tag="HomeSecondFragment" />-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_bg_2_3" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_bg_2_4" />
+
+                <!--<fragment-->
+                <!--android:id="@+id/HomeThirdFragment"-->
+                <!--android:name="com.furniture.ui.fragment.room2.home.HomeThirdFragment"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1.2"-->
+                <!--android:tag="HomeThirdFragment" />-->
+
+                <!--<fragment-->
+                <!--android:id="@+id/HomeFourthFragment"-->
+                <!--android:name="com.furniture.ui.fragment.room2.home.HomeFourthFragment"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:tag="HomeFourthFragment" />-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_home_pic"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/pic_huiwei" />
+
+    </FrameLayout>
+
+</layout>

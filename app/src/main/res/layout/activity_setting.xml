@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import type="lbx.xtoollib.XTools" />
+
+        <variable
+            name="context"
+            type="com.furniture.ui.activity.SettingActivity" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_bg"
+        android:orientation="vertical"
+        tools:context="com.furniture.ui.activity.SettingActivity">
+
+        <com.furniture.ui.view.TopBar
+            android:id="@+id/tb_setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_bar_height">
+
+        </com.furniture.ui.view.TopBar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_item_height"
+            android:layout_marginTop="@dimen/setting_top_item_margin"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/setting_item_padding"
+            android:paddingStart="@dimen/setting_item_padding">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="版本号"
+                android:textColor="#414141"
+                android:textSize="@dimen/setting_item_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/setting_item_icon_size"
+                android:gravity="center_vertical"
+                android:text="@{XTools.AppUtil().getVersionName(context)}"
+                android:textColor="#999999"
+                android:textSize="@dimen/setting_item_second_text_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_item_height"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:onClick="@{()->context.changePwd()}"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/setting_item_padding"
+            android:paddingStart="@dimen/setting_item_padding">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="修改密码"
+                android:textColor="#414141"
+                android:textSize="@dimen/setting_item_text_size" />
+
+            <ImageView
+                android:layout_width="@dimen/setting_item_icon_size"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/next" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_item_height"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:onClick="@{()->context.changeNickName()}"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:paddingEnd="@dimen/setting_item_padding"
+            android:paddingStart="@dimen/setting_item_padding">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="修改昵称"
+                android:textColor="#414141"
+                android:textSize="@dimen/setting_item_text_size" />
+
+            <ImageView
+                android:layout_width="@dimen/setting_item_icon_size"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/next" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_item_height"
+            android:layout_marginTop="@dimen/setting_type_item_margin"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:onClick="@{()->context.logout()}"
+            android:paddingEnd="@dimen/setting_item_padding"
+            android:paddingStart="@dimen/setting_item_padding"
+            android:text="退出账号"
+            android:textColor="#414141"
+            android:textSize="@dimen/setting_item_text_size" />
+
+    </LinearLayout>
+
+</layout>

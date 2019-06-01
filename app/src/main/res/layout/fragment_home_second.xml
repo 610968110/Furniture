@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/home_bg_2_2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="空气"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:translationY="10dp">
+
+                <com.furniture.ui.view.MyProgressBar
+                    android:id="@+id/pb_1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="50dp"
+                    app:MyProgressBarBottomText="μg/㎡"
+                    app:MyProgressBarTopText="PM2.5" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <com.furniture.ui.view.MyProgressBar
+                    android:id="@+id/pb_2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:MyProgressBarBottomText="℃"
+                    app:MyProgressBarTopText="温度" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <com.furniture.ui.view.MyProgressBar
+                    android:id="@+id/pb_3"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="120dp"
+                    app:MyProgressBarBottomText="%"
+                    app:MyProgressBarTopText="湿度" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:translationY="-10dp">
+
+                <com.furniture.ui.view.MyProgressBar
+                    android:id="@+id/pb_4"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="120dp"
+                    app:MyProgressBarBottomText="ppm"
+                    app:MyProgressBarTopText="CO2" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <com.furniture.ui.view.MyProgressBar
+                    android:id="@+id/pb_5"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:MyProgressBarBottomText="mg/m³"
+                    app:MyProgressBarTopText="甲醛" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <com.furniture.ui.view.MyProgressBar
+                    android:id="@+id/pb_6"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="50dp"
+                    app:MyProgressBarBottomText=""
+                    app:MyProgressBarTopText="空气质量" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="user"
+            type="com.furniture.bean.UserInfo" />
+
+        <variable
+            name="context"
+            type="com.furniture.ui.activity.UserInfoActivity" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_bg"
+        android:orientation="vertical">
+
+        <com.furniture.ui.view.TopBar
+            android:id="@+id/tb_user"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_bar_height">
+
+        </com.furniture.ui.view.TopBar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/user_item_height"
+            android:layout_marginTop="@dimen/user_top_item_margin"
+            android:background="@color/white"
+            android:onClick="@{()->context.changeIcon()}"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/user_item_padding"
+            android:paddingStart="@dimen/user_item_padding">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="头像"
+                android:textColor="#414141"
+                android:textSize="@dimen/user_item_text_size" />
+
+            <lbx.xtoollib.view.CircleImageView
+                android:layout_width="@dimen/user_item_icon_head_size"
+                android:layout_height="@dimen/user_item_icon_head_size"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                app:border_color="@color/transparent"
+                app:icon="@{user.icon}" />
+
+            <ImageView
+                android:layout_width="@dimen/user_item_icon_size"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/next" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/user_item_height"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/user_item_padding"
+            android:paddingStart="@dimen/user_item_padding">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="昵称"
+                android:textColor="#414141"
+                android:textSize="@dimen/user_item_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/user_item_icon_size"
+                android:gravity="center_vertical"
+                android:text="@{user.name}"
+                android:textColor="#999999"
+                android:textSize="@dimen/user_item_second_text_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

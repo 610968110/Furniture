@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#11B9B9</color>
+    <color name="colorPrimaryDark">#0f9494</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="default_bg">#F9F9F9</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="white">#ffffff</color>
+    <color name="line_color">#E5E5E5</color>
+
+    <!--main-->
+    <color name="bottombar_item_textcolor_normal">#9F9F9F</color>
+    <color name="bottombar_item_textcolor_select">#9F9F9F</color>
+
+    <!--控制View-->
+    <color name="default_pb_bg">#A9A9A9</color>
+    <color name="open_control_color">#12B9B8</color>
+    <color name="close_control_color">#CDCDCD</color>
+
+    <!--配置页面-->
+    <color name="config_item_select_bg">#7811b9b9</color>
+    <color name="config_item_text_normal_color">#696969</color>
+    <color name="config_item_text_select_color">#11B9B9</color>
+
+</resources>

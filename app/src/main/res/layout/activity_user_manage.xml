@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.furniture.ui.activity.UserManageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.furniture.ui.view.TopBar
+            android:id="@+id/tb_user_manage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/top_bar_height">
+
+        </com.furniture.ui.view.TopBar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.furniture.ui.view.HorizontalIconLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/user_manager_item_h"
+                    app:HorizontalIconLayoutImg="@drawable/yh_dongtai"
+                    app:HorizontalIconLayoutText="我的动态">
+
+                </com.furniture.ui.view.HorizontalIconLayout>
+
+                <com.furniture.ui.view.HorizontalIconLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/user_manager_item_h"
+                    app:HorizontalIconLayoutImg="@drawable/yh_xiaoxi"
+                    app:HorizontalIconLayoutText="我的消息">
+
+                </com.furniture.ui.view.HorizontalIconLayout>
+
+                <com.furniture.ui.view.HorizontalIconLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/user_manager_item_h"
+                    app:HorizontalIconLayoutImg="@drawable/yh_zhibojian"
+                    app:HorizontalIconLayoutText="我的直播间">
+
+                </com.furniture.ui.view.HorizontalIconLayout>
+
+                <com.furniture.ui.view.HorizontalIconLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/user_manager_item_h"
+                    app:HorizontalIconLayoutImg="@drawable/yh_huodong"
+                    app:HorizontalIconLayoutText="我的活动">
+
+                </com.furniture.ui.view.HorizontalIconLayout>
+
+                <com.furniture.ui.view.HorizontalIconLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/user_manager_item_h"
+                    android:layout_marginTop="20dp"
+                    app:HorizontalIconLayoutImg="@drawable/yh_qianbao"
+                    app:HorizontalIconLayoutText="我的钱包">
+
+                </com.furniture.ui.view.HorizontalIconLayout>
+
+                <com.furniture.ui.view.HorizontalIconLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/user_manager_item_h"
+                    app:HorizontalIconLayoutImg="@drawable/yh_dingdan"
+                    app:HorizontalIconLayoutText="我的活动">
+
+                </com.furniture.ui.view.HorizontalIconLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</layout>

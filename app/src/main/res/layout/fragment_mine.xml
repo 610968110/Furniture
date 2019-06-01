@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="fragment"
+            type="com.furniture.ui.fragment.main.MineFragment" />
+
+        <variable
+            name="user"
+            type="com.furniture.bean.UserInfo" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.furniture.ui.view.MineLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/mine_setting_icon_size"
+                android:layout_height="@dimen/mine_setting_icon_size"
+                android:layout_gravity="end"
+                android:onClick="@{()->fragment.setting()}"
+                android:padding="@dimen/mine_setting_icon_size_p"
+                android:src="@drawable/icon_shezhi" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic_wodebg">
+
+            </ImageView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="@dimen/control_action_layout_w"
+                android:layout_height="@dimen/mine_action_layout_height"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+
+                    <com.furniture.ui.view.BigCardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="@{()->fragment.userManage()}"
+                        app:BigCardViewBottomText="用户管理"
+                        app:BigCardViewBottomTextSize="@dimen/control_action_layout_text_size"
+                        app:BigCardViewTopImg="@drawable/icon_guanli_yonghu"
+                        app:BigCardViewTopImgSize="@dimen/control_action_layout_icon_size">
+
+                    </com.furniture.ui.view.BigCardView>
+
+                    <com.furniture.ui.view.BigCardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="@{()->fragment.sceneManage()}"
+                        app:BigCardViewBottomText="场景配置"
+                        app:BigCardViewBottomTextSize="@dimen/control_action_layout_text_size"
+                        app:BigCardViewTopImg="@drawable/icon_guanli_changjing"
+                        app:BigCardViewTopImgSize="@dimen/control_action_layout_icon_size">
+
+                    </com.furniture.ui.view.BigCardView>
+
+                    <com.furniture.ui.view.BigCardView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="@{()->fragment.familyManage()}"
+                        app:BigCardViewBottomText="家庭管理"
+                        app:BigCardViewBottomTextSize="@dimen/control_action_layout_text_size"
+                        app:BigCardViewTopImg="@drawable/icon_guanli_jiat"
+                        app:BigCardViewTopImgSize="@dimen/control_action_layout_icon_size">
+
+                    </com.furniture.ui.view.BigCardView>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </com.furniture.ui.view.MineLinearLayout>
+
+        <lbx.xtoollib.view.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/cv_level"
+            android:layout_centerHorizontal="true"
+            android:onClick="@{()->fragment.info()}"
+            app:icon="@{user.icon}"
+            app:border_color="#dd11B9B9"
+            app:border_width="2dp" />
+
+        <android.support.v7.widget.CardView
+            android:id="@id/cv_level"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:onClick="@{()->fragment.info()}"
+                android:text="@{user.level}"
+                android:textColor="#23BDBD"
+                android:textSize="12dp" />
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</layout>

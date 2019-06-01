@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="user"
+            type="com.furniture.bean.UserInfo" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/family_item_h"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <lbx.xtoollib.view.CircleImageView
+                android:layout_width="@dimen/family_item_icon_size"
+                android:layout_height="@dimen/family_item_icon_size"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/family_item_icon_m"
+                android:layout_marginStart="@dimen/family_item_icon_m"
+                android:src="@{user.icon}"
+                app:border_width="0dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@{user.name}"
+                android:textColor="#393939"
+                android:textSize="@dimen/family_item_text_size" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginEnd="@dimen/family_item_icon_m"
+            android:layout_marginStart="@dimen/family_item_icon_m"
+            android:background="@color/default_bg" />
+
+    </LinearLayout>
+
+</layout>
