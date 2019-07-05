@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.widget.TextView;
 
+import com.furniture.Config;
 import com.furniture.R;
 import com.furniture.base.BaseFragment;
 import com.furniture.bean.SocketBean;
@@ -109,6 +110,10 @@ public class HomeTimeFragment extends BaseFragment {
         mTempLayout.setTemp("-");
         mLimitTextView.setLimit("-", "-");
         mPmLayout.setPM("-");
+        if (Config.APP_TYPE == Config.TYPE_DEMO_JINAN) {
+            View limit = findView(R.id.limit);
+            limit.setVisibility(View.INVISIBLE);
+        }
     }
 
     @Override

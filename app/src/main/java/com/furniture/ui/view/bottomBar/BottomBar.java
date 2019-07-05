@@ -9,6 +9,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.widget.LinearLayoutCompat;
 import android.support.v7.widget.Toolbar;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -132,7 +133,8 @@ public class BottomBar extends LinearLayout {
                 itemView.setTag(i);
                 selectItem(itemView, fragmentInfo);
             }
-            itemView.set(XTools.ResUtil().getDrawable(fragmentInfo.getDrawableId()), XTools.ResUtil().getString(fragmentInfo.getNameId()));
+            itemView.set(XTools.ResUtil().getDrawable(fragmentInfo.getDrawableId()),
+                    XTools.ResUtil().getString(fragmentInfo.getNameId()));
             final int finalI = i;
             itemView.setOnClickListener(v -> {
                 pager.setCurrentItem(finalI, smooth);

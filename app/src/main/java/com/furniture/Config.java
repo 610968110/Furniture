@@ -77,18 +77,23 @@ public class Config {
             UserInfo user5 = new UserInfo("成员五", "005", "005", "普通", R.drawable.pho_chengyuan5);
             map = new UserMap();
             DEFAULT_USER_INFO_MAP = map.put(userA, user1, user2, user3, user4, user5).save();
-            xLogUtil.e("初始化新用户" + DEFAULT_USER_INFO_MAP.size());
+            xLogUtil.e("b初始化新用户" + DEFAULT_USER_INFO_MAP.size());
         } else {
             DEFAULT_USER_INFO_MAP = map;
             xLogUtil.e("本地获取用户" + DEFAULT_USER_INFO_MAP.size());
         }
-        // TYPE_NORMAL  TYPE_ONE  TYPE_DEMO_SIMPLE
-        APP_TYPE = TYPE_NORMAL;
+        // TYPE_NORMAL  TYPE_ONE  TYPE_DEMO_SIMPLE  TYPE_DEMO_JINAN
+        APP_TYPE = TYPE_DEMO_JINAN;
         roomTopAllAction.init(APP_TYPE);
     }
 
+    //普通
     public static final int TYPE_NORMAL = 0x010;
+    //中粮
     public static final int TYPE_ONE = 0x011;
+    //只有一个页面的
     public static final int TYPE_DEMO_SIMPLE = 0x012;
+    //济南  需要把 fragment_room 中的ToolBar高度改成济南的
+    public static final int TYPE_DEMO_JINAN = 0x013;
     public static int APP_TYPE = TYPE_DEMO_SIMPLE;
 }

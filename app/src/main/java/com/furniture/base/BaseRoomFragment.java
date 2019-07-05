@@ -186,6 +186,9 @@ public abstract class BaseRoomFragment extends BaseFragment {
         mBigTempTextView.setVisibility(setShowBigTemp() ? View.VISIBLE : View.GONE);
         mDescView1.setVisibility(setShowDesc1() ? View.VISIBLE : View.GONE);
         mDescView2.setVisibility(setShowDesc2() ? View.VISIBLE : View.GONE);
+        if (Config.APP_TYPE == Config.TYPE_DEMO_JINAN) {
+            mEnvironmentView.setHchoViewShow();
+        }
     }
 
     public boolean setShowBigTemp() {
@@ -212,7 +215,7 @@ public abstract class BaseRoomFragment extends BaseFragment {
             public void onScrollChanged(AppBarLayout appBarLayout, int i) {
                 float percent = i * 1.0F / (mCollapsingToolbarLayout.getMeasuredHeight()
                         - XTools.ResUtil().getDimen(R.dimen.top_action_close_height));
-                int max = XTools.ResUtil().getDimen(R.dimen.environment_top_margin);
+                int max = XTools.ResUtil().getDimen(R.dimen.environment_top_margin) + 10;
                 float offset = max * percent;
                 mEnvironmentView.setTranslationY(offset);
             }
@@ -475,6 +478,10 @@ public abstract class BaseRoomFragment extends BaseFragment {
         mEnvironmentView.setCO2(changeText(co2));
     }
 
+    protected void setBaseHCHO(String co2) {
+        mEnvironmentView.setHcho(changeText(co2));
+    }
+
     private String changeText(String s) {
         if (TextUtils.isEmpty(s) || "0".equals(s)) {
             s = "-";
@@ -587,22 +594,30 @@ public abstract class BaseRoomFragment extends BaseFragment {
     protected void setDer(Der der) {
         xLogUtil.e("der:" + der.getField().toString());
         Der.Field field = der.getField();
-        setBaseTemp(Float.valueOf(field.getTemp()) + "");
-        setBaseH(Float.valueOf(field.getHumi()) + "");
-        setBasePM(Float.valueOf(field.getPM25()) + "");
-        setBaseCO2(Float.valueOf(field.getCO2()) + "");
-        XTools.SpUtil().putFloat(room() + "temp", Float.valueOf(field.getTemp()));
-        XTools.SpUtil().putFloat(room() + "h", Float.valueOf(field.getHumi()));
-        XTools.SpUtil().putFloat(room() + "pm", Float.valueOf(field.getPM25()));
-        XTools.SpUtil().putFloat(room() + "co2", Float.valueOf(field.getPM25()));
+        int temp = Float.valueOf(field.getTemp()).intValue();
+        int hcho = Float.valueOf(field.getHcho()).intValue();
+        int h = Float.valueOf(field.getHumi()).intValue();
+        int pm25 = Float.valueOf(field.getPM25()).intValue();
+        int co2 = Float.valueOf(field.getCO2()).intValue();
+        setBaseTemp(temp + "");
+        setBaseH(h + "");
+        setBasePM(pm25 + "");
+        setBaseCO2(co2 + "");
+        setBaseHCHO(hcho + "");
+        XTools.SpUtil().putInt(room() + "hcho", hcho);
+        XTools.SpUtil().putInt(room() + "temp", temp);
+        XTools.SpUtil().putInt(room() + "h", h);
+        XTools.SpUtil().putInt(room() + "pm", pm25);
+        XTools.SpUtil().putInt(room() + "co2", co2);
     }
 
     protected void setDefaultDer() {
         setDefaultBigTemp();
-        setBaseTemp(String.valueOf(XTools.SpUtil().getFloat(room() + "temp", 0F)));
-        setBaseH(String.valueOf(XTools.SpUtil().getFloat(room() + "h", 0F)));
-        setBasePM(String.valueOf(XTools.SpUtil().getFloat(room() + "pm", 0F)));
-        setBaseCO2(String.valueOf(XTools.SpUtil().getFloat(room() + "co2", 0F)));
+        setBaseHCHO(String.valueOf(XTools.SpUtil().getInt(room() + "hcho", 0)));
+        setBaseTemp(String.valueOf(XTools.SpUtil().getInt(room() + "temp", 0)));
+        setBaseH(String.valueOf(XTools.SpUtil().getInt(room() + "h", 0)));
+        setBasePM(String.valueOf(XTools.SpUtil().getInt(room() + "pm", 0)));
+        setBaseCO2(String.valueOf(XTools.SpUtil().getInt(room() + "co2", 0)));
     }
 
     public void onPageSelect() {

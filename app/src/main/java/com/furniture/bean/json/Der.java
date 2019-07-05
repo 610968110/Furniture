@@ -68,6 +68,8 @@ public class Der extends IGson {
         private String CO2 = "0";
         @SerializedName(value = Device.HUMI)
         private String humi = "0";
+        @SerializedName(value = Device.HCHO)
+        private String hcho = "0";
 
         public String getPM25() {
             return PM25;
@@ -83,6 +85,10 @@ public class Der extends IGson {
 
         public String getHumi() {
             return humi;
+        }
+
+        public String getHcho() {
+            return hcho;
         }
 
         @Override

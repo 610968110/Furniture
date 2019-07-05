@@ -36,12 +36,12 @@
             android:layout_marginStart="6dp"
             android:background="#DFDFDF" />
 
-        <com.furniture.ui.view.TVOCLayout
+        <com.furniture.ui.view.PmLayout
             android:id="@+id/pl_tvoc"
             android:layout_width="@dimen/environment_item_size"
             android:layout_height="@dimen/environment_item_size">
 
-        </com.furniture.ui.view.TVOCLayout>
+        </com.furniture.ui.view.PmLayout>
 
         <View
             android:layout_width="match_parent"
@@ -56,6 +56,23 @@
             android:layout_height="@dimen/environment_item_size">
 
         </com.furniture.ui.view.CO2Layout>
+
+        <View
+            android:id="@+id/line_hcho"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginEnd="6dp"
+            android:visibility="gone"
+            android:layout_marginStart="6dp"
+            android:background="#DFDFDF" />
+
+        <com.furniture.ui.view.HCHOLayout
+            android:id="@+id/pl_hcho"
+            android:visibility="gone"
+            android:layout_width="@dimen/environment_item_size"
+            android:layout_height="@dimen/environment_item_size">
+
+        </com.furniture.ui.view.HCHOLayout>
 
 
     </LinearLayout>

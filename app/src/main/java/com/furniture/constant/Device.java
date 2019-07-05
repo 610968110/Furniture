@@ -31,6 +31,7 @@ public interface Device {
     String TEMP = "Temp";
     String CO2 = "CO2";
     String HUMI = "Humi";
+    String HCHO = "HCHO";
     /**
      * 环境
      */

@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.ServiceConnection;
 import android.databinding.ViewDataBinding;
 import android.os.IBinder;
+import android.util.Log;
 import android.view.View;
 
 import com.furniture.Config;
@@ -24,6 +25,7 @@ import com.furniture.service.CoreService;
 import com.furniture.type.IRoomConfig;
 import com.furniture.type.Room2ConfigPager;
 import com.furniture.type.RoomConfigPager;
+import com.furniture.type.RoomJinanConfigPager;
 import com.furniture.utils.GsonUtil;
 
 import org.greenrobot.eventbus.EventBus;
@@ -149,6 +151,8 @@ public class RoomConfigActivity extends BaseActivity {
                             Collections.addAll(mList, RoomConfigPager.values());
                         } else if (Config.APP_TYPE == Config.TYPE_ONE) {
                             Collections.addAll(mList, Room2ConfigPager.values());
+                        } else if (Config.APP_TYPE == Config.TYPE_DEMO_JINAN) {
+                            Collections.addAll(mList, RoomJinanConfigPager.values());
                         }
                         mBinding.vpConfig.setAdapter(new RoomConfigPagerAdapter(mList, getSupportFragmentManager()));
                         mBinding.vpConfig.setOffscreenPageLimit(Integer.MAX_VALUE);
@@ -156,7 +160,8 @@ public class RoomConfigActivity extends BaseActivity {
                     }
                 }
             }
-        } catch (Exception ignored) {
+        } catch (Exception e) {
+            Log.e("xys", "e:" + e);
         }
     }
 }

@@ -17,6 +17,7 @@ import com.furniture.injector.modules.FragmentModule;
 import com.furniture.type.HomePager;
 import com.furniture.type.HomePager2;
 import com.furniture.type.HomePager3Simple;
+import com.furniture.type.HomePagerJiNan;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -95,6 +96,8 @@ public class MainHomeFragment extends BaseFragment {
         } else if (Config.APP_TYPE == Config.TYPE_DEMO_SIMPLE) {
             values = HomePager3Simple.values();
             mTabLayout.setVisibility(View.GONE);
+        } else if (Config.APP_TYPE == Config.TYPE_DEMO_JINAN) {
+            values = HomePagerJiNan.values();
         }
         Collections.addAll(mList, values);
         //view

@@ -35,7 +35,7 @@
                 <android.support.v7.widget.Toolbar
                     android:id="@+id/toolbar"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/top_action_close_height"
+                    android:layout_height="@dimen/top_action_close_height_jinan"
                     android:background="@color/transparent"
                     app:contentScrim="@android:color/transparent"
                     app:layout_collapseMode="parallax">
@@ -66,8 +66,8 @@
                         android:layout_marginStart="@dimen/base_big_temp_view_m_s"
                         android:layout_marginTop="@dimen/base_big_temp_view_m_t"
                         android:visibility="gone"
-                        app:DescViewText="PH值"
                         app:DescViewSymbol=""
+                        app:DescViewText="PH值"
                         app:layout_collapseMode="parallax"
                         app:layout_collapseParallaxMultiplier="1">
 
@@ -80,8 +80,8 @@
                         android:layout_marginStart="@dimen/base_big_temp_view_m_s"
                         android:layout_marginTop="10dp"
                         android:visibility="gone"
-                        app:DescViewText="导电率"
                         app:DescViewSymbol="μ s/cm"
+                        app:DescViewText="导电率"
                         app:layout_collapseMode="parallax"
                         app:layout_collapseParallaxMultiplier="1">
 

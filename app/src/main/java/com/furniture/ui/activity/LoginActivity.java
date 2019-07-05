@@ -91,9 +91,9 @@ public class LoginActivity extends BaseActivity {
         if (Config.DEBUG) {
             mLoginBean.setAccount("admin");
             mLoginBean.setPassword("admin");
-            mLoginBean.setIp("114.252.122.197:9696");
+            mLoginBean.setIp("114.252.118.161:9696");  // 济南
+//            mLoginBean.setIp("114.252.122.197:9696");  //北京
         }
-        mLoginBean.setIp("114.252.122.197:9696");
     }
 
     public void login(View view) {

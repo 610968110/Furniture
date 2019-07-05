@@ -2,6 +2,7 @@ package com.furniture.ui.fragment.room;
 
 import android.databinding.ViewDataBinding;
 import android.os.Bundle;
+import android.support.annotation.DrawableRes;
 import android.view.View;
 
 import com.furniture.R;
@@ -41,8 +42,17 @@ import org.greenrobot.eventbus.Subscribe;
 
 public class HomeFragment extends BaseFragment {
 
+    private
+    @DrawableRes
+    int mbg = -1;
+
     public static HomeFragment newInstance() {
+        return HomeFragment.newInstance(-1);
+    }
+
+    public static HomeFragment newInstance(@DrawableRes int bg) {
         Bundle args = new Bundle();
+        args.putInt("bg", bg);
         HomeFragment fragment = new HomeFragment();
         fragment.setArguments(args);
         return fragment;
@@ -64,13 +74,21 @@ public class HomeFragment extends BaseFragment {
     }
 
     @Override
+    public void initArguments(Bundle bundle) {
+        super.initArguments(bundle);
+        this.mbg = bundle.getInt("bg");
+    }
+
+    @Override
     public void getDataBinding(ViewDataBinding binding) {
 
     }
 
     @Override
     public void initView(View view) {
-
+        if (mbg != -1) {
+            ((View) findView(R.id.rl_main)).setBackgroundResource(mbg);
+        }
     }
 
     @Override

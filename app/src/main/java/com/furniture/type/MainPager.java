@@ -10,6 +10,7 @@ import com.furniture.ui.fragment.main.MineFragment;
 import lbx.xtoollib.bean.FragmentInfo;
 
 import static com.furniture.Config.APP_TYPE;
+import static com.furniture.Config.TYPE_DEMO_JINAN;
 import static com.furniture.Config.TYPE_NORMAL;
 import static com.furniture.Config.TYPE_ONE;
 
@@ -65,6 +66,9 @@ public enum MainPager {
                 break;
             case TYPE_ONE:
                 name = R.string.main_1_2;
+                break;
+            case TYPE_DEMO_JINAN:
+                name = R.string.main_1;
                 break;
             default:
                 break;

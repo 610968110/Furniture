@@ -1,5 +1,6 @@
 package com.furniture.utils;
 
+import com.furniture.Config;
 import com.furniture.IHttp;
 import com.furniture.bean.json.LimitResult;
 import com.furniture.bean.json.PM25Result;
@@ -50,9 +51,13 @@ public class HttpUtil {
     }
 
     public void getWeather(OnHttpObservableCallBack<WeatherResult> callBack) {
+        String local = "北京";
+        if (Config.APP_TYPE == Config.TYPE_DEMO_JINAN) {
+            local = "济南";
+        }
         XTools.HttpUtil().send(XTools.HttpUtil()
                 .getRetrofit("http://v.juhe.cn/weather/", IHttp.class, "查询天气")
-                .getWeather("3a541afe424c94a58044f43e340bb2d2", "2", "北京"), callBack);
+                .getWeather("3a541afe424c94a58044f43e340bb2d2", "2", local), callBack);
     }
 
     public void getPM25(OnHttpObservableCallBack<PM25Result> callBack) {

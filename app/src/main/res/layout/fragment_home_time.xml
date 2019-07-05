@@ -85,6 +85,7 @@
             <com.furniture.ui.view.PmLayout
                 android:id="@+id/pl_pm"
                 android:layout_width="wrap_content"
+                android:visibility="invisible"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/time_item_m_s"
                 app:pm="@{pm25}">
@@ -92,9 +93,11 @@
             </com.furniture.ui.view.PmLayout>
 
             <LinearLayout
+                android:id="@+id/limit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/time_item_m_s"
+                android:visibility="invisible"
                 android:orientation="vertical">
 
                 <TextView
