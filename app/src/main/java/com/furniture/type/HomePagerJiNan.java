@@ -34,11 +34,17 @@ import com.furniture.ui.fragment.roomjinan.JiNanXuanguanFragment;
 
 public enum HomePagerJiNan implements IMainPager {
 
+//    HOME_PAGE("首页", JiNanHomeFragment.newInstance(R.drawable.jinan_bg_1)),
+//    DINING_ROOM("餐客厅", JiNanDinnerFragment.newInstance(R.drawable.jinan_bg_2)),
+//    MASTER_ROOM("玄关", JiNanXuanguanFragment.newInstance(R.drawable.jinan_bg_3)),
+//    SECOND_ROOM("夹层", JiNanJiacengFragment.newInstance(R.drawable.jinan_bg_4)),
+//    CHILD_ROOM("B2层", JiNanB2Fragment.newInstance(R.drawable.jinan_bg_5));
+
     HOME_PAGE("首页", JiNanHomeFragment.newInstance(R.drawable.jinan_bg_1)),
-    DINING_ROOM("餐客厅", JiNanDinnerFragment.newInstance(R.drawable.jinan_bg_2)),
-    MASTER_ROOM("玄关", JiNanXuanguanFragment.newInstance(R.drawable.jinan_bg_3)),
-    SECOND_ROOM("夹层", JiNanJiacengFragment.newInstance(R.drawable.jinan_bg_4)),
-    CHILD_ROOM("B2层", JiNanB2Fragment.newInstance(R.drawable.jinan_bg_5));
+    DINING_ROOM("一层", JiNanDinnerFragment.newInstance(R.drawable.jinan_new_1)),
+    MASTER_ROOM("二层", JiNanXuanguanFragment.newInstance(R.drawable.jinan_new_2)),
+    SECOND_ROOM("B1层", JiNanJiacengFragment.newInstance(R.drawable.jinan_new_3)),
+    CHILD_ROOM("B2层", JiNanB2Fragment.newInstance(R.drawable.jinan_new_4));
 
     private String name;
     private BaseFragment fragment;
