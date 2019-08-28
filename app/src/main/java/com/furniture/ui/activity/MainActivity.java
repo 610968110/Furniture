@@ -135,11 +135,6 @@ public class MainActivity extends BaseActivity {
                     mCoreService = ((CoreService.CoreBind) service).getCoreService();
                     refreshAll();
                     getAll = true;
-                    if (mPool == null && !Config.DEBUG) {
-//                        mPool = new ScheduledThreadPoolExecutor(1, (ThreadFactory) Thread::new);
-//                        mPool.scheduleWithFixedDelay(() -> send(new AllState()),
-//                                30, 30, TimeUnit.SECONDS);
-                    }
                 }
 
                 @Override

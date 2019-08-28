@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.lbx:xView:1.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/39b2551fecf5606aa1738cce4db65567/xView-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/39b2551fecf5606aa1738cce4db65567/xView-1.0.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.lbx/xView/1.0.1/db1c897969ef0f340aeb83ec299acd3dd4ff6389/xView-1.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.lbx/xView/1.0.1/c6a8dd276e951fa6c41e004489bffcf06068b0dd/xView-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

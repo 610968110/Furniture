@@ -7,7 +7,6 @@ import com.furniture.function.ConfigRoomMap;
 import com.furniture.function.RoomActionMap;
 import com.furniture.function.UserMap;
 
-import lbx.xtoollib.XTools;
 import lbx.xtoollib.phone.xLogUtil;
 
 /**
@@ -47,8 +46,8 @@ public class Config {
      */
     public static RoomActionMap roomActionMap = new RoomActionMap();
     public static String UUID = "b21adaaa81582330e15a71db5ea59770";
-    public static final boolean DEBUG = XTools.ApkUtil().isApkInDebug(XTools.getApplicationContext());
-//    public static final boolean DEBUG = false;
+//    public static final boolean DEBUG = XTools.ApkUtil().isApkInDebug(XTools.getApplicationContext());
+    public static final boolean DEBUG = true;
 
     public static ConfigRoomMap roomTopAllAction = new ConfigRoomMap();
 

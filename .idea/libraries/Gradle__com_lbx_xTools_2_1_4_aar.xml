@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.lbx:xTools:2.1.4@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/80348bdedd153cc2613ee3b606c76c66/xTools-2.1.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/80348bdedd153cc2613ee3b606c76c66/xTools-2.1.4/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.lbx/xTools/2.1.4/ecffe91519be2381c186e88d0c169cdd7cad88bd/xTools-2.1.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.lbx/xTools/2.1.4/c8b40c434ae2f929c994fb9c1a4ec154db353d9e/xTools-2.1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

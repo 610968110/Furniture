@@ -595,7 +595,7 @@ public abstract class BaseRoomFragment extends BaseFragment {
         xLogUtil.e("der:" + der.getField().toString());
         Der.Field field = der.getField();
         int temp = Float.valueOf(field.getTemp()).intValue();
-        int hcho = Float.valueOf(field.getHcho()).intValue();
+        float hcho = Float.valueOf(field.getHcho());
         int h = Float.valueOf(field.getHumi()).intValue();
         int pm25 = Float.valueOf(field.getPM25()).intValue();
         int co2 = Float.valueOf(field.getCO2()).intValue();
@@ -604,7 +604,7 @@ public abstract class BaseRoomFragment extends BaseFragment {
         setBasePM(pm25 + "");
         setBaseCO2(co2 + "");
         setBaseHCHO(hcho + "");
-        XTools.SpUtil().putInt(room() + "hcho", hcho);
+        XTools.SpUtil().putFloat(room() + "hcho", hcho);
         XTools.SpUtil().putInt(room() + "temp", temp);
         XTools.SpUtil().putInt(room() + "h", h);
         XTools.SpUtil().putInt(room() + "pm", pm25);
@@ -613,7 +613,7 @@ public abstract class BaseRoomFragment extends BaseFragment {
 
     protected void setDefaultDer() {
         setDefaultBigTemp();
-        setBaseHCHO(String.valueOf(XTools.SpUtil().getInt(room() + "hcho", 0)));
+        setBaseHCHO(String.valueOf(XTools.SpUtil().getFloat(room() + "hcho", 0)));
         setBaseTemp(String.valueOf(XTools.SpUtil().getInt(room() + "temp", 0)));
         setBaseH(String.valueOf(XTools.SpUtil().getInt(room() + "h", 0)));
         setBasePM(String.valueOf(XTools.SpUtil().getInt(room() + "pm", 0)));

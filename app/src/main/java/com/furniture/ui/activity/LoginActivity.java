@@ -88,12 +88,12 @@ public class LoginActivity extends BaseActivity {
         mLoginBean.setAccount(XTools.SpUtil().getString(DoMain.SP_ACCOUNT_SAVE, ""));
         mLoginBean.setPassword(XTools.SpUtil().getString(DoMain.SP_PWD_SAVE, ""));
         mLoginBean.setIp(XTools.SpUtil().getString(DoMain.SP_IP_SAVE, ""));
-        if (Config.DEBUG) {
-            mLoginBean.setAccount("admin");
-            mLoginBean.setPassword("admin");
-            mLoginBean.setIp("114.252.118.161:9696");  // 济南
+//        if (Config.DEBUG) {
+//            mLoginBean.setAccount("admin");
+//            mLoginBean.setPassword("admin");
+//            mLoginBean.setIp("114.252.97.98");  // 济南
 //            mLoginBean.setIp("114.252.122.197:9696");  //北京
-        }
+//        }
     }
 
     public void login(View view) {
@@ -193,7 +193,7 @@ public class LoginActivity extends BaseActivity {
     };
 
     private void getUUID() {
-        View decorView = LoginActivity.this.getWindow().getDecorView();
+        View decorView = findView(android.R.id.content);
         if (mSnackbar == null) {
             mSnackbar = Snackbar.make(decorView, "连接成功，正在获取UUID...", 10000)
                     .addCallback(new Snackbar.Callback() {

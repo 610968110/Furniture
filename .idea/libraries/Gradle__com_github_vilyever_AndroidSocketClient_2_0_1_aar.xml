@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.vilyever:AndroidSocketClient:2.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/02806d29223de4b642e88e33c5265b47/AndroidSocketClient-2.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/02806d29223de4b642e88e33c5265b47/AndroidSocketClient-2.0.1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.vilyever/AndroidSocketClient/2.0.1/5a579df02f2d8e8e8715bd8094b2e9f255ff24f9/AndroidSocketClient-2.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

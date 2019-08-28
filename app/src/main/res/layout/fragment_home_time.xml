@@ -29,7 +29,7 @@
             android:id="@+id/tv_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="7:17"
+            android:text=""
             android:textColor="#000000"
             android:textSize="@dimen/time_text_size"
             android:textStyle="bold" />
@@ -39,7 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="8月13日星期一"
+            android:text=""
             android:textColor="#000000"
             android:textSize="@dimen/data_text_size" />
 
@@ -58,7 +58,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="top"
-                    android:text="天气"
+                    android:text="@string/weather"
                     android:textColor="#9F9F9F"
                     android:textSize="@dimen/small_text_size" />
 
@@ -104,7 +104,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="top"
-                    android:text="今日限行"
+                    android:text="@string/limit_today"
                     android:textColor="#9F9F9F"
                     android:textSize="@dimen/small_text_size" />
 
@@ -151,7 +151,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="6dp"
-                    android:text="回家" />
+                    android:text="@string/go_home" />
 
             </LinearLayout>
 
@@ -172,7 +172,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="6dp"
-                    android:text="离家" />
+                    android:text="@string/live_home" />
 
             </LinearLayout>
 

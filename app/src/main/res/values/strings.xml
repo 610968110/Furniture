@@ -8,4 +8,10 @@
     <string name="main_2">社区</string>
     <string name="main_3">我的</string>
     <string name="test">开发中</string>
+
+
+    <string name="limit_today">今日限行</string>
+    <string name="go_home">回家</string>
+    <string name="live_home">离家</string>
+    <string name="weather">天气</string>
 </resources>
