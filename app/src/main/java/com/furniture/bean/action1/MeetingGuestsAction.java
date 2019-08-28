@@ -1,11 +1,14 @@
 package com.furniture.bean.action1;
 
 import android.content.Context;
+import android.util.Log;
 
+import com.furniture.Config;
 import com.furniture.R;
 import com.furniture.bean.ActionBean;
 import com.furniture.bean.json.AllState;
 import com.furniture.bean.json.control.DeviceAction2;
+import com.furniture.bean.json.control.DeviceHome;
 import com.furniture.event.ResetOpenAction;
 import com.furniture.impl.IModeAction;
 import com.furniture.task.ActionClick;
@@ -14,6 +17,8 @@ import com.furniture.ui.activity.MainActivity;
 import org.greenrobot.eventbus.EventBus;
 
 import lbx.xtoollib.phone.xLogUtil;
+
+import static com.furniture.constant.Device.HOME;
 
 /**
  * .  ┏┓　　　┏┓
@@ -70,7 +75,11 @@ public class MeetingGuestsAction extends ActionBean implements IModeAction {
             MainActivity activity = (MainActivity) context;
             xLogUtil.e(this, "会客");
             EventBus.getDefault().post(new ResetOpenAction(1));
-            activity.send(new DeviceAction2(room, getDeviceName(), "", 1), true);
+            if (Config.APP_TYPE == Config.TYPE_DEMO_SHANGHAI) {
+                activity.send(new DeviceHome(room, HOME, "", isOpen), true);
+            } else {
+                activity.send(new DeviceAction2(room, getDeviceName(), "", 1), true);
+            }
             setOpen(isOpen);
         }
     }
@@ -82,6 +91,7 @@ public class MeetingGuestsAction extends ActionBean implements IModeAction {
     @Override
     public void onRefresh(AllState.Params.Item.Field field) {
         super.onRefresh(field);
+        Log.e("xys", "~~~~~:" + field);
         setOpen(field.LM == 1);
     }
 

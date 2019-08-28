@@ -186,7 +186,8 @@ public abstract class BaseRoomFragment extends BaseFragment {
         mBigTempTextView.setVisibility(setShowBigTemp() ? View.VISIBLE : View.GONE);
         mDescView1.setVisibility(setShowDesc1() ? View.VISIBLE : View.GONE);
         mDescView2.setVisibility(setShowDesc2() ? View.VISIBLE : View.GONE);
-        if (Config.APP_TYPE == Config.TYPE_DEMO_JINAN) {
+        if (Config.APP_TYPE == Config.TYPE_DEMO_JINAN||
+                Config.APP_TYPE == Config.TYPE_DEMO_SHANGHAI) {
             mEnvironmentView.setHchoViewShow();
         }
     }

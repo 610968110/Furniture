@@ -96,7 +96,8 @@ public class MainHomeFragment extends BaseFragment {
         } else if (Config.APP_TYPE == Config.TYPE_DEMO_SIMPLE) {
             values = HomePager3Simple.values();
             mTabLayout.setVisibility(View.GONE);
-        } else if (Config.APP_TYPE == Config.TYPE_DEMO_JINAN) {
+        } else if (Config.APP_TYPE == Config.TYPE_DEMO_JINAN||
+                Config.APP_TYPE == Config.TYPE_DEMO_SHANGHAI) {
             values = HomePagerJiNan.values();
         }
         Collections.addAll(mList, values);

@@ -2,6 +2,7 @@ package com.furniture.bean.action1;
 
 import android.content.Context;
 
+import com.furniture.Config;
 import com.furniture.R;
 import com.furniture.bean.ActionBean;
 import com.furniture.bean.json.AllState;
@@ -43,7 +44,7 @@ import static com.furniture.constant.DoMain.GO_HOME_SAVE;
  * @date 2018/9/5.
  */
 
-public class GoHomeAction extends ActionBean implements IModeAction,IHome {
+public class GoHomeAction extends ActionBean implements IModeAction, IHome {
 
     public static final String NAME = Device.HOME + "Mode";
 
@@ -81,7 +82,10 @@ public class GoHomeAction extends ActionBean implements IModeAction,IHome {
             MainActivity activity = (MainActivity) context;
             xLogUtil.e(this, "回家");
             EventBus.getDefault().post(new ResetOpenAction(1));
-            activity.send(new DeviceAction2(room, getDeviceName(), "", 2), true);
+            if (Config.APP_TYPE == Config.TYPE_DEMO_SHANGHAI)
+                activity.send(new DeviceAction2(room, getDeviceName(), "", 1), true);
+            else
+                activity.send(new DeviceAction2(room, getDeviceName(), "", 2), true);
             setOpen(isOpen);
         }
     }

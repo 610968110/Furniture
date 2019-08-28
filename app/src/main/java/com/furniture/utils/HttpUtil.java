@@ -5,6 +5,7 @@ import com.furniture.IHttp;
 import com.furniture.bean.json.LimitResult;
 import com.furniture.bean.json.PM25Result;
 import com.furniture.bean.json.WeatherResult;
+import com.furniture.bean.json.WeatherShanghaiResult;
 
 import lbx.xtoollib.XTools;
 import lbx.xtoollib.listener.OnHttpObservableCallBack;
@@ -54,6 +55,35 @@ public class HttpUtil {
         String local = "北京";
         if (Config.APP_TYPE == Config.TYPE_DEMO_JINAN) {
             local = "济南";
+        } else if (Config.APP_TYPE == Config.TYPE_DEMO_SHANGHAI) {
+            // local = "上海";
+            XTools.HttpUtil().send(XTools.HttpUtil()
+                    .getRetrofit("http://www.weather.com.cn/", IHttp.class, "查询上海天气")
+                    .getWeatherShanghai(), new OnHttpObservableCallBack<WeatherShanghaiResult>() {
+                @Override
+                public void onSuccess(WeatherShanghaiResult weatherShanghaiResult) {
+                    if (callBack != null) {
+                        WeatherResult t = new WeatherResult();
+                        WeatherResult.ResultBean result = new WeatherResult.ResultBean();
+                        WeatherResult.ResultBean.TodayBean today = new WeatherResult.ResultBean.TodayBean();
+                        today.setWeather("-");
+                        result.setToday(today);
+                        WeatherResult.ResultBean.SkBean sk = new WeatherResult.ResultBean.SkBean();
+                        sk.setTemp(weatherShanghaiResult.getWeatherinfo().getTemp());
+                        result.setSk(sk);
+                        t.setResult(result);
+                        callBack.onSuccess(t);
+                    }
+                }
+
+                @Override
+                public void onFailure(Throwable t) {
+                    if (callBack != null) {
+                        callBack.onFailure(t);
+                    }
+                }
+            });
+            return;
         }
         XTools.HttpUtil().send(XTools.HttpUtil()
                 .getRetrofit("http://v.juhe.cn/weather/", IHttp.class, "查询天气")
