@@ -66,10 +66,18 @@ public class HttpUtil {
                         WeatherResult t = new WeatherResult();
                         WeatherResult.ResultBean result = new WeatherResult.ResultBean();
                         WeatherResult.ResultBean.TodayBean today = new WeatherResult.ResultBean.TodayBean();
-                        today.setWeather("-");
+                        try {
+                            today.setWeather(weatherShanghaiResult.getWeatherinfo().getWeather().replace("℃", ""));
+                        } catch (Exception e) {
+                            today.setWeather("-");
+                        }
                         result.setToday(today);
                         WeatherResult.ResultBean.SkBean sk = new WeatherResult.ResultBean.SkBean();
-                        sk.setTemp(weatherShanghaiResult.getWeatherinfo().getTemp());
+                        try {
+                            sk.setTemp(weatherShanghaiResult.getWeatherinfo().getTemp2());
+                        } catch (Exception e) {
+                            sk.setTemp("-");
+                        }
                         result.setSk(sk);
                         t.setResult(result);
                         callBack.onSuccess(t);

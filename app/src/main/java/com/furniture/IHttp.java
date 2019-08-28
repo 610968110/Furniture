@@ -38,7 +38,7 @@ public interface IHttp {
                                          @Query("format") String format,
                                          @Query("cityname") String cityname);
 
-    @GET("data/sk/101020100.html")
+    @GET("data/cityinfo/101020100.html")
     Observable<WeatherShanghaiResult> getWeatherShanghai();
 
     @GET("environment/air/pm?")

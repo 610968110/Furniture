@@ -33,9 +33,9 @@
     <dimen name="content_s_m">50dp</dimen>
     <dimen name="content_p_t">20dp</dimen>
     <dimen name="time_text_size">60dp</dimen>
-    <dimen name="data_text_size">18dp</dimen>
-    <dimen name="small_text_size">14dp</dimen>
-    <dimen name="big_text_size">20dp</dimen>
+    <dimen name="data_text_size">30dp</dimen>
+    <dimen name="small_text_size">20dp</dimen>
+    <dimen name="big_text_size">24dp</dimen>
     <dimen name="home_icon_size">60dp</dimen>
     <dimen name="time_line_width">400dp</dimen>
     <dimen name="time_line_m">20dp</dimen>
