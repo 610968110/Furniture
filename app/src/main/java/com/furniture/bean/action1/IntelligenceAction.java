@@ -2,11 +2,9 @@ package com.furniture.bean.action1;
 
 import android.content.Context;
 
-import com.furniture.Config;
 import com.furniture.R;
 import com.furniture.bean.ActionBean;
 import com.furniture.bean.json.AllState;
-import com.furniture.bean.json.control.DeviceHome;
 import com.furniture.bean.json.control.IntelligenceHome;
 import com.furniture.event.ResetOpenAction;
 import com.furniture.impl.IModeAction;
@@ -16,8 +14,6 @@ import com.furniture.ui.activity.MainActivity;
 import org.greenrobot.eventbus.EventBus;
 
 import lbx.xtoollib.phone.xLogUtil;
-
-import static com.furniture.constant.Device.HOME;
 
 /**
  * .  ┏┓　　　┏┓
@@ -76,11 +72,11 @@ public class IntelligenceAction extends ActionBean implements IModeAction {
             MainActivity activity = (MainActivity) context;
             xLogUtil.e(this, "智能");
             EventBus.getDefault().post(new ResetOpenAction(1));
-            if (Config.APP_TYPE == Config.TYPE_DEMO_SHANGHAI) {
-                activity.send(new DeviceHome(room, HOME, "", isOpen), true);
-            } else {
+//            if (Config.APP_TYPE == Config.TYPE_DEMO_SHANGHAI) {
+//                activity.send(new DeviceHome(room, HOME, "", isOpen), true);
+//            } else {
                 activity.send(new IntelligenceHome(room, getDeviceName(), "", isOpen), true);
-            }
+//            }
             setOpen(isOpen);
         }
     }

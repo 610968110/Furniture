@@ -12,6 +12,7 @@ import com.furniture.bean.action1.MovieAction;
 import com.furniture.bean.action1.ReadAction;
 import com.furniture.bean.action2.AirAction;
 import com.furniture.bean.action2.AirConditionerAction;
+import com.furniture.bean.action2.CurtainsAction;
 import com.furniture.bean.jinanbean.KeTingMainLightAction;
 import com.furniture.bean.jinanbean.SupperLight;
 import com.furniture.bean.jinanbean.TVWallLightBeltAction;
@@ -59,8 +60,13 @@ public class JiNanDinnerFragment extends KeTingRoomFragment {
         ActionBean bean9 = new SupperLight(getActivity(), ROOM, "L7", "餐厅吊灯");
         ActionBean bean10 = new SupperLight(getActivity(), ROOM, "L8", "餐厅筒灯");
         ActionBean bean11 = new SupperLight(getActivity(), ROOM, "L9", "餐厅灯带");
-        return new ActionBean[]{bean1, bean2, bean3, bean4, bean5, bean6, bean7,
-                bean8, bean9, bean10, bean11};
+        // 窗帘
+        ActionBean bean12 = new CurtainsAction(getActivity(), ROOM, "Curt1");
+
+        return Config.APP_TYPE == Config.TYPE_DEMO_SHANGHAI ?
+                new ActionBean[]{bean1, bean2, bean12, bean3, bean4, bean5, bean6} :
+                new ActionBean[]{bean1, bean2, bean3, bean4, bean5, bean6, bean7,
+                        bean8, bean9, bean10, bean11};
     }
 
     @Override
@@ -69,13 +75,13 @@ public class JiNanDinnerFragment extends KeTingRoomFragment {
         ActionBean bean1;
         //会客
         ActionBean bean2;
-        if (Config.APP_TYPE == Config.TYPE_DEMO_SHANGHAI) {
-            bean1 = new IntelligenceAction(getActivity(), "R", "Home");
-            bean2 = new MeetingGuestsAction(getActivity(), "R", "Home");
-        } else {
-            bean1 = new IntelligenceAction(getActivity(), ROOM, SCE);
-            bean2 = new MeetingGuestsAction(getActivity(), ROOM, SCE);
-        }
+//        if (Config.APP_TYPE == Config.TYPE_DEMO_SHANGHAI) {
+//            bean1 = new IntelligenceAction(getActivity(), "R", "Home");
+//            bean2 = new MeetingGuestsAction(getActivity(), "R", "Home");
+//        } else {
+        bean1 = new IntelligenceAction(getActivity(), ROOM, SCE);
+        bean2 = new MeetingGuestsAction(getActivity(), ROOM, SCE);
+//        }
         //用餐
         ActionBean bean3 = new EatAction(getActivity(), ROOM, SCE);
         //阅读
