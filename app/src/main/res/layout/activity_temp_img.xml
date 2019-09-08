@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.furniture.ui.view.TopBar
+                android:id="@+id/tb_user_manage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/top_bar_height"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </com.furniture.ui.view.TopBar>
+
+            <com.furniture.ui.view.MyImageView
+                android:id="@+id/iv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tb_user_manage" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</layout>

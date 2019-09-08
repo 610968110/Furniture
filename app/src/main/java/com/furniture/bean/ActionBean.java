@@ -77,6 +77,9 @@ public class ActionBean {
         this.deviceName = deviceName;
         otherName = SpUtil.getInstance().getString(room + name, null);
     }
+    public ActionBean(String name, String room, String deviceName, int icon, ActionClick task) {
+        this(name, room, deviceName, icon, icon, task);
+    }
 
     public void binView(BigCardView view) {
         this.view = view;

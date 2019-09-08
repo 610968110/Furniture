@@ -10,7 +10,7 @@
 
         <com.furniture.ui.view.TempLayout
             android:id="@+id/tl_temp"
-            android:layout_width="@dimen/environment_item_size"
+            android:layout_width="@dimen/environment_item_size_w"
             android:layout_height="@dimen/environment_item_size">
 
         </com.furniture.ui.view.TempLayout>
@@ -24,7 +24,7 @@
 
         <com.furniture.ui.view.HLayout
             android:id="@+id/tl_h"
-            android:layout_width="@dimen/environment_item_size"
+            android:layout_width="@dimen/environment_item_size_w"
             android:layout_height="@dimen/environment_item_size">
 
         </com.furniture.ui.view.HLayout>
@@ -38,7 +38,7 @@
 
         <com.furniture.ui.view.PmLayout
             android:id="@+id/pl_tvoc"
-            android:layout_width="@dimen/environment_item_size"
+            android:layout_width="@dimen/environment_item_size_w"
             android:layout_height="@dimen/environment_item_size">
 
         </com.furniture.ui.view.PmLayout>
@@ -52,7 +52,7 @@
 
         <com.furniture.ui.view.CO2Layout
             android:id="@+id/pl_co2"
-            android:layout_width="@dimen/environment_item_size"
+            android:layout_width="@dimen/environment_item_size_w"
             android:layout_height="@dimen/environment_item_size">
 
         </com.furniture.ui.view.CO2Layout>
@@ -69,7 +69,7 @@
         <com.furniture.ui.view.HCHOLayout
             android:id="@+id/pl_hcho"
             android:visibility="gone"
-            android:layout_width="@dimen/environment_item_size"
+            android:layout_width="@dimen/environment_item_size_w"
             android:layout_height="@dimen/environment_item_size">
 
         </com.furniture.ui.view.HCHOLayout>

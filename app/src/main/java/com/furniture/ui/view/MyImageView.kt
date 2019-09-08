@@ -22,11 +22,13 @@ class MyImageView : ImageView {
 
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec)
-        val sw = MeasureSpec.getSize(widthMeasureSpec)
-        val w = drawable.intrinsicWidth
-        h = drawable.intrinsicHeight * sw * 1.0F / w
-        val mode = MeasureSpec.getMode(heightMeasureSpec)
-        val newHeightMeasureSpec = MeasureSpec.makeMeasureSpec(h.toInt(), mode)
-        setMeasuredDimension(widthMeasureSpec, newHeightMeasureSpec)
+        drawable?.apply {
+            val sw = MeasureSpec.getSize(widthMeasureSpec)
+            val w = this.intrinsicWidth
+            h = this.intrinsicHeight * sw * 1.0F / w
+            val mode = MeasureSpec.getMode(heightMeasureSpec)
+            val newHeightMeasureSpec = MeasureSpec.makeMeasureSpec(h.toInt(), mode)
+            setMeasuredDimension(widthMeasureSpec, newHeightMeasureSpec)
+        }
     }
 }
