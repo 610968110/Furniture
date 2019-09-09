@@ -4,7 +4,6 @@ import android.content.Context
 import android.support.v7.widget.RecyclerView
 import com.furniture.bean.ActionBean
 import com.furniture.databinding.ItemRoomActionBinding
-import lbx.xtoollib.XTools
 import lbx.xtoollib.base.BaseDataAdapter
 
 /**
@@ -15,7 +14,8 @@ import lbx.xtoollib.base.BaseDataAdapter
  * Time: 0:22
  * Desc:
  */
-class ShequAdapter(context: Context, list: List<ActionBean>, itemHeight: Int) : RoomAdapter(context, list, itemHeight), BaseDataAdapter.OnItemClickListener<ActionBean> {
+class ShequAdapter(context: Context, list: List<ActionBean>, private val itemHeight: Int)
+    : RoomAdapter(context, list, itemHeight + 80), BaseDataAdapter.OnItemClickListener<ActionBean> {
     override fun onItemLongClick(recyclerView: RecyclerView?, id: Int, position: Int, entity: ActionBean?) {
         entity?.task?.actionClick(true)
     }
@@ -28,9 +28,8 @@ class ShequAdapter(context: Context, list: List<ActionBean>, itemHeight: Int) : 
         onItemClickListener = this
     }
 
-    private val size = XTools.WindowUtil().px2dip(60).toInt()
     override fun dataBinding(binding: ItemRoomActionBinding?, position: Int, entity: ActionBean?, baseHolder: BaseHolder?) {
         super.dataBinding(binding, position, entity, baseHolder)
-        binding?.bcv?.setImagesize(size)
+        binding?.bcv?.setImagesize(itemHeight)
     }
 }

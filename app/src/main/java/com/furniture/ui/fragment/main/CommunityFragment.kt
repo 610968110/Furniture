@@ -71,7 +71,7 @@ class CommunityFragment : BaseFragment() {
     }
 
     override fun initData() {
-        val dimen = XTools.WindowUtil().px2dip(140).toInt()
+        val dimen = XTools.WindowUtil().px2dip(120).toInt()
         binding.rv1.adapter = ShequAdapter(context, getData1(), dimen)
         binding.rv2.init("管家服务", ShequAdapter(context, getData2(), dimen))
         binding.rv3.init("生活服务", ShequAdapter(context, getData3(), dimen))
@@ -79,7 +79,6 @@ class CommunityFragment : BaseFragment() {
         binding.rv5.init("社区健康", ShequAdapter(context, getData5(), dimen))
         binding.rv6.init("邻里之间", ShequAdapter(context, getData6(), dimen))
     }
-
 
     private fun getData1(): List<ActionBean> {
         return listOf(
@@ -140,7 +139,7 @@ class CommunityFragment : BaseFragment() {
         return listOf(
                 ActionBean("房屋租售", "", "", R.drawable.icon_fangwuzushou, object : ActionClick() {
                     override fun actionClick(isLongClick: Boolean) {
-                        super .actionClick(isLongClick)
+                        super.actionClick(isLongClick)
                         TempImgActivity.start(context, "房屋租售", R.drawable.img_fangwuzushou)
                     }
                 }),

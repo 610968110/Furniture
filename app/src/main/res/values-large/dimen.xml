@@ -34,7 +34,7 @@
     <dimen name="content_p_t">20dp</dimen>
     <dimen name="time_text_size">60dp</dimen>
     <dimen name="data_text_size">30dp</dimen>
-    <dimen name="small_text_size">20dp</dimen>
+    <dimen name="small_text_size">18dp</dimen>
     <dimen name="big_text_size">24dp</dimen>
     <dimen name="home_icon_size">60dp</dimen>
     <dimen name="time_line_width">400dp</dimen>
@@ -62,7 +62,7 @@
     <dimen name="environment_item_size">55dp</dimen>
     <dimen name="environment_top_margin">50dp</dimen>
     <dimen name="environment_big_text">18dp</dimen>
-    <dimen name="environment_small_text">10dp</dimen>
+    <dimen name="environment_small_text">12dp</dimen>
     <dimen name="select_view_width">47dp</dimen>
     <dimen name="select_view_height">28dp</dimen>
     <dimen name="select_view_marginStart">50dp</dimen>

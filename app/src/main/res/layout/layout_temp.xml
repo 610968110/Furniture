@@ -20,7 +20,7 @@
             android:id="@+id/tv_temp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="2dp"
             android:text="—"
             android:textColor="#000000"
             android:textSize="@dimen/big_text_size"

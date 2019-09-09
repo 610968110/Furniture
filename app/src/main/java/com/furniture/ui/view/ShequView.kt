@@ -8,9 +8,9 @@ import android.graphics.Rect
 import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.util.AttributeSet
+import android.util.TypedValue
 import android.widget.LinearLayout
 import android.widget.TextView
-import lbx.xtoollib.XTools
 
 /**
  * Copyright © 2013-2019 Worktile. All Rights Reserved.
@@ -38,7 +38,7 @@ class ShequView : LinearLayout {
         orientation = VERTICAL
         contentView = NoScrollRecycleView(context)
         titleView = TextView(context)
-        titleView.textSize = XTools.WindowUtil().dip2px(18.0F).toFloat()
+        titleView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 16.0F)
         titleView.setTextColor(Color.BLACK)
         contentView.layoutManager = GridLayoutManager(context, 5)
         val mp = MarginLayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT)
