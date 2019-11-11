@@ -3,11 +3,11 @@ package com.furniture.type;
 import com.furniture.R;
 import com.furniture.base.BaseFragment;
 import com.furniture.impl.IMainPager;
-import com.furniture.ui.fragment.roomjinan.JiNanB2Fragment;
-import com.furniture.ui.fragment.roomjinan.JiNanDinnerFragment;
-import com.furniture.ui.fragment.roomjinan.JiNanHomeFragment;
-import com.furniture.ui.fragment.roomjinan.JiNanJiacengFragment;
-import com.furniture.ui.fragment.roomjinan.JiNanXuanguanFragment;
+import com.furniture.ui.fragment.roomjinan2.JiNanB2Fragment;
+import com.furniture.ui.fragment.roomjinan2.JiNanDinnerFragment;
+import com.furniture.ui.fragment.roomjinan2.JiNanHomeFragment;
+import com.furniture.ui.fragment.roomjinan2.JiNanJiacengFragment;
+import com.furniture.ui.fragment.roomjinan2.JiNanXuanguanFragment;
 
 /**
  * .  ┏┓　　　┏┓
@@ -34,11 +34,26 @@ import com.furniture.ui.fragment.roomjinan.JiNanXuanguanFragment;
 
 public enum HomePagerJiNan implements IMainPager {
 
+    // 这里是之前做的上海的完整版
+//    HOME_PAGE("首页", JiNanHomeFragment.newInstance(R.drawable.jinan_bg_1)),
+//    DINING_ROOM("餐客厅", JiNanDinnerFragment.newInstance(R.drawable.jinan_bg_2)),
+//    MASTER_ROOM("玄关", JiNanXuanguanFragment.newInstance(R.drawable.jinan_bg_3)),
+//    SECOND_ROOM("夹层", JiNanJiacengFragment.newInstance(R.drawable.jinan_bg_4)),
+//    CHILD_ROOM("B2层", JiNanB2Fragment.newInstance(R.drawable.jinan_bg_5));
+
+    // 这里是之前做的上海的完整版后又让换图片
+//    HOME_PAGE("首页", JiNanHomeFragment.newInstance(R.drawable.jinan_bg_1)),
+//    DINING_ROOM("餐客厅", JiNanDinnerFragment.newInstance(R.drawable.shanghai_bg_1)),
+//    MASTER_ROOM("主卧", JiNanXuanguanFragment.newInstance(R.drawable.shanghai_bg_2)),
+//    SECOND_ROOM("儿童房", JiNanJiacengFragment.newInstance(R.drawable.shanghai_bg_3)),
+//    CHILD_ROOM("书房", JiNanB2Fragment.newInstance(R.drawable.shanghai_bg_4));
+
+    // 2这里是之前做的上海的完整版后又让换图片和改名 这里的fragment包名后多了个2
     HOME_PAGE("首页", JiNanHomeFragment.newInstance(R.drawable.jinan_bg_1)),
-    DINING_ROOM("餐客厅", JiNanDinnerFragment.newInstance(R.drawable.jinan_bg_2)),
-    MASTER_ROOM("玄关", JiNanXuanguanFragment.newInstance(R.drawable.jinan_bg_3)),
-    SECOND_ROOM("夹层", JiNanJiacengFragment.newInstance(R.drawable.jinan_bg_4)),
-    CHILD_ROOM("B2层", JiNanB2Fragment.newInstance(R.drawable.jinan_bg_5));
+    DINING_ROOM("餐客厅", JiNanDinnerFragment.newInstance(R.drawable.new_2)),
+    MASTER_ROOM("主卧", JiNanXuanguanFragment.newInstance(R.drawable.new_3)),
+    SECOND_ROOM("老人房", JiNanJiacengFragment.newInstance(R.drawable.new_4)),
+    CHILD_ROOM("儿童房", JiNanB2Fragment.newInstance(R.drawable.new_5));
 
 //    HOME_PAGE("首页", JiNanHomeFragment.newInstance(R.drawable.jinan_bg_1)),
 //    DINING_ROOM("一层", JiNanDinnerFragment.newInstance(R.drawable.jinan_new_1)),
