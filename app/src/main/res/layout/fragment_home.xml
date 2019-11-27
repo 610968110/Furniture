@@ -14,7 +14,17 @@
             android:layout_height="@dimen/home_img_h"
             android:layout_above="@+id/tv_welcome"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/pic_huiwei2" />
+            android:src="@drawable/pic_huiwei2"
+            android:translationX="-120dp" />
+
+        <ImageView
+            android:id="@+id/iv_home_pic1"
+            android:layout_width="@dimen/home_img_w"
+            android:layout_height="@dimen/home_img_h"
+            android:layout_above="@+id/tv_welcome"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/pic_shanghai"
+            android:translationX="120dp" />
 
         <TextView
             android:id="@id/tv_welcome"

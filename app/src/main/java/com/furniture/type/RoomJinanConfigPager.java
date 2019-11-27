@@ -31,10 +31,22 @@ import com.furniture.ui.fragment.config.SecondRoomConfigFragment;
 
 public enum RoomJinanConfigPager implements IRoomConfig {
 
-    DINING_CONFIG("餐客厅", DiningRoomConfigFragment.newInstance()),
+//    DINING_CONFIG("餐客厅", DiningRoomConfigFragment.newInstance()),
+//    MASTER_CONFIG("玄关", MasterRoomConfigFragment.newInstance()),
+//    SECOND_CONFIG("夹层", SecondRoomConfigFragment.newInstance()),
+//    CHILD_CONFIG("B2层", ChildRoomConfigFragment.newInstance());
+
+    // 这里是上海完成后的制作的下一个版本，没说是哪的，包名 shanghainext40
+    DINING_CONFIG("客餐厅", DiningRoomConfigFragment.newInstance()),
     MASTER_CONFIG("玄关", MasterRoomConfigFragment.newInstance()),
-    SECOND_CONFIG("夹层", SecondRoomConfigFragment.newInstance()),
-    CHILD_CONFIG("B2层", ChildRoomConfigFragment.newInstance());
+    SECOND_CONFIG("主卧", SecondRoomConfigFragment.newInstance()),
+    CHILD_CONFIG("卫生间", ChildRoomConfigFragment.newInstance());
+
+    // 这里是上海完成后的制作的下一个版本，没说是哪的，包名 shanghainext80
+//    DINING_CONFIG("客餐厅", DiningRoomConfigFragment.newInstance()),
+//    MASTER_CONFIG("主卧", MasterRoomConfigFragment.newInstance()),
+//    SECOND_CONFIG("次卧", SecondRoomConfigFragment.newInstance()),
+//    CHILD_CONFIG("卫生间", ChildRoomConfigFragment.newInstance());
 
     private String name;
     private BaseRoomConfigFragment fragment;

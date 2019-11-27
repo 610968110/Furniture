@@ -186,7 +186,7 @@ public abstract class BaseRoomFragment extends BaseFragment {
         mBigTempTextView.setVisibility(setShowBigTemp() ? View.VISIBLE : View.GONE);
         mDescView1.setVisibility(setShowDesc1() ? View.VISIBLE : View.GONE);
         mDescView2.setVisibility(setShowDesc2() ? View.VISIBLE : View.GONE);
-        if (Config.APP_TYPE == Config.TYPE_DEMO_JINAN||
+        if (Config.APP_TYPE == Config.TYPE_DEMO_JINAN ||
                 Config.APP_TYPE == Config.TYPE_DEMO_SHANGHAI) {
             mEnvironmentView.setHchoViewShow();
         }
@@ -600,11 +600,11 @@ public abstract class BaseRoomFragment extends BaseFragment {
         int h = Float.valueOf(field.getHumi()).intValue();
         int pm25 = Float.valueOf(field.getPM25()).intValue();
         int co2 = Float.valueOf(field.getCO2()).intValue();
-        setBaseTemp(temp + "");
-        setBaseH(h + "");
-        setBasePM(pm25 + "");
-        setBaseCO2(co2 + "");
-        setBaseHCHO(hcho + "");
+        setBaseTemp(temp / 10 + "");
+        setBaseH(h / 10 + "");
+        setBasePM(pm25 / 10 + "");
+        setBaseCO2(co2 / 10 + "");
+        setBaseHCHO(hcho / 10 + "");
         XTools.SpUtil().putFloat(room() + "hcho", hcho);
         XTools.SpUtil().putInt(room() + "temp", temp);
         XTools.SpUtil().putInt(room() + "h", h);
@@ -614,11 +614,11 @@ public abstract class BaseRoomFragment extends BaseFragment {
 
     protected void setDefaultDer() {
         setDefaultBigTemp();
-        setBaseHCHO(String.valueOf(XTools.SpUtil().getFloat(room() + "hcho", 0)));
-        setBaseTemp(String.valueOf(XTools.SpUtil().getInt(room() + "temp", 0)));
-        setBaseH(String.valueOf(XTools.SpUtil().getInt(room() + "h", 0)));
-        setBasePM(String.valueOf(XTools.SpUtil().getInt(room() + "pm", 0)));
-        setBaseCO2(String.valueOf(XTools.SpUtil().getInt(room() + "co2", 0)));
+        setBaseHCHO(String.valueOf(XTools.SpUtil().getFloat(room() + "hcho", 0) / 10));
+        setBaseTemp(String.valueOf(XTools.SpUtil().getInt(room() + "temp", 0) / 10));
+        setBaseH(String.valueOf(XTools.SpUtil().getInt(room() + "h", 0) / 10));
+        setBasePM(String.valueOf(XTools.SpUtil().getInt(room() + "pm", 0) / 10));
+        setBaseCO2(String.valueOf(XTools.SpUtil().getInt(room() + "co2", 0) / 10));
     }
 
     public void onPageSelect() {
