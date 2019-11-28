@@ -54,11 +54,12 @@ public class HeatingActivity extends BaseControlActivity {
     private static final int MAX = 50;
     private static final int MIN = 16;
 
-    public static XIntent getIntent(Context context, String name, String room, boolean isOpen) {
+    public static XIntent getIntent(Context context, String name, String room, String deviceName, boolean isOpen) {
         XIntent intent = new XIntent(context, HeatingActivity.class);
         intent.putExtra("name", name);
         intent.putExtra("room", room);
         intent.putExtra("isOpen", isOpen);
+        intent.putExtra("deviceName", deviceName);
         return intent;
     }
 
@@ -90,7 +91,7 @@ public class HeatingActivity extends BaseControlActivity {
         List<ActionBean> list = new ArrayList<>();
         ActionBean bean = new AutoAction(this, room, name);
         //开关
-        mMainBean = new SwitchAction(this, room, name,"","");
+        mMainBean = new SwitchAction(this, room, name, "", "");
         list.add(bean);
         list.add(mMainBean);
         return list;

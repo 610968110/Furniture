@@ -12,6 +12,8 @@ import com.furniture.bean.action1.ReadAction;
 import com.furniture.bean.action2.AirAction;
 import com.furniture.bean.action2.AirConditionerAction;
 import com.furniture.bean.action2.CurtainsAction;
+import com.furniture.bean.action2.HeatingAction;
+import com.furniture.bean.action2.ScreenWindowAction;
 import com.furniture.bean.jinanbean.SupperLight;
 import com.furniture.ui.fragment.room.KeTingRoomFragment;
 
@@ -45,11 +47,16 @@ public class JiNanDinnerFragment extends KeTingRoomFragment {
                 new AirAction(getActivity(), ROOM, "FAU1"),
                 new SupperLight(getActivity(), ROOM, "L1", "客厅主灯"),
                 new SupperLight(getActivity(), ROOM, "L2", "沙发射灯"),
-                new SupperLight(getActivity(), ROOM, "L3", "顶面射灯"),
+                new SupperLight(getActivity(), ROOM, "L3", "顶面灯带"),
                 new SupperLight(getActivity(), ROOM, "L4", "电视射灯"),
                 new SupperLight(getActivity(), ROOM, "L5", "电视灯带"),
+                new SupperLight(getActivity(), ROOM, "L6", "餐厅筒灯"),
                 // 窗帘
                 new CurtainsAction(getActivity(), ROOM, "Curt1"),
+                // 纱窗
+                new ScreenWindowAction(getActivity(), ROOM, "Gau1"),
+                // 地暖
+                new HeatingAction(getActivity(), ROOM, "FH1"),
         };
     }
 

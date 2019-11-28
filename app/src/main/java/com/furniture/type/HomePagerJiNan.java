@@ -56,18 +56,18 @@ public enum HomePagerJiNan implements IMainPager {
 //    CHILD_ROOM("儿童房", JiNanB2Fragment.newInstance(R.drawable.new_5));
 
     // 这里是上海完成后的制作的下一个版本，没说是哪的，包名 shanghainext40
-    HOME_PAGE("首页", JiNanHomeFragment.newInstance(R.drawable.jinan_bg_1)),
-    DINING_ROOM("客餐厅", JiNanDinnerFragment.newInstance(R.drawable.new_2)),
-    MASTER_ROOM("玄关", JiNanXuanguanFragment.newInstance(R.drawable.new_3)),
-    SECOND_ROOM("主卧", JiNanJiacengFragment.newInstance(R.drawable.new_4)),
-    CHILD_ROOM("卫生间", JiNanB2Fragment.newInstance(R.drawable.new_5));
-
-    // 这里是上海完成后的制作的下一个版本，没说是哪的，包名 shanghainext80
 //    HOME_PAGE("首页", JiNanHomeFragment.newInstance(R.drawable.jinan_bg_1)),
 //    DINING_ROOM("客餐厅", JiNanDinnerFragment.newInstance(R.drawable.new_2)),
-//    MASTER_ROOM("主卧", JiNanXuanguanFragment.newInstance(R.drawable.new_3)),
-//    SECOND_ROOM("次卧", JiNanJiacengFragment.newInstance(R.drawable.new_4)),
+//    MASTER_ROOM("玄关", JiNanXuanguanFragment.newInstance(R.drawable.new_3)),
+//    SECOND_ROOM("主卧", JiNanJiacengFragment.newInstance(R.drawable.new_4)),
 //    CHILD_ROOM("卫生间", JiNanB2Fragment.newInstance(R.drawable.new_5));
+
+    // 这里是上海完成后的制作的下一个版本，没说是哪的，包名 shanghainext80
+    HOME_PAGE("首页", JiNanHomeFragment.newInstance(R.drawable.jinan_bg_1)),
+    DINING_ROOM("客餐厅", JiNanDinnerFragment.newInstance(R.drawable.new_2)),
+    MASTER_ROOM("主卧", JiNanXuanguanFragment.newInstance(R.drawable.new_3)),
+    SECOND_ROOM("次卧", JiNanJiacengFragment.newInstance(R.drawable.new_4)),
+    CHILD_ROOM("卫生间", JiNanB2Fragment.newInstance(R.drawable.new_5));
 
 //    HOME_PAGE("首页", JiNanHomeFragment.newInstance(R.drawable.jinan_bg_1)),
 //    DINING_ROOM("一层", JiNanDinnerFragment.newInstance(R.drawable.jinan_new_1)),

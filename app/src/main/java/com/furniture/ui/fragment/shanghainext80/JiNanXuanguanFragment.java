@@ -7,6 +7,7 @@ import com.furniture.bean.ActionBean;
 import com.furniture.bean.action2.AirAction;
 import com.furniture.bean.action2.AirConditionerAction;
 import com.furniture.bean.action2.CurtainsAction;
+import com.furniture.bean.action2.HeatingAction;
 import com.furniture.bean.action2.ScreenWindowAction;
 import com.furniture.bean.jinanbean.SupperLight;
 import com.furniture.ui.fragment.room.DinnerRoomFragment;
@@ -43,7 +44,10 @@ public class JiNanXuanguanFragment extends DinnerRoomFragment {
                 new SupperLight(getActivity(), ROOM, "L4", "主卧壁灯"),
                 // 窗帘
                 new CurtainsAction(getActivity(), ROOM, "Curt1"),
-                new ScreenWindowAction(getActivity(), ROOM, "Gau1")
+                // 纱窗
+                new ScreenWindowAction(getActivity(), ROOM, "Gau1"),
+                // 地暖
+                new HeatingAction(getActivity(), ROOM, "FH1"),
         };
     }
 }
