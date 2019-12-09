@@ -2,6 +2,7 @@ package com.furniture.bean.action2;
 
 import android.content.Context;
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.furniture.R;
 import com.furniture.bean.ActionBean;
@@ -66,6 +67,7 @@ public class HeatingAction extends ActionBean {
         if (isLongClick) {
             HeatingActivity.getIntent(context, TextUtils.isEmpty(getOtherName()) ? getName() : getOtherName(), room, getDeviceName(), isOpen()).start();
         } else {
+            Log.e("xys", "~~~~~~~~~~~~~~~~:" + isOpen());
             open(context, !isOpen());
         }
     }

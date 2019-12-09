@@ -8,10 +8,9 @@ import com.furniture.bean.UserInfo;
 import com.furniture.injector.ContextLifeCycle;
 import com.furniture.injector.ForActivity;
 import com.furniture.injector.modules.ActivityModule;
-import com.furniture.ui.activity.ChangeNickNameActivity;
-import com.furniture.ui.activity.RoomConfigActivity;
 import com.furniture.ui.activity.AirActivity;
 import com.furniture.ui.activity.AirConditionerActivity;
+import com.furniture.ui.activity.ChangeNickNameActivity;
 import com.furniture.ui.activity.ChangePasswordActivity;
 import com.furniture.ui.activity.CurtainsActivity;
 import com.furniture.ui.activity.FamilyManageActivity;
@@ -19,10 +18,12 @@ import com.furniture.ui.activity.HeatingActivity;
 import com.furniture.ui.activity.LampActivity;
 import com.furniture.ui.activity.LoginActivity;
 import com.furniture.ui.activity.MainActivity;
+import com.furniture.ui.activity.RoomConfigActivity;
 import com.furniture.ui.activity.SettingActivity;
 import com.furniture.ui.activity.UserInfoActivity;
 import com.furniture.ui.activity.UserManageActivity;
 import com.furniture.ui.dialog.AirConditionerTempSelectDialogActivity;
+import com.furniture.ui.dialog.HeatingDialog;
 
 import dagger.Component;
 
@@ -93,4 +94,6 @@ public interface ActivityComponent {
     void inject(ChangeNickNameActivity changeNickNameActivity);
 
     void inject(AirConditionerTempSelectDialogActivity activity);
+
+    void inject(HeatingDialog activity);
 }

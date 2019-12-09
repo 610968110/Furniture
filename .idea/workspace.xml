@@ -6,23 +6,64 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="warn" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="xys" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27e4b6bd-b380-405a-9e05-f7e6bd0b93ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/bean/action2/HeatingAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/bean/json/control/AirDeviceTemp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/dialog/HeatingDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/nanjing1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/nanjing11.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/nanjing12.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/nanjing13.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/nanjing14.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/nanjing2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/nanjing3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/nanjing4.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/pic_logo_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/base/BaseRoomFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/base/BaseRoomFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/bean/action2/HeatingAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/bean/action2/HeatingAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/injector/components/ActivityComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/injector/components/ActivityComponent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/type/HomePagerJiNan.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/type/HomePagerJiNan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/type/RoomJinanConfigPager.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/type/RoomJinanConfigPager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/activity/AirConditionerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/activity/AirConditionerActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/activity/CurtainsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/activity/CurtainsActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/activity/HeatingActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/activity/HeatingActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext40/JiNanB2Fragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext40/JiNanB2Fragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext40/JiNanDinnerFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext40/JiNanDinnerFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext40/JiNanJiacengFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext40/JiNanJiacengFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext40/JiNanXuanguanFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext40/JiNanXuanguanFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext80/JiNanB2Fragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext80/JiNanB2Fragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext80/JiNanDinnerFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext80/JiNanDinnerFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext80/JiNanJiacengFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext80/JiNanJiacengFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext80/JiNanXuanguanFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext80/JiNanXuanguanFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/dialog/AirConditionerTempSelectDialogActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/dialog/AirConditionerTempSelectDialogActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext40/JiNanB2Fragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext40/JiNanB240Fragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext40/JiNanDinnerFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext40/JiNanDinner40Fragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext40/JiNanHomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext40/JiNanHome40Fragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext40/JiNanJiacengFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext40/JiNanJiaceng40Fragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext40/JiNanXuanguanFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext40/JiNanXuanguan40Fragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext80/JiNanB2Fragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext80/JiNanB280Fragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext80/JiNanDinnerFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext80/JiNanDinner80Fragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext80/JiNanHomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext80/JiNanHome80Fragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext80/JiNanJiacengFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext80/JiNanJiaceng80Fragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext80/JiNanXuanguanFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainext80/JiNanXuanguan80Fragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/view/control/AirConditionerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/view/control/AirConditionerView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/view/control/HeatingView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/view/control/HeatingView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/view/control/LampView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/view/control/LampView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home_time.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home_time.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_room.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_room.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/release/app-40.apk" beforeDir="false" afterPath="$PROJECT_DIR$/release/app-40.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/release/app-80.apk" beforeDir="false" afterPath="$PROJECT_DIR$/release/app-80.apk" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +77,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="WQCDU19904011421" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="F_Table_API_29" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -60,156 +101,18 @@
     </system>
   </component>
   <component name="FavoritesManager">
-    <favorites_list name="Furniture">
-      <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi" module="app" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/sun.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/back.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/next.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/water.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/bg_ciwo.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/bg_home.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/pic_hui.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/sanjiao.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/bg_zhuwo.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_logo.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/pic_jtgl.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/tab_home.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/tab_wode.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/yh_xiaoxi.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/home_bg_2.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_mima.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/pic_yanse.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/tab_shequ.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/yh_dingdan.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/yh_dongtai.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/yh_huodong.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/yh_qianbao.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/btn_dinuan.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/btn_guanbi.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/di_nicheng.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_launcher.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_xuanz.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/pic_huiwei.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/pic_wodebg.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/tab_home_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/tab_wode_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/bg_kecanting.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/home_bg_2_1.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/home_bg_2_2.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/home_bg_2_3.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/home_bg_2_4.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_shezhi.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/tab_shequ_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/yanse_anniu.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/yh_zhibojian.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/btn_dinuan_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/btn_guanbi_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/fangjian_di1.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/fangjian_di3.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_air_drg.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_air_hot.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_air_wet.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_xinfeng.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/bg_ertongfang.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/first_room_bg.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_air_cold.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_tv.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ph_chengyuan1.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/pic_shebei_bg.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/shebei_kapian.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/third_room_bg.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/fourth_room_bg.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_air_drg_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_air_hot_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_air_wet_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_eat.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_top.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_scene_eat.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_scene_home.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_shoujihao.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_xuanz_hui.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/pho_chengyuan2.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/pho_chengyuan3.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/pho_chengyuan4.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/pho_chengyuan5.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/second_room_bg.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_air_cold_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_air_stuffy.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_door.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_left.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_tv_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_wall.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_scene_meet.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_scene_read.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_wangguanip.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_launcher_round.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_guanli_jiat.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_eat_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_right.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_top_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_yigui.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_scene_eat_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_scene_movie.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_window_yarn.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/pic_shebei_light.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_air_freshair.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_air_stuffy_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_door_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_left_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_wall_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_scene_home_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_scene_lihome.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_scene_meet_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_scene_read_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_xinfeng_xiao.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/pho_wode_touxiang.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/pic_shebei_diduan.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/btn_chuanglian_kai.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_guanli_yonghu.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_balcony.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_right_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_yangtai.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_yigui_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_scene_lihome_s.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_scene_movie_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_scene_zhineng.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_window_yarn_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/btn_chuanglian_guan.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/btn_chuanglian_stop.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_air_freshair_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_chuanglian_kai.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_corridor.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_dachuang.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_window_curtain.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/btn_chuanglian_kai_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_balcony_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_chuangtao.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_eat_shoot.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_yangtai_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_scene_zhineng_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/pic_shebei_light_hui.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/btn_chuanglian_guan_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/btn_chuanglian_stop_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_guanli_changjing.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_corridor_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_dachuang_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_eat_shoot1.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_window_curtain_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_chuangtao_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_eat_shoot1s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_light_eat_shoot_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_air_airconditioner.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-        <favorite_root url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/icon_air_airconditioner_s.webp" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-      </favorite_root>
+    <favorites_list name="配置">
+      <favorite_root url="file://$PROJECT_DIR$/app/src/main/java/com/furniture/type/HomePagerJiNan.java" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="com.furniture.ui.fragment.config.DiningRoomConfigFragment" module="app" type="class" klass="com.intellij.ide.favoritesTreeView.smartPointerPsiNodes.ClassSmartPointerNode" />
     </favorites_list>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Kotlin File" />
         <option value="Kotlin Class" />
         <option value="layoutResourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -230,8 +133,8 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ApkExportedModule" value="app" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Nexus_5X_API_26" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2019-11-18T06:55:27.860Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="F_Table_API_29" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2019-12-09T03:44:44.782Z" />
     <property name="ExportApk.ApkPath" value="F:\mine\0_mine\jingrui\f\Furniture" />
     <property name="ExportApk.BuildType" value="release" />
     <property name="ExportApk.BuildVariants" value="release" />
@@ -256,22 +159,23 @@
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\mine\0_mine\jingrui\f\Furniture\app\src\main\res\drawable-xxhdpi" />
+      <recent name="F:\mine\0_mine\jingrui\f\Furniture\app\src\main\java\com\furniture\ui\drawable" />
+      <recent name="J:\mine\0_mine\jingrui\f\Furniture\app\src\main\java\com\furniture\ui\fragment\shanghainext80" />
+      <recent name="J:\mine\0_mine\jingrui\f\Furniture\app\src\main\java\com\furniture\ui\fragment" />
+      <recent name="J:\mine\0_mine\jingrui\f\Furniture\app\src\main\java\com\furniture\ui\fragment\shanghainext" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.furniture.bean.json.control" />
       <recent name="com.furniture.bean.action2" />
       <recent name="com.furniture.bean.json" />
       <recent name="com.furniture.type" />
       <recent name="com.furniture.bean.jinanbean" />
-      <recent name="com.furniture.ui.view" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\mine\0_mine\jingrui\f\Furniture\app\src\main\res\drawable-xxhdpi" />
-      <recent name="J:\mine\0_mine\jingrui\f\Furniture\app\src\main\java\com\furniture\ui\fragment\shanghainext80" />
-      <recent name="J:\mine\0_mine\jingrui\f\Furniture\app\src\main\java\com\furniture\ui\fragment" />
-      <recent name="J:\mine\0_mine\jingrui\f\Furniture\app\src\main\java\com\furniture\ui\fragment\shanghainext" />
-      <recent name="F:\mine\0_mine\jingrui\f\Furniture\app\src\main\java\com\furniture\ui\fragment\roomjinan2" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi" />
     </key>
   </component>
   <component name="RunDashboard">

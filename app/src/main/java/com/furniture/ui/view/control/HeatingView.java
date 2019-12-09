@@ -1,22 +1,15 @@
 package com.furniture.ui.view.control;
 
 import android.content.Context;
-import android.graphics.Color;
-import android.os.Looper;
 import android.support.annotation.AttrRes;
-import android.support.annotation.DrawableRes;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
-import android.util.TypedValue;
-import android.view.Gravity;
-import android.view.ViewGroup;
-import android.widget.FrameLayout;
+import android.widget.ImageView;
 
-import com.furniture.R;
-import com.furniture.ui.view.TemperatureTextView;
+import com.furniture.ui.dialog.HeatingDialog;
 
-import lbx.xtoollib.XTools;
+import lbx.xtoollib.phone.xLogUtil;
 
 /**
  * .  ┏┓　　　┏┓
@@ -42,22 +35,7 @@ import lbx.xtoollib.XTools;
  * 地暖
  */
 
-public class HeatingView extends FrameLayout {
-
-    protected TemperatureTextView textView;
-    private CircleTouchView imageView;
-    /**
-     * 关闭
-     */
-    private
-    @DrawableRes
-    int nbg;
-    /**
-     * 开启
-     */
-    private
-    @DrawableRes
-    int sbg;
+public class HeatingView extends AirConditionerView {
 
     private int min = 0;
     private int max = 100;
@@ -73,60 +51,36 @@ public class HeatingView extends FrameLayout {
     public HeatingView(@NonNull Context context, @Nullable AttributeSet attrs, @AttrRes int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
-        imageView = new CircleTouchView(context);
+//        imageView = new CircleTouchView(context);
+//
+//        textView = new TemperatureTextView(context);
+//        textView.setTextSize(TypedValue.COMPLEX_UNIT_PX, XTools.ResUtil().getDimen(R.dimen.control_center_textSize));
+//        textView.setTextColor(Color.WHITE);
+//        textView.setSymbolColor(Color.WHITE);
+//        textView.setSymbol("℃");
+//        textView.ignoreSymbolLength();
+//        textView.setSymbolSize(R.dimen.control_center_symbol_textSize);
+//
+//        LayoutParams params = new LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+//        params.gravity = Gravity.CENTER;
+//
+//        addView(imageView);
+//        addView(textView, params);
 
-        textView = new TemperatureTextView(context);
-        textView.setTextSize(TypedValue.COMPLEX_UNIT_PX, XTools.ResUtil().getDimen(R.dimen.control_center_textSize));
-        textView.setTextColor(Color.WHITE);
-        textView.setSymbolColor(Color.WHITE);
-        textView.setSymbol("℃");
-        textView.ignoreSymbolLength();
-        textView.setSymbolSize(R.dimen.control_center_symbol_textSize);
-
-        LayoutParams params = new LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        params.gravity = Gravity.CENTER;
-
-        addView(imageView);
-        addView(textView, params);
     }
 
-    public void setImg(@DrawableRes int nbg, @DrawableRes int sbg) {
-        this.nbg = nbg;
-        this.sbg = sbg;
-        imageView.setImageResource(nbg);
-    }
-
-    public void setImageResource(@DrawableRes int s) {
-        imageView.setImageResource(s);
-    }
-
-    public void setCenterText(String s) {
-        textView.setText(s);
-    }
-
-    public void setOpen(boolean isOpen) {
-        if ((sbg & nbg) != 0) {
-            imageView.setImageResource(isOpen ? sbg : nbg);
-        }
-    }
-
-    public void setCenterImg(@DrawableRes int s) {
-        imageView.setImageResource(s);
+    @Override
+    public void setClick(Context context) {
+        setOnClickListener(v -> {
+            xLogUtil.e("progressEnable:" + progressEnable);
+            if (progressEnable) {
+                HeatingDialog.getIntent(context, mSelectTemp).start();
+            }
+        });
     }
 
     public void setProgress(int progress) {
-        Looper.myQueue().addIdleHandler(() -> {
-            if (imageView != null) {
-                imageView.setProgress(progress);
-            }
-            return false;
-        });
         setCenterText(String.valueOf(progress2Real(max, min, progress)));
-    }
-
-
-    public void setProgressEnable(boolean enable) {
-        imageView.setProgressEnable(enable);
     }
 
     public interface OnSeekBarChangeListener {
@@ -139,60 +93,66 @@ public class HeatingView extends FrameLayout {
     }
 
     public void setOnSeekBarProgressListener(OnSeekBarChangeListener listener) {
-        imageView.setOnSeekBarChangeListener(new CircleSeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(int progress) {
-                setCenterText(String.valueOf(progress2Real(max, min, progress)));
-                if (listener != null) {
-                    listener.onProgressChanged(progress);
-                }
-            }
-
-            @Override
-            public void onStartTrackingTouch() {
-                if (listener != null) {
-                    listener.onStartTrackingTouch();
-                }
-            }
-
-            @Override
-            public void onStopTrackingTouch() {
-                if (listener != null) {
-                    listener.onStopTrackingTouch();
-                }
-            }
-        });
+//        imageView.setOnSeekBarChangeListener(new CircleSeekBar.OnSeekBarChangeListener() {
+//            @Override
+//            public void onProgressChanged(int progress) {
+//                setCenterText(String.valueOf(progress2Real(max, min, progress)));
+//                if (listener != null) {
+//                    listener.onProgressChanged(progress);
+//                }
+//            }
+//
+//            @Override
+//            public void onStartTrackingTouch() {
+//                if (listener != null) {
+//                    listener.onStartTrackingTouch();
+//                }
+//            }
+//
+//            @Override
+//            public void onStopTrackingTouch() {
+//                if (listener != null) {
+//                    listener.onStopTrackingTouch();
+//                }
+//            }
+//        });
     }
 
-    public float getProgressStartAngle() {
-        return imageView.getProgressStartAngle();
-    }
+//    public float getProgressStartAngle() {
+//        return imageView.getProgressStartAngle();
+//    }
 
-    protected CircleTouchView getCircleTouchView() {
+    protected ImageView getCircleTouchView() {
         return imageView;
     }
 
     protected CircleSeekBar getSeekBar() {
-        return imageView.getSeekBar();
+//        return imageView.getSeekBar();
+        return null;
     }
 
+    @Override
     protected int progress2Real(int max, int min, int progress) {
         return (int) Math.ceil((min + (max - min) * 1.0F * progress / 100));
     }
 
+    @Override
     protected int real2Progress(int max, int min, int progress) {
         return (int) Math.ceil(((progress - min) * 1.0F / (max - min) * 100));
     }
 
+    @Override
     public int getMin() {
         return min;
     }
 
+    @Override
     public void set(int max, int min) {
         this.min = min;
         this.max = max;
     }
 
+    @Override
     public int getMax() {
         return max;
     }

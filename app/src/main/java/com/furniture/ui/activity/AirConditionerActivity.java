@@ -12,9 +12,9 @@ import com.furniture.bean.SocketBean;
 import com.furniture.bean.action2.AirConditionerAction;
 import com.furniture.bean.control.SwitchAction;
 import com.furniture.bean.json.AllState;
+import com.furniture.bean.json.control.AirDeviceTemp;
 import com.furniture.bean.json.control.DeviceAirCCM;
 import com.furniture.bean.json.control.DeviceSpeedC;
-import com.furniture.bean.json.control.DeviceTemp;
 import com.furniture.event.AirConditionerTempBean;
 import com.furniture.injector.components.AppComponent;
 import com.furniture.injector.components.DaggerActivityComponent;
@@ -66,11 +66,11 @@ public class AirConditionerActivity extends BaseControlActivity {
     private static final int MIN = 16;
     /**
      * -自动
-     * 1-低
-     * 2-中
-     * 3-高
+     * 8-低
+     * 4-中
+     * 2-高
      */
-    private int[] speed = new int[]{1, 2, 3};
+    private int[] speed = new int[]{8, 4, 2};
 
     public static XIntent getIntent(Context context, String name, String room, String deviceName, boolean isOpen) {
         XIntent intent = new XIntent(context, AirConditionerActivity.class);
@@ -124,10 +124,10 @@ public class AirConditionerActivity extends BaseControlActivity {
     public List<SelectBean> selectClickList() {
         List<SelectBean> list = new ArrayList<>();
         list.add(new SelectBean("制冷", "1"));
-//        list.add(new SelectBean("除湿", "4"));
-        list.add(new SelectBean("通风", "3"));
-        list.add(new SelectBean("制热", "2"));
-//        list.add(new SelectBean("自动", "1"));
+        list.add(new SelectBean("除湿", "2"));
+        list.add(new SelectBean("通风", "4"));
+        list.add(new SelectBean("制热", "8"));
+        list.add(new SelectBean("自动", "16"));
         return list;
     }
 
@@ -203,15 +203,15 @@ public class AirConditionerActivity extends BaseControlActivity {
     @Override
     public void initData(AllState.Params.Item item) {
         xLogUtil.e("空调:" + item);
-        mAirConditionerView.setCenterText(getCircleProgress() + "");
+        mAirConditionerView.setCenterText(getCircleProgress() / 10 + "");
         //左上方文字 制冷制热
         if (item != null) {
             AllState.Params.Item.Field field = item.field;
             select(new SelectBean("", field.Mode));
-            int setT = (int) field.SetT;
+            int setT = (int) (field.SetT / 10);
             saveCircleProgress(setT);
             mAirConditionerView.setCenterText(setT + "");
-            setDesc((int) field.Temp);
+            setDesc((int) (field.Temp / 10));
         }
         //setDesc(18);
         mTextProgressBar.setProgress(getProgress());
@@ -242,7 +242,7 @@ public class AirConditionerActivity extends BaseControlActivity {
         if (isControlOpen()) {
             saveCircleProgress(temp);
         }
-        send(new DeviceTemp(room, AirConditionerAction.NAME, AirConditionerAction.ID, temp));
+        send(new AirDeviceTemp(room, AirConditionerAction.NAME, AirConditionerAction.ID, temp * 10));
     }
 
     @Override

@@ -20,6 +20,7 @@ import com.furniture.bean.EditActionNameBean;
 import com.furniture.bean.SocketBean;
 import com.furniture.bean.action2.AirAction;
 import com.furniture.bean.action2.AirConditionerAction;
+import com.furniture.bean.action2.HeatingAction;
 import com.furniture.bean.json.AllState;
 import com.furniture.bean.json.Der;
 import com.furniture.bean.json.GetAllState;
@@ -188,7 +189,7 @@ public abstract class BaseRoomFragment extends BaseFragment {
         mDescView2.setVisibility(setShowDesc2() ? View.VISIBLE : View.GONE);
         if (Config.APP_TYPE == Config.TYPE_DEMO_JINAN ||
                 Config.APP_TYPE == Config.TYPE_DEMO_SHANGHAI) {
-            mEnvironmentView.setHchoViewShow();
+//            mEnvironmentView.setHchoViewShow();
         }
     }
 
@@ -216,7 +217,9 @@ public abstract class BaseRoomFragment extends BaseFragment {
             public void onScrollChanged(AppBarLayout appBarLayout, int i) {
                 float percent = i * 1.0F / (mCollapsingToolbarLayout.getMeasuredHeight()
                         - XTools.ResUtil().getDimen(R.dimen.top_action_close_height));
-                int max = XTools.ResUtil().getDimen(R.dimen.environment_top_margin) + 10;
+                // 右侧为5个的时候用这个
+//                int max = XTools.ResUtil().getDimen(R.dimen.environment_top_margin) + 10;
+                int max = XTools.ResUtil().getDimen(R.dimen.environment_top_margin);
                 float offset = max * percent;
                 mEnvironmentView.setTranslationY(offset);
             }
@@ -532,6 +535,16 @@ public abstract class BaseRoomFragment extends BaseFragment {
                     DeviceCtrl control = GsonUtil.getInstance().fromJson(bean.getJson(), DeviceCtrl.class);
                     boolean open = control.getParams().getField().isCtrl();
                     int pos = ListUtil.getPosFromClass(mAllList, AirConditionerAction.class);
+                    if (pos != -1) {
+                        mAllList.get(pos).setOpen(open);
+                        mAllAdapter.notifyItemChanged(pos);
+                    }
+                } else if (devid.equals(room() + HeatingAction.NAME)) {
+                    //地暖开关
+                    xLogUtil.e(this, "地暖开关");
+                    DeviceCtrl control = GsonUtil.getInstance().fromJson(bean.getJson(), DeviceCtrl.class);
+                    boolean open = control.getParams().getField().isCtrl();
+                    int pos = ListUtil.getPosFromClass(mAllList, HeatingAction.class);
                     if (pos != -1) {
                         mAllList.get(pos).setOpen(open);
                         mAllAdapter.notifyItemChanged(pos);
