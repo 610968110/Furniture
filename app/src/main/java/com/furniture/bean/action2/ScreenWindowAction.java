@@ -45,7 +45,7 @@ public class ScreenWindowAction extends ActionBean {
     public static final String NAME = "Gau1";
 
     public ScreenWindowAction(Context context, String room, String deviceName) {
-        this(context, room, deviceName, null);
+        this(context, room, deviceName, null, "纱窗");
         setTask(new ActionClick() {
             @Override
             public void actionClick(boolean isLongClick) {
@@ -56,8 +56,20 @@ public class ScreenWindowAction extends ActionBean {
         });
     }
 
-    public ScreenWindowAction(Context context, String room, String deviceName, ActionClick task) {
-        super("纱窗", room, deviceName, R.drawable.icon_window_yarn, R.drawable.icon_window_yarn_s, task);
+    public ScreenWindowAction(Context context, String room, String deviceName, String name) {
+        this(context, room, deviceName, null, name);
+        setTask(new ActionClick() {
+            @Override
+            public void actionClick(boolean isLongClick) {
+                super.actionClick(isLongClick);
+                xLogUtil.e(this, "纱窗");
+                onClick(context, isLongClick);
+            }
+        });
+    }
+
+    public ScreenWindowAction(Context context, String room, String deviceName, ActionClick task, String name) {
+        super(name, room, deviceName, R.drawable.icon_window_yarn, R.drawable.icon_window_yarn_s, task);
     }
 
     @Override

@@ -45,7 +45,7 @@ public class CurtainsAction extends ActionBean {
     public static final String NAME = "Curt1";
 
     public CurtainsAction(Context context, String room, String deviceName) {
-        this(context, room, deviceName, null);
+        this(context, room, deviceName, null, "窗帘");
         setTask(new ActionClick() {
             @Override
             public void actionClick(boolean isLongClick) {
@@ -56,8 +56,20 @@ public class CurtainsAction extends ActionBean {
         });
     }
 
-    public CurtainsAction(Context context, String room, String deviceName, ActionClick task) {
-        super("窗帘", room, deviceName, R.drawable.icon_window_curtain, R.drawable.icon_window_curtain_s, task);
+    public CurtainsAction(Context context, String room, String deviceName, String name) {
+        this(context, room, deviceName, null, name);
+        setTask(new ActionClick() {
+            @Override
+            public void actionClick(boolean isLongClick) {
+                super.actionClick(isLongClick);
+                xLogUtil.e(this, "窗帘");
+                onClick(context, isLongClick);
+            }
+        });
+    }
+
+    public CurtainsAction(Context context, String room, String deviceName, ActionClick task, String name) {
+        super(name, room, deviceName, R.drawable.icon_window_curtain, R.drawable.icon_window_curtain_s, task);
     }
 
     @Override
