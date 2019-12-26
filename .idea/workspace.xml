@@ -12,19 +12,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27e4b6bd-b380-405a-9e05-f7e6bd0b93ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainextF/JiNanB2FFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainextF/JiNanDinnerFFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainextF/JiNanHomeFFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainextF/JiNanJiacengFFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainextF/JiNanXuanguanFFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/nanjing_f_1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/nanjing_f_2.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/nanjing_f_3.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/nanjing_f_4.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/bean/action2/CurtainsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/bean/action2/CurtainsAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/bean/action2/ScreenWindowAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/bean/action2/ScreenWindowAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/bean/json/control/DeviceCus.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/bean/json/control/DeviceCus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/type/HomePagerJiNan.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/type/HomePagerJiNan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/type/RoomJinanConfigPager.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/type/RoomJinanConfigPager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainextF/JiNanB2FFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainextF/JiNanB2FFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainextF/JiNanDinnerFFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainextF/JiNanDinnerFFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainextF/JiNanJiacengFFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainextF/JiNanJiacengFFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainextF/JiNanXuanguanFFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainextF/JiNanXuanguanFFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/release/app-f.apk" beforeDir="false" afterPath="$PROJECT_DIR$/release/app-f.apk" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +115,7 @@
     <property name="SearchEverywhereHistoryKey" value="baseroo&#9;FILE&#9;file:///Users/liboxin/0_mine/cr/f/Furniture/app/src/main/java/com/furniture/base/BaseRoomFragment.java&#10;base&#9;FILE&#9;file:///Users/liboxin/0_mine/cr/f/Furniture/app/src/main/java/com/furniture/base/BaseRoomConfigFragment.java&#10;hometim&#9;FILE&#9;file:///Users/liboxin/0_mine/cr/f/Furniture/app/src/main/java/com/furniture/ui/fragment/HomeTimeFragment.java&#10;loginac&#9;FILE&#9;file:///Users/liboxin/0_mine/cr/f/Furniture/app/src/main/java/com/furniture/ui/activity/LoginActivity.java&#10;time&#9;FILE&#9;file:///Users/liboxin/0_mine/cr/f/Furniture/app/src/main/java/com/furniture/ui/fragment/HomeTimeFragment.java&#10;bigcard&#9;FILE&#9;file:///Users/liboxin/Downloads/Furniture/app/src/main/java/com/furniture/ui/view/BigCardView.java&#10;homefra&#9;FILE&#9;file:///Users/liboxin/Downloads/Furniture/app/src/main/java/com/furniture/ui/fragment/room/HomeFragment.java&#10;basec&#9;FILE&#9;file:///Users/liboxin/Downloads/Furniture/app/src/main/java/com/furniture/base/BaseRoomConfigFragment.java&#10;basecon&#9;FILE&#9;file:///Users/liboxin/Downloads/Furniture/app/src/main/java/com/furniture/base/BaseControlActivity.java&#10;baseroom&#9;FILE&#9;file:///Users/liboxin/Downloads/Furniture/app/src/main/java/com/furniture/base/BaseRoomConfigFragment.java&#10;baseroomconfig&#9;PSI&#9;JAVA://com.furniture.base.BaseRoomConfigFragment&#10;dinner&#9;FILE&#9;file:///Users/liboxin/Downloads/Furniture/app/src/main/java/com/furniture/ui/fragment/room/DinnerRoomFragment.java&#10;home&#9;FILE&#9;file:///Users/liboxin/Downloads/Furniture/app/src/main/java/com/furniture/ui/fragment/main/MainHomeFragment.java" />
     <property name="android.sdk.path" value="/tools/android/androidsdk" />
     <property name="device.picker.selection" value="Furniture_API_26" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/com/furniture/ui/fragment/shanghainextF" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
     <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
@@ -120,9 +130,12 @@
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\mine\0_mine\jingrui\f\Furniture\app\src\main\res\drawable-xxhdpi" />
-      <recent name="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi" />
+      <recent name="F:\mine\0_mine\jingrui\f\Furniture\app\src\main\java\com\furniture\ui\fragment\shanghainextF" />
+      <recent name="F:\mine\0_mine\jingrui\f\Furniture\app\src\main\java\com\furniture\ui\fragment" />
+      <recent name="F:\mine\0_mine\jingrui\f\Furniture\app\src\main\java\com\furniture\ui\drawable" />
+      <recent name="J:\mine\0_mine\jingrui\f\Furniture\app\src\main\java\com\furniture\ui\fragment\shanghainext80" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.furniture.bean.action2" />
@@ -131,12 +144,9 @@
       <recent name="com.furniture.type" />
       <recent name="com.furniture.bean.jinanbean" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\mine\0_mine\jingrui\f\Furniture\app\src\main\java\com\furniture\ui\fragment\shanghainextF" />
-      <recent name="F:\mine\0_mine\jingrui\f\Furniture\app\src\main\java\com\furniture\ui\fragment" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\mine\0_mine\jingrui\f\Furniture\app\src\main\res\drawable-xxhdpi" />
-      <recent name="F:\mine\0_mine\jingrui\f\Furniture\app\src\main\java\com\furniture\ui\drawable" />
-      <recent name="J:\mine\0_mine\jingrui\f\Furniture\app\src\main\java\com\furniture\ui\fragment\shanghainext80" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi" />
     </key>
   </component>
   <component name="RunDashboard">

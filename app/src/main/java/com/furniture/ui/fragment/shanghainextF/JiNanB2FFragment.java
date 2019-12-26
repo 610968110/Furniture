@@ -39,6 +39,8 @@ public class JiNanB2FFragment extends BookRoomFragment {
                 new AirConditionerAction(getActivity(), ROOM, "AHU1"),
                 //新风
                 new AirAction(getActivity(), ROOM, "FAU1"),
+                // 地暖
+                new HeatingAction(getActivity(), ROOM, "FH1"),
                 new SupperLight(getActivity(), ROOM, "L1", "电视射灯"),
                 new SupperLight(getActivity(), ROOM, "L2", "玄关灯"),
                 new SupperLight(getActivity(), ROOM, "L3", "床头射灯"),
@@ -46,8 +48,7 @@ public class JiNanB2FFragment extends BookRoomFragment {
                 new SupperLight(getActivity(), ROOM, "L5", "辅灯带"),
                 new CurtainsAction(getActivity(), ROOM, "Curt1","布帘"),
                 new ScreenWindowAction(getActivity(), ROOM, "Gau1","纱帘"),
-                // 地暖
-                new HeatingAction(getActivity(), ROOM, "FH1"),
+
         };
     }
 }

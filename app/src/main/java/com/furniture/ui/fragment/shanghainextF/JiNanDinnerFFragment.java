@@ -45,6 +45,8 @@ public class JiNanDinnerFFragment extends KeTingRoomFragment {
                 new AirConditionerAction(getActivity(), ROOM, "AHU1"),
                 //新风
                 new AirAction(getActivity(), ROOM, "FAU1"),
+                // 地暖
+                new HeatingAction(getActivity(), ROOM, "FH1"),
                 new SupperLight(getActivity(), ROOM, "L1", "玄关射灯"),
                 new SupperLight(getActivity(), ROOM, "L2", "玄关鞋柜灯带"),
                 new SupperLight(getActivity(), ROOM, "L3", "沙发区射灯"),
@@ -67,8 +69,7 @@ public class JiNanDinnerFFragment extends KeTingRoomFragment {
                 new ScreenWindowAction(getActivity(), ROOM, "Gau2","纱帘2"),
                 new CurtainsAction(getActivity(), ROOM, "Curt3","布帘3"),
                 new ScreenWindowAction(getActivity(), ROOM, "Gau3","纱帘3"),
-                // 地暖
-                new HeatingAction(getActivity(), ROOM, "FH1")
+
         };
     }
 

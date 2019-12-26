@@ -42,7 +42,7 @@ import lbx.xtoollib.phone.xLogUtil;
 public class CurtainsAction extends ActionBean {
 
     public static final String ID = "";
-    public static final String NAME = "Curt1";
+    public String NAME = "Curt1";
 
     public CurtainsAction(Context context, String room, String deviceName) {
         this(context, room, deviceName, null, "窗帘");
@@ -70,6 +70,7 @@ public class CurtainsAction extends ActionBean {
 
     public CurtainsAction(Context context, String room, String deviceName, ActionClick task, String name) {
         super(name, room, deviceName, R.drawable.icon_window_curtain, R.drawable.icon_window_curtain_s, task);
+        NAME = deviceName;
     }
 
     @Override

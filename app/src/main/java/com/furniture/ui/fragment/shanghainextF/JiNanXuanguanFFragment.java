@@ -38,21 +38,21 @@ public class JiNanXuanguanFFragment extends DinnerRoomFragment {
                 new AirConditionerAction(getActivity(), ROOM, "AHU1"),
                 //新风
                 new AirAction(getActivity(), ROOM, "FAU1"),
-                new SupperLight(getActivity(), ROOM, "L1", "玄关射灯"),
-                new SupperLight(getActivity(), ROOM, "L2", "主卧射灯"),
-                new SupperLight(getActivity(), ROOM, "L3", "主卧筒灯"),
-                new SupperLight(getActivity(), ROOM, "L4", "主卧灯带"),
-                new SupperLight(getActivity(), ROOM, "L5", "衣柜灯带"),
-                new SupperLight(getActivity(), ROOM, "L6", "玄关筒灯"),
-                new SupperLight(getActivity(), ROOM, "L7", "洗手池筒灯"),
-                new SupperLight(getActivity(), ROOM, "L8", "洗手间柜体灯带"),
-                new SupperLight(getActivity(), ROOM, "L9", "淋浴间筒灯"),
-                new SupperLight(getActivity(), ROOM, "L10", "浴缸筒灯"),
-                new SupperLight(getActivity(), ROOM, "L11", "衣帽间筒灯"),
-                new CurtainsAction(getActivity(), ROOM, "Curt1","布帘"),
-                new ScreenWindowAction(getActivity(), ROOM, "Gau1","纱帘"),
                 // 地暖
                 new HeatingAction(getActivity(), ROOM, "FH1"),
+                new SupperLight(getActivity(), ROOM, "L1", "主卧射灯"),
+                new SupperLight(getActivity(), ROOM, "L2", "主卧筒灯"),
+                new SupperLight(getActivity(), ROOM, "L3", "主卧灯带"),
+                new SupperLight(getActivity(), ROOM, "L4", "衣柜灯带"),
+                new SupperLight(getActivity(), ROOM, "L5", "玄关筒灯"),
+                new SupperLight(getActivity(), ROOM, "L6", "洗手池筒灯"),
+                new SupperLight(getActivity(), ROOM, "L7", "洗手间柜体灯带"),
+                new SupperLight(getActivity(), ROOM, "L8", "淋浴间筒灯"),
+                new SupperLight(getActivity(), ROOM, "L9", "浴缸筒灯"),
+                new SupperLight(getActivity(), ROOM, "L10", "衣帽间筒灯"),
+                new CurtainsAction(getActivity(), ROOM, "Curt1","布帘"),
+                new ScreenWindowAction(getActivity(), ROOM, "Gau1","纱帘"),
+
         };
     }
 }

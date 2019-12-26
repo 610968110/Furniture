@@ -71,10 +71,10 @@ public enum HomePagerJiNan implements IMainPager {
 
     // 这里是上海完成后的制作的下一个版本，没说是哪的，包名 shanghainextF
     HOME_PAGE("首页", JiNanHomeFFragment.newInstance(R.drawable.jinan_bg_1)),
-    DINING_ROOM("客餐厅", JiNanDinnerFFragment.newInstance(R.drawable.nanjing11)),
-    MASTER_ROOM("主卧", JiNanXuanguanFFragment.newInstance(R.drawable.nanjing12)),
-    SECOND_ROOM("次卧", JiNanJiacengFFragment.newInstance(R.drawable.nanjing13)),
-    CHILD_ROOM("儿童房", JiNanB2FFragment.newInstance(R.drawable.nanjing14));
+    DINING_ROOM("客餐厅", JiNanDinnerFFragment.newInstance(R.drawable.nanjing_f_1)),
+    MASTER_ROOM("主卧", JiNanXuanguanFFragment.newInstance(R.drawable.nanjing_f_2)),
+    SECOND_ROOM("次卧", JiNanJiacengFFragment.newInstance(R.drawable.nanjing_f_3)),
+    CHILD_ROOM("儿童房", JiNanB2FFragment.newInstance(R.drawable.nanjing_f_4));
 
 //    HOME_PAGE("首页", JiNanHomeFragment.newInstance(R.drawable.jinan_bg_1)),
 //    DINING_ROOM("一层", JiNanDinnerFragment.newInstance(R.drawable.jinan_new_1)),
