@@ -113,7 +113,7 @@ public class CurtainsActivity extends BaseControlActivity {
 //                } else {
 //                    bean.setOpen(true);
 //                }
-                DeviceCtrl deviceCtrl = new DeviceCtrl(room, CurtainsAction.NAME, "", isOpen);
+                DeviceCtrl deviceCtrl = new DeviceCtrl(room, deviceName, "", isOpen);
                 deviceCtrl.getParams().getField().setCtrl(0);
                 send(deviceCtrl);
             }
@@ -131,7 +131,7 @@ public class CurtainsActivity extends BaseControlActivity {
 //                    bean1.setOpen(true);
 //                }
                 //isOpen没有用，被替换成了2
-                DeviceCtrl deviceCtrl = new DeviceCtrl(room, CurtainsAction.NAME, "", isOpen);
+                DeviceCtrl deviceCtrl = new DeviceCtrl(room, deviceName, "", isOpen);
                 deviceCtrl.getParams().getField().setCtrl(2);
                 send(deviceCtrl);
             }
@@ -148,7 +148,7 @@ public class CurtainsActivity extends BaseControlActivity {
 //                } else {
 //                    bean2.setOpen(true);
 //                }
-                DeviceCtrl deviceCtrl = new DeviceCtrl(room, CurtainsAction.NAME, "", isOpen);
+                DeviceCtrl deviceCtrl = new DeviceCtrl(room, deviceName, "", isOpen);
                 deviceCtrl.getParams().getField().setCtrl(1);
                 send(deviceCtrl);
             }

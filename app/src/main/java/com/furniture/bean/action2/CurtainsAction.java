@@ -42,7 +42,9 @@ import lbx.xtoollib.phone.xLogUtil;
 public class CurtainsAction extends ActionBean {
 
     public static final String ID = "";
-    public static String NAME = "Curt1";
+    public static String NAME1 = "Curt1";
+    public static String NAME2 = "Curt2";
+    public static String NAME3 = "Curt3";
 
     public CurtainsAction(Context context, String room, String deviceName) {
         this(context, room, deviceName, null, "窗帘");
@@ -70,7 +72,6 @@ public class CurtainsAction extends ActionBean {
 
     public CurtainsAction(Context context, String room, String deviceName, ActionClick task, String name) {
         super(name, room, deviceName, R.drawable.icon_window_curtain, R.drawable.icon_window_curtain_s, task);
-        NAME = deviceName;
     }
 
     @Override
@@ -85,8 +86,8 @@ public class CurtainsAction extends ActionBean {
     public void open(Context context, boolean isOpen) {
         if (context instanceof MainActivity) {
             MainActivity activity = (MainActivity) context;
-            xLogUtil.e(this, "窗帘开关");
-            activity.send(new DeviceCtrl(room, NAME, ID, isOpen));
+            xLogUtil.e(this, "窗帘开关:" + getDeviceName());
+            activity.send(new DeviceCtrl(room, getDeviceName(), ID, isOpen));
             setOpen(isOpen);
             EventBus.getDefault().post(new NotifyRoomItem(2));
         }
