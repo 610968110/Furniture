@@ -14,7 +14,7 @@
             android:layout_height="@dimen/home_img_h"
             android:layout_above="@+id/tv_welcome"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/pic_logo_3" />
+            android:src="@drawable/logo_zhongtiejian" />
 
         <TextView
             android:id="@id/tv_welcome"
