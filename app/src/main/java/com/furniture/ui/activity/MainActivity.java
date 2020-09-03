@@ -1,5 +1,6 @@
 package com.furniture.ui.activity;
 
+import android.app.AlertDialog;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.ServiceConnection;
@@ -12,6 +13,7 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import com.furniture.Config;
+import com.furniture.service.NoticeService;
 import com.furniture.R;
 import com.furniture.adapter.MainFragmentAdapter;
 import com.furniture.base.BaseActivity;
@@ -59,10 +61,13 @@ public class MainActivity extends BaseActivity {
     private MainFragmentAdapter mAdapter;
     private List<BaseFragment> mList;
     private ServiceConnection mConnection;
+    private ServiceConnection mConnectionWarning;
     private CoreService mCoreService;
+    private NoticeService mNoticeService;
     private Disposable mDisposable;
     private boolean getAll;
     private ScheduledExecutorService mPool;
+    private AlertDialog noticeDialog;
 
     public static XIntent getIntent(Context context) {
         return new XIntent(context, MainActivity.class);
@@ -143,6 +148,21 @@ public class MainActivity extends BaseActivity {
                 }
             };
             CoreService.bind(this, mConnection);
+        }
+        if (mConnectionWarning == null) {
+            mConnectionWarning = new ServiceConnection() {
+                @Override
+                public void onServiceConnected(ComponentName name, IBinder service) {
+                    mNoticeService = ((NoticeService.CoreBind) service).getNoticeService();
+                    mNoticeService.mainActivity = MainActivity.this;
+                }
+
+                @Override
+                public void onServiceDisconnected(ComponentName name) {
+
+                }
+            };
+            NoticeService.Companion.bind(this, mConnectionWarning);
         }
     }
 
@@ -228,10 +248,34 @@ public class MainActivity extends BaseActivity {
             mPool.shutdownNow();
             mPool = null;
         }
+        NoticeService.Companion.unbind(this, mConnectionWarning);
         super.onDestroy();
     }
 
+
+    public void showWarningDialog() {
+        if (noticeDialog == null || !noticeDialog.isShowing()) {
+            noticeDialog = new AlertDialog.Builder(this)
+                    .setTitle("警告")
+                    .setMessage("智能报警系统启动")
+                    .setCancelable(false)
+                    .create();
+            noticeDialog.show();
+        }
+    }
+
+    public void dismissWarningDialog() {
+        if (noticeDialog != null && noticeDialog.isShowing()) {
+            noticeDialog.dismiss();
+        }
+        noticeDialog = null;
+    }
+
     public void send(IGson gson, boolean eventBus) {
+        send(gson, eventBus, true);
+    }
+
+    public void send(IGson gson, boolean eventBus, boolean showDialog) {
         if (eventBus) {
             xLogUtil.e(this, "重新注册EventBus");
             try {
@@ -240,7 +284,9 @@ public class MainActivity extends BaseActivity {
             }
         }
         if (mCoreService != null) {
-            XTools.UiUtil().showProgressDialog(this, !Config.DEBUG);
+            if (showDialog) {
+                XTools.UiUtil().showProgressDialog(this, !Config.DEBUG);
+            }
             mCoreService.sendMsg(gson);
         }
     }

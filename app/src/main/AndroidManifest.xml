@@ -116,6 +116,8 @@
             android:configChanges="keyboardHidden|orientation|keyboard"
             android:screenOrientation="landscape"
             android:theme="@style/AppTheme_WindowTranslucent" />
+
+        <service android:name=".service.NoticeService" />
     </application>
 
 </manifest>
