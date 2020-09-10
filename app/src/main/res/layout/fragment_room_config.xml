@@ -19,7 +19,7 @@
             <com.furniture.ui.view.SelectTitleView
                 android:id="@+id/stv_top"
                 android:layout_width="match_parent"
-                android:layout_height="40dp">
+                android:layout_height="@dimen/config_select_view_size">
 
             </com.furniture.ui.view.SelectTitleView>
 
@@ -45,7 +45,7 @@
             <com.furniture.ui.view.SelectTitleView
                 android:id="@+id/stv_bottom"
                 android:layout_width="match_parent"
-                android:layout_height="40dp">
+                android:layout_height="@dimen/config_select_view_size">
 
             </com.furniture.ui.view.SelectTitleView>
 

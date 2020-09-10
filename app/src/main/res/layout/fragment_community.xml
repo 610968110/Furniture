@@ -1,92 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <ScrollView
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#fff">
+        android:layout_height="match_parent">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:background="#fff">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="270dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/banner" />
-
-            <com.furniture.ui.view.NoScrollRecycleView
-                android:id="@+id/rv_1"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="50dp"
-                android:layout_marginEnd="50dp"
-                android:background="@drawable/fangjian_di1"
-                android:translationY="-20dp" />
+                android:orientation="vertical">
 
-            <com.furniture.ui.view.ShequView
-                android:id="@+id/rv_2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="50dp"
-                android:paddingEnd="50dp" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/banner" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="#F7F7F7" />
+                <com.furniture.ui.view.NoScrollRecycleView
+                    android:id="@+id/rv_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:background="@drawable/fangjian_di1"
+                    android:translationY="-20dp" />
 
-            <com.furniture.ui.view.ShequView
-                android:id="@+id/rv_3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="50dp"
-                android:paddingEnd="50dp" />
+                <com.furniture.ui.view.ShequView
+                    android:id="@+id/rv_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="50dp" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="#F7F7F7" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#F7F7F7" />
 
-            <com.furniture.ui.view.ShequView
-                android:id="@+id/rv_4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="50dp"
-                android:paddingEnd="50dp" />
+                <com.furniture.ui.view.ShequView
+                    android:id="@+id/rv_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="50dp" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="#F7F7F7" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#F7F7F7" />
 
-            <com.furniture.ui.view.ShequView
-                android:id="@+id/rv_5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="50dp"
-                android:paddingEnd="50dp" />
+                <com.furniture.ui.view.ShequView
+                    android:id="@+id/rv_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="50dp" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="#F7F7F7" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#F7F7F7" />
 
-            <com.furniture.ui.view.ShequView
-                android:id="@+id/rv_6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingStart="50dp"
-                android:paddingEnd="50dp" />
+                <com.furniture.ui.view.ShequView
+                    android:id="@+id/rv_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="50dp" />
 
-        </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#F7F7F7" />
 
-    </ScrollView>
+                <com.furniture.ui.view.ShequView
+                    android:id="@+id/rv_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="50dp"
+                    android:paddingEnd="50dp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/iv_communty_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/shequ_vertical"
+            android:visibility="gone" />
+
+    </FrameLayout>
 
 </layout>

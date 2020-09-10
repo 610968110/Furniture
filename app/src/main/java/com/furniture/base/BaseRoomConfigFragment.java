@@ -110,8 +110,12 @@ public abstract class BaseRoomConfigFragment extends BaseFragment {
         manager.setOrientation(LinearLayoutManager.HORIZONTAL);
         LinearLayoutManager manager1 = new LinearLayoutManager(getContext());
         manager1.setOrientation(LinearLayoutManager.HORIZONTAL);
-        mTopView.setLayoutManager(new GridLayoutManager(getContext(), 9));
-        mBottomView.setLayoutManager(new GridLayoutManager(getContext(), 9));
+        int count = 9;
+        if (Config.SCREEN_ORIENTATION == Config.SCREEN_PORTRAIT) {
+            count = (XTools.WindowUtil().getScreenWidth() - 100) / XTools.ResUtil().getDimen(R.dimen.config_item_size);
+        }
+        mTopView.setLayoutManager(new GridLayoutManager(getContext(), count));
+        mBottomView.setLayoutManager(new GridLayoutManager(getContext(), count));
     }
 
     @CallSuper

@@ -30,8 +30,7 @@
 
         <activity
             android:name=".ui.activity.LoginActivity"
-            android:configChanges="keyboardHidden|orientation|keyboard"
-            android:screenOrientation="landscape">
+            android:configChanges="keyboardHidden|orientation|keyboard">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -40,56 +39,43 @@
         </activity>
         <activity
             android:name=".ui.activity.MainActivity"
-            android:configChanges="keyboardHidden|orientation|keyboard"
-            android:screenOrientation="landscape" />
+            android:configChanges="keyboardHidden|orientation|keyboard" />
         <activity
             android:name=".ui.activity.CurtainsActivity"
-            android:configChanges="keyboardHidden|orientation|keyboard"
-            android:screenOrientation="landscape" />
+            android:configChanges="keyboardHidden|orientation|keyboard" />
         <activity
             android:name=".ui.activity.AirActivity"
-            android:configChanges="keyboardHidden|orientation|keyboard"
-            android:screenOrientation="landscape" />
+            android:configChanges="keyboardHidden|orientation|keyboard" />
         <activity
             android:name=".ui.activity.HeatingActivity"
-            android:configChanges="keyboardHidden|orientation|keyboard"
-            android:screenOrientation="landscape" />
+            android:configChanges="keyboardHidden|orientation|keyboard" />
         <activity
             android:name=".ui.activity.LampActivity"
-            android:configChanges="keyboardHidden|orientation|keyboard"
-            android:screenOrientation="landscape" />
+            android:configChanges="keyboardHidden|orientation|keyboard" />
         <activity
             android:name=".ui.activity.AirConditionerActivity"
-            android:configChanges="keyboardHidden|orientation|keyboard"
-            android:screenOrientation="landscape" />
+            android:configChanges="keyboardHidden|orientation|keyboard" />
         <activity
             android:name=".ui.activity.ChangePasswordActivity"
-            android:configChanges="keyboardHidden|orientation|keyboard"
-            android:screenOrientation="landscape" />
+            android:configChanges="keyboardHidden|orientation|keyboard" />
         <activity
             android:name=".ui.activity.SettingActivity"
-            android:configChanges="keyboardHidden|orientation|keyboard"
-            android:screenOrientation="landscape" />
+            android:configChanges="keyboardHidden|orientation|keyboard" />
         <activity
             android:name=".ui.activity.FamilyManageActivity"
-            android:configChanges="keyboardHidden|orientation|keyboard"
-            android:screenOrientation="landscape" />
+            android:configChanges="keyboardHidden|orientation|keyboard" />
         <activity
             android:name=".ui.activity.UserInfoActivity"
-            android:configChanges="keyboardHidden|orientation|keyboard"
-            android:screenOrientation="landscape" />
+            android:configChanges="keyboardHidden|orientation|keyboard" />
         <activity
             android:name=".ui.activity.UserManageActivity"
-            android:configChanges="keyboardHidden|orientation|keyboard"
-            android:screenOrientation="landscape" />
+            android:configChanges="keyboardHidden|orientation|keyboard" />
         <activity
             android:name=".ui.activity.RoomConfigActivity"
-            android:configChanges="keyboardHidden|orientation|keyboard"
-            android:screenOrientation="landscape" />
+            android:configChanges="keyboardHidden|orientation|keyboard" />
         <activity
             android:name=".TestActivity"
-            android:configChanges="keyboardHidden|orientation|keyboard"
-            android:screenOrientation="landscape">
+            android:configChanges="keyboardHidden|orientation|keyboard">
 
 
             <!--<intent-filter>-->
@@ -100,21 +86,19 @@
         </activity>
         <activity
             android:name=".ui.activity.ChangeNickNameActivity"
-            android:configChanges="keyboardHidden|orientation|keyboard"
-            android:screenOrientation="landscape" />
+            android:configChanges="keyboardHidden|orientation|keyboard" />
         <activity
             android:name=".ui.activity.TempImgActivity"
-            android:configChanges="keyboardHidden|orientation|keyboard"
-            android:screenOrientation="landscape" />
+            android:configChanges="keyboardHidden|orientation|keyboard" />
         <activity
             android:name=".ui.dialog.AirConditionerTempSelectDialogActivity"
             android:configChanges="keyboardHidden|orientation|keyboard"
-            android:screenOrientation="landscape"
+
             android:theme="@style/AppTheme_WindowTranslucent" />
         <activity
             android:name=".ui.dialog.HeatingDialog"
             android:configChanges="keyboardHidden|orientation|keyboard"
-            android:screenOrientation="landscape"
+
             android:theme="@style/AppTheme_WindowTranslucent" />
 
         <service android:name=".service.NoticeService" />

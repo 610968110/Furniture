@@ -130,11 +130,15 @@ public abstract class BaseRoomFragment extends BaseFragment {
         }
         Looper.myQueue().addIdleHandler(() -> {
             ViewGroup.LayoutParams layoutParams = mAppBar.getLayoutParams();
-            layoutParams.height = getView().getHeight() -
-                    XTools.ResUtil().getDimen(
-                            R.dimen.top_action_margin,
-                            R.dimen.top_action_margin,
-                            R.dimen.top_action_height);
+            if (Config.SCREEN_ORIENTATION == Config.SCREEN_PORTRAIT) {
+                layoutParams.height = getView().getHeight() / 2;
+            } else {
+                layoutParams.height = getView().getHeight() -
+                        XTools.ResUtil().getDimen(
+                                R.dimen.top_action_margin,
+                                R.dimen.top_action_margin,
+                                R.dimen.top_action_height);
+            }
             mAppBar.setLayoutParams(layoutParams);
             return false;
         });
@@ -142,7 +146,12 @@ public abstract class BaseRoomFragment extends BaseFragment {
         mTopRecyclerView.setLayoutManager(new GridLayoutManager(getContext(), lineCount()));
         mCenterRecyclerView.setLayoutManager(new GridLayoutManager(getContext(), lineCount()));
         mAllRecyclerView.setLayoutManager(new GridLayoutManager(getContext(), lineCount()));
+        mEnvironmentView.setVisibility(showEnvironmentView());
         initView();
+    }
+
+    protected int showEnvironmentView(){
+        return View.VISIBLE;
     }
 
     protected int lineCount() {

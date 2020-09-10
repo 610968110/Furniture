@@ -1,9 +1,11 @@
 package com.furniture.base;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 
 import com.furniture.App;
+import com.furniture.Config;
 import com.furniture.injector.components.ActivityComponent;
 import com.furniture.injector.components.AppComponent;
 
@@ -38,6 +40,11 @@ public abstract class BaseActivity extends lbx.xtoollib.base.BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         bindComponent(getApp().getAppComponent());
+        if (Config.SCREEN_ORIENTATION == Config.SCREEN_LANDSCAPE) {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        } else {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        }
         super.onCreate(savedInstanceState);
     }
 

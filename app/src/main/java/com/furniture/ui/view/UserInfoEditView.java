@@ -91,12 +91,12 @@ public class UserInfoEditView extends LinearLayout {
         editText = new MyEditText(context);
         textView1 = new TextView(context);
 
-        int size = 12;
+        int size = XTools.ResUtil().getDimen(R.dimen.edit_text_size);
         textView.setTextColor(Color.parseColor(cn));
         textView1.setTextColor(Color.parseColor(cn));
-        textView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, size);
-        editText.setTextSize(TypedValue.COMPLEX_UNIT_DIP, size);
-        textView1.setTextSize(TypedValue.COMPLEX_UNIT_DIP, size);
+        textView.setTextSize(TypedValue.COMPLEX_UNIT_PX, size);
+        editText.setTextSize(TypedValue.COMPLEX_UNIT_PX, size);
+        textView1.setTextSize(TypedValue.COMPLEX_UNIT_PX, size);
         textView.setGravity(Gravity.START);
         editText.setGravity(Gravity.CENTER);
         textView1.setGravity(Gravity.CENTER);

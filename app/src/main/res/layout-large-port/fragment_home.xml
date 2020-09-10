@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_home"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_home_pic"
+            android:layout_width="@dimen/home_img_w"
+            android:layout_height="@dimen/home_img_h"
+            android:layout_above="@+id/tv_welcome"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo_v" />
+
+        <TextView
+            android:id="@id/tv_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/home_img_b_m"
+            android:text="欢迎回家"
+            android:textColor="#ADB8BE"
+            android:textSize="@dimen/home_text_size" />
+
+        <fragment
+            android:id="@+id/HomeTimeFragment"
+            android:name="com.furniture.ui.fragment.HomeTimeFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+</layout>

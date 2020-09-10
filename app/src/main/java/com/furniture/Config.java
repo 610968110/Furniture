@@ -97,4 +97,8 @@ public class Config {
     //上海  需要把 fragment_room 中的ToolBar高度改成济南的  济南和上海的一样，只是回家离家按钮的指令不一样
     public static final int TYPE_DEMO_SHANGHAI = 0x014;
     public static int APP_TYPE = TYPE_DEMO_SIMPLE;
+
+    public static int SCREEN_LANDSCAPE = 0;
+    public static int SCREEN_PORTRAIT = 1;
+    public static int SCREEN_ORIENTATION = SCREEN_PORTRAIT;
 }

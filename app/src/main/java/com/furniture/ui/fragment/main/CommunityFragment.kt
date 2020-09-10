@@ -4,6 +4,7 @@ import android.databinding.ViewDataBinding
 import android.os.Bundle
 import android.support.v7.widget.GridLayoutManager
 import android.view.View
+import com.furniture.Config
 import com.furniture.R
 import com.furniture.adapter.ShequAdapter
 import com.furniture.base.BaseFragment
@@ -12,6 +13,7 @@ import com.furniture.databinding.FragmentCommunityBinding
 import com.furniture.injector.components.ActivityComponent
 import com.furniture.task.ActionClick
 import com.furniture.ui.activity.TempImgActivity
+import kotlinx.android.synthetic.main.fragment_community.iv_communty_bg
 import lbx.xtoollib.XTools
 
 /**
@@ -68,6 +70,9 @@ class CommunityFragment : BaseFragment() {
 
     override fun initView(view: View) {
         binding.rv1.layoutManager = GridLayoutManager(context, 5)
+        if (Config.SCREEN_ORIENTATION == Config.SCREEN_PORTRAIT) {
+            binding.ivCommuntyBg.visibility = View.VISIBLE
+        }
     }
 
     override fun initData() {
@@ -82,93 +87,93 @@ class CommunityFragment : BaseFragment() {
 
     private fun getData1(): List<ActionBean> {
         return listOf(
-                ActionBean("智能开门", "", "", R.drawable.tu_zhinengkaimen, object : ActionClick() {
-                    override fun actionClick(isLongClick: Boolean) {
-                        super.actionClick(isLongClick)
-                        TempImgActivity.start(context, "智能开门", R.drawable.img_zhinengkaimen)
-                    }
-                }),
-                ActionBean("呼叫物业", "", "", R.drawable.tu_hujiaowuye, object : ActionClick() {
-                    override fun actionClick(isLongClick: Boolean) {
-                        super.actionClick(isLongClick)
-                        TempImgActivity.start(context, "呼叫物业", R.drawable.img_hujiaowuye)
-                    }
-                }),
-                ActionBean("物业公告", "", "", R.drawable.tu_wuyegonggao, object : ActionClick() {
-                    override fun actionClick(isLongClick: Boolean) {
-                        super.actionClick(isLongClick)
-                        TempImgActivity.start(context, "物业公告", R.drawable.img_wuyegonggao)
-                    }
-                }),
-                ActionBean("缴费", "", "", R.drawable.tu_jiaofei, object : ActionClick() {
-                    override fun actionClick(isLongClick: Boolean) {
-                        super.actionClick(isLongClick)
-                        TempImgActivity.start(context, "缴费", R.drawable.img_jiaofei)
-                    }
-                }),
-                ActionBean("报修", "", "", R.drawable.tu_baoxiu, object : ActionClick() {
-                    override fun actionClick(isLongClick: Boolean) {
-                        super.actionClick(isLongClick)
-                        TempImgActivity.start(context, "报修", R.drawable.img_baoxiu)
-                    }
-                })
+            ActionBean("智能开门", "", "", R.drawable.tu_zhinengkaimen, object : ActionClick() {
+                override fun actionClick(isLongClick: Boolean) {
+                    super.actionClick(isLongClick)
+                    TempImgActivity.start(context, "智能开门", R.drawable.img_zhinengkaimen)
+                }
+            }),
+            ActionBean("呼叫物业", "", "", R.drawable.tu_hujiaowuye, object : ActionClick() {
+                override fun actionClick(isLongClick: Boolean) {
+                    super.actionClick(isLongClick)
+                    TempImgActivity.start(context, "呼叫物业", R.drawable.img_hujiaowuye)
+                }
+            }),
+            ActionBean("物业公告", "", "", R.drawable.tu_wuyegonggao, object : ActionClick() {
+                override fun actionClick(isLongClick: Boolean) {
+                    super.actionClick(isLongClick)
+                    TempImgActivity.start(context, "物业公告", R.drawable.img_wuyegonggao)
+                }
+            }),
+            ActionBean("缴费", "", "", R.drawable.tu_jiaofei, object : ActionClick() {
+                override fun actionClick(isLongClick: Boolean) {
+                    super.actionClick(isLongClick)
+                    TempImgActivity.start(context, "缴费", R.drawable.img_jiaofei)
+                }
+            }),
+            ActionBean("报修", "", "", R.drawable.tu_baoxiu, object : ActionClick() {
+                override fun actionClick(isLongClick: Boolean) {
+                    super.actionClick(isLongClick)
+                    TempImgActivity.start(context, "报修", R.drawable.img_baoxiu)
+                }
+            })
         )
     }
 
     private fun getData2(): List<ActionBean> {
         return listOf(
-                ActionBean("收房验房", "", "", R.drawable.icon_yanfang, null),
-                ActionBean("呼叫物业", "", "", R.drawable.icon_callwy, null),
-                ActionBean("物业公告", "", "", R.drawable.icon_rectanglecopy_, null),
-                ActionBean("缴费", "", "", R.drawable.icon_jiaofei, null),
-                ActionBean("报修", "", "", R.drawable.icon_baoxiu, null),
-                ActionBean("投诉", "", "", R.drawable.icon_tousu, null),
-                ActionBean("智能开门", "", "", R.drawable.icon_zhinengkaimen, null),
-                ActionBean("访客", "", "", R.drawable.icon_fangke, null),
-                ActionBean("停车服务", "", "", R.drawable.icon_tingche, object : ActionClick() {
-                    override fun actionClick(isLongClick: Boolean) {
-                        super.actionClick(isLongClick)
-                        TempImgActivity.start(context, "停车服务", R.drawable.img_tingchefuwu)
-                    }
-                }),
-                ActionBean("实时监控", "", "", R.drawable.icon_jiankong, null)
+            ActionBean("收房验房", "", "", R.drawable.icon_yanfang, null),
+            ActionBean("呼叫物业", "", "", R.drawable.icon_callwy, null),
+            ActionBean("物业公告", "", "", R.drawable.icon_rectanglecopy_, null),
+            ActionBean("缴费", "", "", R.drawable.icon_jiaofei, null),
+            ActionBean("报修", "", "", R.drawable.icon_baoxiu, null),
+            ActionBean("投诉", "", "", R.drawable.icon_tousu, null),
+            ActionBean("智能开门", "", "", R.drawable.icon_zhinengkaimen, null),
+            ActionBean("访客", "", "", R.drawable.icon_fangke, null),
+            ActionBean("停车服务", "", "", R.drawable.icon_tingche, object : ActionClick() {
+                override fun actionClick(isLongClick: Boolean) {
+                    super.actionClick(isLongClick)
+                    TempImgActivity.start(context, "停车服务", R.drawable.img_tingchefuwu)
+                }
+            }),
+            ActionBean("实时监控", "", "", R.drawable.icon_jiankong, null)
         )
     }
 
     private fun getData3(): List<ActionBean> {
         return listOf(
-                ActionBean("房屋租售", "", "", R.drawable.icon_fangwuzushou, object : ActionClick() {
-                    override fun actionClick(isLongClick: Boolean) {
-                        super.actionClick(isLongClick)
-                        TempImgActivity.start(context, "房屋租售", R.drawable.img_fangwuzushou)
-                    }
-                }),
-                ActionBean("二手市场", "", "", R.drawable.icon_ershaoshichang, null),
-                ActionBean("便民查询", "", "", R.drawable.icon_bianminchaxun, null),
-                ActionBean("生活缴费", "", "", R.drawable.icon_shenghuojiaofei, null),
-                ActionBean("家政保洁", "", "", R.drawable.icon_jiazhengfuwu, null)
+            ActionBean("房屋租售", "", "", R.drawable.icon_fangwuzushou, object : ActionClick() {
+                override fun actionClick(isLongClick: Boolean) {
+                    super.actionClick(isLongClick)
+                    TempImgActivity.start(context, "房屋租售", R.drawable.img_fangwuzushou)
+                }
+            }),
+            ActionBean("二手市场", "", "", R.drawable.icon_ershaoshichang, null),
+            ActionBean("便民查询", "", "", R.drawable.icon_bianminchaxun, null),
+            ActionBean("生活缴费", "", "", R.drawable.icon_shenghuojiaofei, null),
+            ActionBean("家政保洁", "", "", R.drawable.icon_jiazhengfuwu, null)
         )
     }
 
     private fun getData4(): List<ActionBean> {
         return listOf(
-                ActionBean("健康管家", "", "", R.drawable.icon_jiankangguanjia, null),
-                ActionBean("送药上门", "", "", R.drawable.icon_songyaoshangmen, null),
-                ActionBean("体验套餐", "", "", R.drawable.icon_tijiantaocan, null),
-                ActionBean("健康小屋", "", "", R.drawable.icon_jiankangxiaowu, null)
+            ActionBean("健康管家", "", "", R.drawable.icon_jiankangguanjia, null),
+            ActionBean("送药上门", "", "", R.drawable.icon_songyaoshangmen, null),
+            ActionBean("体验套餐", "", "", R.drawable.icon_tijiantaocan, null),
+            ActionBean("健康小屋", "", "", R.drawable.icon_jiankangxiaowu, null)
         )
     }
 
     private fun getData5(): List<ActionBean> {
         return listOf(
-                ActionBean("社区酒店", "", "", R.drawable.icon_shequshangdian, null),
-                ActionBean("社区拼团", "", "", R.drawable.icon_shequpintuan, null)
+            ActionBean("社区酒店", "", "", R.drawable.icon_shequshangdian, null),
+            ActionBean("社区拼团", "", "", R.drawable.icon_shequpintuan, null)
         )
     }
 
     private fun getData6(): List<ActionBean> {
         return listOf(
-                ActionBean("社交圈", "", "", R.drawable.icon_shejiaoquan, null)
+            ActionBean("社交圈", "", "", R.drawable.icon_shejiaoquan, null)
         )
     }
 }
