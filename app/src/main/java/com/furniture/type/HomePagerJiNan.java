@@ -3,11 +3,11 @@ package com.furniture.type;
 import com.furniture.R;
 import com.furniture.base.BaseFragment;
 import com.furniture.impl.IMainPager;
-import com.furniture.ui.fragment.port.JiNanB2FFragment;
-import com.furniture.ui.fragment.port.JiNanDinnerFFragment;
-import com.furniture.ui.fragment.port.JiNanHomeFFragment;
-import com.furniture.ui.fragment.port.JiNanJiacengFFragment;
-import com.furniture.ui.fragment.port.JiNanXuanguanFFragment;
+import com.furniture.ui.fragment.porth.JiNanB2FFragment;
+import com.furniture.ui.fragment.porth.JiNanDinnerFFragment;
+import com.furniture.ui.fragment.porth.JiNanHomeFFragment;
+import com.furniture.ui.fragment.porth.JiNanJiacengFFragment;
+import com.furniture.ui.fragment.porth.JiNanXuanguanFFragment;
 
 /**
  * .  ┏┓　　　┏┓
@@ -97,11 +97,18 @@ public enum HomePagerJiNan implements IMainPager {
 //    CHILD_ROOM("客卫", JiNanB2FFragment.newInstance(R.drawable.zhongtiejian_bg_5));
 
     // 竖屏版  包名 port
+//    HOME_PAGE("首页", JiNanHomeFFragment.newInstance(R.drawable.port_bg1)),
+//    DINING_ROOM("餐客厅", JiNanDinnerFFragment.newInstance(R.drawable.port_bg2)),
+//    MASTER_ROOM("主卧", JiNanXuanguanFFragment.newInstance(R.drawable.port_bg3)),
+//    SECOND_ROOM("次卧", JiNanJiacengFFragment.newInstance(R.drawable.port_bg4)),
+//    CHILD_ROOM("儿童房", JiNanB2FFragment.newInstance(R.drawable.port_bg5));
+
+    // 竖屏版同一批横屏版  包名 porth
     HOME_PAGE("首页", JiNanHomeFFragment.newInstance(R.drawable.port_bg1)),
-    DINING_ROOM("餐客厅", JiNanDinnerFFragment.newInstance(R.drawable.port_bg2)),
-    MASTER_ROOM("主卧", JiNanXuanguanFFragment.newInstance(R.drawable.port_bg3)),
-    SECOND_ROOM("次卧", JiNanJiacengFFragment.newInstance(R.drawable.port_bg4)),
-    CHILD_ROOM("儿童房", JiNanB2FFragment.newInstance(R.drawable.port_bg5));
+    DINING_ROOM("餐客厅", JiNanDinnerFFragment.newInstance(R.drawable.port_h_bg2)),
+    MASTER_ROOM("主卧", JiNanXuanguanFFragment.newInstance(R.drawable.port_h_bg3)),
+    SECOND_ROOM("次卧", JiNanJiacengFFragment.newInstance(R.drawable.port_h_bg4)),
+    CHILD_ROOM("儿童房", JiNanB2FFragment.newInstance(R.drawable.port_h_bg5));
 
     private String name;
     private BaseFragment fragment;

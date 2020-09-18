@@ -100,5 +100,5 @@ public class Config {
 
     public static int SCREEN_LANDSCAPE = 0;
     public static int SCREEN_PORTRAIT = 1;
-    public static int SCREEN_ORIENTATION = SCREEN_PORTRAIT;
+    public static int SCREEN_ORIENTATION = SCREEN_LANDSCAPE;
 }

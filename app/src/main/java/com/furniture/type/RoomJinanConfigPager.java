@@ -69,6 +69,12 @@ public enum RoomJinanConfigPager implements IRoomConfig {
 
 
     // 竖屏
+//    DINING_CONFIG("餐客厅"  , DiningRoomConfigFragment.newInstance()),
+//    MASTER_CONFIG("主卧", MasterRoomConfigFragment.newInstance()),
+//    SECOND_CONFIG("次卧", SecondRoomConfigFragment.newInstance()),
+//    CHILD_CONFIG("儿童房", ChildRoomConfigFragment.newInstance());
+
+    // 竖屏版同一批横屏版
     DINING_CONFIG("餐客厅"  , DiningRoomConfigFragment.newInstance()),
     MASTER_CONFIG("主卧", MasterRoomConfigFragment.newInstance()),
     SECOND_CONFIG("次卧", SecondRoomConfigFragment.newInstance()),
