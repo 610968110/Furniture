@@ -70,7 +70,11 @@ public class WeekUpAction extends ActionBean implements IModeAction {
             MainActivity activity = (MainActivity) context;
             xLogUtil.e(this, "起床");
             EventBus.getDefault().post(new ResetOpenAction(1));
-            activity.send(new DeviceAction2(room, getDeviceName(), "", 1), true);
+            if (getOpen() == -1) {
+                activity.send(new DeviceAction2(room, getDeviceName(), "", 1), true);
+            } else {
+                activity.send(new DeviceAction2(room, getDeviceName(), "", getOpen()), true);
+            }
             setOpen(isOpen);
         }
     }
@@ -82,7 +86,11 @@ public class WeekUpAction extends ActionBean implements IModeAction {
     @Override
     public void onRefresh(AllState.Params.Item.Field field) {
         super.onRefresh(field);
-        setOpen(field.LM == 1);
+        if (getOpen() == -1) {
+            setOpen(field.LM == 1);
+        } else {
+            setOpen(field.LM == getOpen());
+        }
     }
 
     @Override

@@ -35,6 +35,11 @@ import lbx.xtoollib.res.SpUtil;
  */
 
 public class ActionBean {
+    /**
+     * 这个是各种模式的开关值
+     */
+    private int open = -1;
+
     private String name;
     /**
      * 例如 R1SenWet中的SenWet
@@ -179,6 +184,14 @@ public class ActionBean {
         isSelect = select;
     }
 
+    public int getOpen() {
+        return open;
+    }
+
+    public void setOpen(int open) {
+        this.open = open;
+    }
+
     @Override
     public String toString() {
         return "ActionBean{" +
@@ -193,6 +206,7 @@ public class ActionBean {
                 ", room='" + room + '\'' +
                 ", isSelect=" + isSelect +
                 ", otherName=" + otherName +
+                ", open=" + open +
                 '}';
     }
 }

@@ -1,6 +1,7 @@
 <component name="libraryTable">
   <library name="Gradle: com.lbx:xView:1.0.1@aar">
     <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a170bce424e0a43a4f5eb5cda2a95f84/xView-1.0.1/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a170bce424e0a43a4f5eb5cda2a95f84/xView-1.0.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a170bce424e0a43a4f5eb5cda2a95f84/xView-1.0.1/res" />
     </CLASSES>
