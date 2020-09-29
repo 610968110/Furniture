@@ -87,10 +87,16 @@ public enum RoomJinanConfigPager implements IRoomConfig {
 //    CHILD_CONFIG("老人房", ChildRoomConfigFragment.newInstance());
 
     // 济南b6 b户型
-    DINING_CONFIG("客厅"  , DiningRoomConfigFragment.newInstance()),
-    MASTER_CONFIG("餐厅", MasterRoomConfigFragment.newInstance()),
-    SECOND_CONFIG("主卧", SecondRoomConfigFragment.newInstance()),
-    CHILD_CONFIG("老人房", ChildRoomConfigFragment.newInstance());
+//    DINING_CONFIG("客厅"  , DiningRoomConfigFragment.newInstance()),
+//    MASTER_CONFIG("餐厅", MasterRoomConfigFragment.newInstance()),
+//    SECOND_CONFIG("主卧", SecondRoomConfigFragment.newInstance()),
+//    CHILD_CONFIG("老人房", ChildRoomConfigFragment.newInstance());
+
+    // 绿地都江堰
+    DINING_CONFIG("餐客厅"  , DiningRoomConfigFragment.newInstance()),
+    MASTER_CONFIG("主卧", MasterRoomConfigFragment.newInstance()),
+    SECOND_CONFIG("次卧", SecondRoomConfigFragment.newInstance()),
+    CHILD_CONFIG("儿童房", ChildRoomConfigFragment.newInstance());
 
     private String name;
     private BaseRoomConfigFragment fragment;
