@@ -3,11 +3,11 @@ package com.furniture.type;
 import com.furniture.R;
 import com.furniture.base.BaseFragment;
 import com.furniture.impl.IMainPager;
-import com.furniture.ui.fragment.dujiangyan.JiNanB2FFragment;
-import com.furniture.ui.fragment.dujiangyan.JiNanDinnerFFragment;
-import com.furniture.ui.fragment.dujiangyan.JiNanHomeFFragment;
-import com.furniture.ui.fragment.dujiangyan.JiNanJiacengFFragment;
-import com.furniture.ui.fragment.dujiangyan.JiNanXuanguanFFragment;
+import com.furniture.ui.fragment.room202104.JiNanB2FFragment;
+import com.furniture.ui.fragment.room202104.JiNanDinnerFFragment;
+import com.furniture.ui.fragment.room202104.JiNanHomeFFragment;
+import com.furniture.ui.fragment.room202104.JiNanJiacengFFragment;
+import com.furniture.ui.fragment.room202104.JiNanXuanguanFFragment;
 
 /**
  * .  ┏┓　　　┏┓
@@ -125,6 +125,13 @@ public enum HomePagerJiNan implements IMainPager {
 //    CHILD_ROOM("老人房", JiNanB2FFragment.newInstance(R.drawable.jinan_b6a_bg5));
 
     // 绿地都江堰  dujiangyan
+//    HOME_PAGE("首页", JiNanHomeFFragment.newInstance(R.drawable.home_bg_v_h)),
+//    DINING_ROOM("餐客厅", JiNanDinnerFFragment.newInstance(R.drawable.lv_djy_bg_2)),
+//    MASTER_ROOM("主卧", JiNanXuanguanFFragment.newInstance(R.drawable.lv_djy_bg_3)),
+//    SECOND_ROOM("次卧", JiNanJiacengFFragment.newInstance(R.drawable.lv_djy_bg_4)),
+//    CHILD_ROOM("儿童房", JiNanB2FFragment.newInstance(R.drawable.lv_djy_bg_4));
+
+    // 2021-04
     HOME_PAGE("首页", JiNanHomeFFragment.newInstance(R.drawable.home_bg_v_h)),
     DINING_ROOM("餐客厅", JiNanDinnerFFragment.newInstance(R.drawable.lv_djy_bg_2)),
     MASTER_ROOM("主卧", JiNanXuanguanFFragment.newInstance(R.drawable.lv_djy_bg_3)),

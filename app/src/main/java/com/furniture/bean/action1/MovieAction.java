@@ -82,7 +82,7 @@ public class MovieAction extends ActionBean implements IModeAction {
     @Override
     public void onRefresh(AllState.Params.Item.Field field) {
         super.onRefresh(field);
-        setOpen(field.LM == 4);
+        setOpen(field.LM == getOpen());
     }
 
     @Override

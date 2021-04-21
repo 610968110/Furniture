@@ -1,7 +1,6 @@
 package com.furniture.bean.action1;
 
 import android.content.Context;
-import android.util.Log;
 
 import com.furniture.R;
 import com.furniture.bean.ActionBean;
@@ -91,7 +90,6 @@ public class MeetingGuestsAction extends ActionBean implements IModeAction {
     @Override
     public void onRefresh(AllState.Params.Item.Field field) {
         super.onRefresh(field);
-        Log.e("xys", "~~~~~:" + field);
         if (getOpen() == -1) {
             setOpen(field.LM == 1);
         } else {

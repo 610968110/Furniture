@@ -53,8 +53,8 @@
     <dimen name="home_img_b_m">20dp</dimen>
 
     <!--room-->
-    <dimen name="top_action_width">420dp</dimen>
-    <dimen name="top_action_height">65dp</dimen>
+    <dimen name="top_action_width">520dp</dimen>
+    <dimen name="top_action_height">90dp</dimen>
     <dimen name="top_action_margin">15dp</dimen>
     <dimen name="main_layout_top_margin">10dp</dimen>
     <!--environment_item_size * 4 + 3 -->
@@ -94,8 +94,8 @@
     <dimen name="pb_height">4dp</dimen>
 
     <!--所有控制图标-->
-    <dimen name="action_img_size">30dp</dimen>
-    <dimen name="action_text_size">12dp</dimen>
+    <dimen name="action_img_size">50dp</dimen>
+    <dimen name="action_text_size">16dp</dimen>
     <dimen name="bottom_action_view_width">100dp</dimen>
     <dimen name="bottom_action_img_size">40dp</dimen>
     <dimen name="bottom_action_text_size">12dp</dimen>

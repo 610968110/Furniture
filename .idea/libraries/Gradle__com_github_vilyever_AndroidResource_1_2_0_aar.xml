@@ -4,10 +4,14 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0d7ef3185ed4d5bab8c69b9de663f3dc/AndroidResource-1.2.0/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0d7ef3185ed4d5bab8c69b9de663f3dc/AndroidResource-1.2.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0d7ef3185ed4d5bab8c69b9de663f3dc/AndroidResource-1.2.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/baa40af6e9459967233a7e685f8468b1/AndroidResource-1.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/baa40af6e9459967233a7e685f8468b1/AndroidResource-1.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/baa40af6e9459967233a7e685f8468b1/AndroidResource-1.2.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.vilyever/AndroidResource/1.2.0/4f556a778cfe7a2250fceba2c57d339f9e2967a3/AndroidResource-1.2.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.vilyever/AndroidResource/1.2.0/887c6b5094aa0892ba95d6ec40a873c32878bdd1/AndroidResource-1.2.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

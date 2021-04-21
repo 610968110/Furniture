@@ -38,7 +38,8 @@ import lbx.xtoollib.base.BaseDataAdapter;
 public class RoomAdapter extends BaseDataAdapter<ActionBean, ItemRoomActionBinding, BaseDataAdapter.BaseHolder> {
 
     private int itemHeight;
-    public RoomAdapter(Context context, List<ActionBean> list,int itemHeight) {
+
+    public RoomAdapter(Context context, List<ActionBean> list, int itemHeight) {
         super(context, list);
         this.itemHeight = itemHeight;
     }
@@ -56,7 +57,7 @@ public class RoomAdapter extends BaseDataAdapter<ActionBean, ItemRoomActionBindi
     @Override
     public void dataBinding(ItemRoomActionBinding binding, int position, ActionBean entity, BaseHolder baseHolder) {
         binding.setBean(entity);
-        binding.getRoot().getLayoutParams().height =itemHeight;
+        binding.getRoot().getLayoutParams().height = itemHeight;
     }
 
     @Override
