@@ -18,13 +18,13 @@ import com.furniture.type.HomePager;
 import com.furniture.type.HomePager2;
 import com.furniture.type.HomePager3Simple;
 import com.furniture.type.HomePagerJiNan;
+import com.furniture.ui.view.tablayout.XTabLayout;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 import butterknife.BindView;
-import lbx.xtoollib.view.tablayout.XTabLayout;
 
 /**
  * .  ┏┓　　　┏┓
@@ -96,7 +96,8 @@ public class MainHomeFragment extends BaseFragment {
         } else if (Config.APP_TYPE == Config.TYPE_DEMO_SIMPLE) {
             values = HomePager3Simple.values();
             mTabLayout.setVisibility(View.GONE);
-        } else if (Config.APP_TYPE == Config.TYPE_DEMO_JINAN) {
+        } else if (Config.APP_TYPE == Config.TYPE_DEMO_JINAN ||
+                Config.APP_TYPE == Config.TYPE_DEMO_SHANGHAI) {
             values = HomePagerJiNan.values();
         }
         Collections.addAll(mList, values);

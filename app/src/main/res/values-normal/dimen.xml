@@ -11,6 +11,7 @@
     <!--login-->
     <dimen name="login_main_layout_margin">20dp</dimen>
     <dimen name="login_icon_size">70dp</dimen>
+    <dimen name="login_input_icon_size">15dp</dimen>
     <dimen name="login_icon_margin_bottom">30dp</dimen>
     <dimen name="login_input_text_size">12dp</dimen>
     <dimen name="login_input_view_height">30dp</dimen>
@@ -22,6 +23,9 @@
     <!--main-->
     <dimen name="home_bottom_bar_width">400dp</dimen>
     <dimen name="home_bottom_bar_height">40dp</dimen>
+    <dimen name="bottom_bar_img_size">22dp</dimen>
+    <dimen name="bottom_bar_textview_height">16dp</dimen>
+    <dimen name="bottom_bar_text_size">10dp</dimen>
 
     <!--HomeFragment-->
     <dimen name="tab_line_width">15dp</dimen>
@@ -32,11 +36,11 @@
     <!--time fragment-->
     <dimen name="content_s_m">50dp</dimen>
     <dimen name="content_p_t">20dp</dimen>
-    <dimen name="time_text_size">40dp</dimen>
-    <dimen name="data_text_size">14dp</dimen>
-    <dimen name="small_text_size">10dp</dimen>
-    <dimen name="big_text_size">16dp</dimen>
-    <dimen name="home_icon_size">35dp</dimen>
+    <dimen name="time_text_size">60dp</dimen>
+    <dimen name="data_text_size">30dp</dimen>
+    <dimen name="small_text_size">18dp</dimen>
+    <dimen name="big_text_size">24dp</dimen>
+    <dimen name="home_icon_size">60dp</dimen>
     <dimen name="time_line_width">400dp</dimen>
     <dimen name="time_line_m">20dp</dimen>
     <dimen name="time_item_m_s0">20dp</dimen>
@@ -58,11 +62,11 @@
     <!--environment_item_size * 5 + 4 -->
     <dimen name="top_action_close_height_jinan">204dp</dimen>
     <!--大于 environment_item_size -->
-    <dimen name="environment_view_width">80dp</dimen>
+    <dimen name="environment_view_width">100dp</dimen>
     <dimen name="environment_item_size">40dp</dimen>
     <dimen name="environment_top_margin">30dp</dimen>
-    <dimen name="environment_big_text">16dp</dimen>
-    <dimen name="environment_small_text">10dp</dimen>
+    <dimen name="environment_big_text">14dp</dimen>
+    <dimen name="environment_small_text">12dp</dimen>
     <dimen name="select_view_width">47dp</dimen>
     <dimen name="select_view_height">28dp</dimen>
     <dimen name="select_view_marginStart">50dp</dimen>
@@ -103,11 +107,15 @@
     <dimen name="control_center_img">50dp</dimen>
     <dimen name="control_center_textSize">25dp</dimen>
     <dimen name="control_center_symbol_textSize">12dp</dimen>
-    <dimen name="control_action_layout_w">300dp</dimen>
     <dimen name="control_action_layout_icon_size">30dp</dimen>
     <dimen name="control_action_layout_text_size">12dp</dimen>
 
     <!--我的-->
+    <dimen name="login_btn_w">100dp</dimen>
+    <dimen name="login_btn_h">45dp</dimen>
+    <dimen name="login_btn_text">12dp</dimen>
+    <dimen name="control_action_layout_w">300dp</dimen>
+    <dimen name="head_icon_size">100dp</dimen>
     <dimen name="mine_action_layout_height">80dp</dimen>
     <dimen name="mine_setting_icon_size">50dp</dimen>
     <dimen name="mine_setting_icon_size_p">15dp</dimen>
@@ -164,6 +172,16 @@
     <dimen name="edit_content_width">180dp</dimen>
     <dimen name="button_height">40dp</dimen>
     <dimen name="button_text_size">14dp</dimen>
+    <dimen name="edit_text_size">12dp</dimen>
+
+    <!--  config  -->
+    <dimen name="config_item_size">70dp</dimen>
+    <dimen name="config_img_size">35dp</dimen>
+    <dimen name="config_img_margin_top">10dp</dimen>
+    <dimen name="config_item_text_size">10dp</dimen>
+    <dimen name="config_select_view_size">40dp</dimen>
+    <dimen name="config_select_view_text_size">12dp</dimen>
+    <dimen name="config_select_view_img_size">12dp</dimen>
 
 
 </resources>

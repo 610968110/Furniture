@@ -1,5 +1,7 @@
 //apply plugin: 'me.tatarka.retrolambda'
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 
 android {
     def android = rootProject.ext;
@@ -82,6 +84,7 @@ repositories {
     flatDir {
         dirs 'libs'
     }
+    mavenCentral()
 }
 
 dependencies {
@@ -115,6 +118,7 @@ dependencies {
     implementation "org.reactivestreams:reactive-streams:1.0.2"
     implementation 'com.google.dagger:dagger:2.17'
     annotationProcessor 'com.google.dagger:dagger-compiler:2.17'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 //    implementation 'com.google.dagger:dagger-android:2.17'
 //    implementation 'com.google.dagger:dagger-android-support:2.17'
 //    annotationProcessor 'com.google.dagger:dagger-android-processor:2.17'

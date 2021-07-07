@@ -46,7 +46,7 @@ import lbx.xtoollib.phone.xLogUtil;
 public class AirConditionerView extends FrameLayout {
 
     protected TemperatureTextView textView;
-    private ImageView imageView;
+    protected ImageView imageView;
     /**
      * 关闭
      */
@@ -60,10 +60,10 @@ public class AirConditionerView extends FrameLayout {
     @DrawableRes
     int sbg;
 
-    private int min = 0;
-    private int max = 100;
-    private boolean progressEnable;
-    private int mSelectTemp;
+    int min = 0;
+    int max = 100;
+    boolean progressEnable;
+    int mSelectTemp;
 
     public AirConditionerView(@NonNull Context context) {
         this(context, null);
@@ -91,10 +91,14 @@ public class AirConditionerView extends FrameLayout {
 
         addView(imageView);
         addView(textView, params);
+        setClick(context);
+    }
+
+    public void setClick(Context context) {
         setOnClickListener(v -> {
             xLogUtil.e("progressEnable:" + progressEnable);
             if (progressEnable) {
-                AirConditionerTempSelectDialogActivity.getIntent(context,mSelectTemp).start();
+                AirConditionerTempSelectDialogActivity.getIntent(context, mSelectTemp).start();
             }
         });
     }
@@ -113,7 +117,7 @@ public class AirConditionerView extends FrameLayout {
         try {
             this.mSelectTemp = Integer.valueOf(s);
         } catch (Exception ignored) {
-            this.mSelectTemp = -1;
+            this.mSelectTemp = 16;
         }
         textView.setText(s);
     }

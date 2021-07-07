@@ -22,7 +22,7 @@
     <TextView
         android:id="@+id/tv_card"
         android:layout_width="match_parent"
-        android:layout_height="20dp"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/mine_action_tv_p"
         android:layout_marginStart="@dimen/mine_action_tv_p"
         android:layout_marginTop="2dp"

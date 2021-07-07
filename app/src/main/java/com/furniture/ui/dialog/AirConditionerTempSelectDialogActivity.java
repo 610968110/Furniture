@@ -105,8 +105,11 @@ public class AirConditionerTempSelectDialogActivity extends BaseActivity {
     public void initListener() {
         super.initListener();
         sure.setOnClickListener(v -> {
-            xLogUtil.e("选择温度:" + i * 10 + i1);
-            EventBus.getDefault().post(new AirConditionerTempBean(i * 10 + i1));
+            xLogUtil.e("选择温度1:" + i + i1);
+            xLogUtil.e("选择温度2:" + i1);
+            int t =  i * 10 + i1;
+            xLogUtil.e("选择温度end:" +t);
+            EventBus.getDefault().post(new AirConditionerTempBean(t));
             finish();
         });
         if (mSelectTemp >= 16 && mSelectTemp < 20) {

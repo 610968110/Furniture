@@ -20,6 +20,7 @@ import com.furniture.bean.EditActionNameBean;
 import com.furniture.bean.SocketBean;
 import com.furniture.bean.action2.AirAction;
 import com.furniture.bean.action2.AirConditionerAction;
+import com.furniture.bean.action2.HeatingAction;
 import com.furniture.bean.json.AllState;
 import com.furniture.bean.json.Der;
 import com.furniture.bean.json.GetAllState;
@@ -129,11 +130,15 @@ public abstract class BaseRoomFragment extends BaseFragment {
         }
         Looper.myQueue().addIdleHandler(() -> {
             ViewGroup.LayoutParams layoutParams = mAppBar.getLayoutParams();
-            layoutParams.height = getView().getHeight() -
-                    XTools.ResUtil().getDimen(
-                            R.dimen.top_action_margin,
-                            R.dimen.top_action_margin,
-                            R.dimen.top_action_height);
+            if (Config.SCREEN_ORIENTATION == Config.SCREEN_PORTRAIT) {
+                layoutParams.height = getView().getHeight() / 2;
+            } else {
+                layoutParams.height = getView().getHeight() -
+                        XTools.ResUtil().getDimen(
+                                R.dimen.top_action_margin,
+                                R.dimen.top_action_margin,
+                                R.dimen.top_action_height);
+            }
             mAppBar.setLayoutParams(layoutParams);
             return false;
         });
@@ -141,7 +146,12 @@ public abstract class BaseRoomFragment extends BaseFragment {
         mTopRecyclerView.setLayoutManager(new GridLayoutManager(getContext(), lineCount()));
         mCenterRecyclerView.setLayoutManager(new GridLayoutManager(getContext(), lineCount()));
         mAllRecyclerView.setLayoutManager(new GridLayoutManager(getContext(), lineCount()));
+        mEnvironmentView.setVisibility(showEnvironmentView());
         initView();
+    }
+
+    protected int showEnvironmentView(){
+        return View.VISIBLE;
     }
 
     protected int lineCount() {
@@ -186,8 +196,9 @@ public abstract class BaseRoomFragment extends BaseFragment {
         mBigTempTextView.setVisibility(setShowBigTemp() ? View.VISIBLE : View.GONE);
         mDescView1.setVisibility(setShowDesc1() ? View.VISIBLE : View.GONE);
         mDescView2.setVisibility(setShowDesc2() ? View.VISIBLE : View.GONE);
-        if (Config.APP_TYPE == Config.TYPE_DEMO_JINAN) {
-            mEnvironmentView.setHchoViewShow();
+        if (Config.APP_TYPE == Config.TYPE_DEMO_JINAN ||
+                Config.APP_TYPE == Config.TYPE_DEMO_SHANGHAI) {
+//            mEnvironmentView.setHchoViewShow();
         }
     }
 
@@ -215,7 +226,9 @@ public abstract class BaseRoomFragment extends BaseFragment {
             public void onScrollChanged(AppBarLayout appBarLayout, int i) {
                 float percent = i * 1.0F / (mCollapsingToolbarLayout.getMeasuredHeight()
                         - XTools.ResUtil().getDimen(R.dimen.top_action_close_height));
-                int max = XTools.ResUtil().getDimen(R.dimen.environment_top_margin) + 10;
+                // 右侧为5个的时候用这个
+//                int max = XTools.ResUtil().getDimen(R.dimen.environment_top_margin) + 10;
+                int max = XTools.ResUtil().getDimen(R.dimen.environment_top_margin);
                 float offset = max * percent;
                 mEnvironmentView.setTranslationY(offset);
             }
@@ -535,6 +548,16 @@ public abstract class BaseRoomFragment extends BaseFragment {
                         mAllList.get(pos).setOpen(open);
                         mAllAdapter.notifyItemChanged(pos);
                     }
+                } else if (devid.equals(room() + HeatingAction.NAME)) {
+                    //地暖开关
+                    xLogUtil.e(this, "地暖开关");
+                    DeviceCtrl control = GsonUtil.getInstance().fromJson(bean.getJson(), DeviceCtrl.class);
+                    boolean open = control.getParams().getField().isCtrl();
+                    int pos = ListUtil.getPosFromClass(mAllList, HeatingAction.class);
+                    if (pos != -1) {
+                        mAllList.get(pos).setOpen(open);
+                        mAllAdapter.notifyItemChanged(pos);
+                    }
                 } else {
                     onSocketMsgReceive(bean, devid);
                 }
@@ -599,11 +622,11 @@ public abstract class BaseRoomFragment extends BaseFragment {
         int h = Float.valueOf(field.getHumi()).intValue();
         int pm25 = Float.valueOf(field.getPM25()).intValue();
         int co2 = Float.valueOf(field.getCO2()).intValue();
-        setBaseTemp(temp + "");
-        setBaseH(h + "");
-        setBasePM(pm25 + "");
-        setBaseCO2(co2 + "");
-        setBaseHCHO(hcho + "");
+        setBaseTemp(temp / 10 + "");
+        setBaseH(h / 10 + "");
+        setBasePM(pm25 / 10 + "");
+        setBaseCO2(co2 / 10 + "");
+        setBaseHCHO(hcho / 10 + "");
         XTools.SpUtil().putFloat(room() + "hcho", hcho);
         XTools.SpUtil().putInt(room() + "temp", temp);
         XTools.SpUtil().putInt(room() + "h", h);
@@ -613,11 +636,11 @@ public abstract class BaseRoomFragment extends BaseFragment {
 
     protected void setDefaultDer() {
         setDefaultBigTemp();
-        setBaseHCHO(String.valueOf(XTools.SpUtil().getFloat(room() + "hcho", 0)));
-        setBaseTemp(String.valueOf(XTools.SpUtil().getInt(room() + "temp", 0)));
-        setBaseH(String.valueOf(XTools.SpUtil().getInt(room() + "h", 0)));
-        setBasePM(String.valueOf(XTools.SpUtil().getInt(room() + "pm", 0)));
-        setBaseCO2(String.valueOf(XTools.SpUtil().getInt(room() + "co2", 0)));
+        setBaseHCHO(String.valueOf(XTools.SpUtil().getFloat(room() + "hcho", 0) / 10));
+        setBaseTemp(String.valueOf(XTools.SpUtil().getInt(room() + "temp", 0) / 10));
+        setBaseH(String.valueOf(XTools.SpUtil().getInt(room() + "h", 0) / 10));
+        setBasePM(String.valueOf(XTools.SpUtil().getInt(room() + "pm", 0) / 10));
+        setBaseCO2(String.valueOf(XTools.SpUtil().getInt(room() + "co2", 0) / 10));
     }
 
     public void onPageSelect() {

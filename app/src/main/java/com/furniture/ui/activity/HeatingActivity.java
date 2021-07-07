@@ -8,17 +8,21 @@ import com.furniture.base.BaseControlActivity;
 import com.furniture.bean.ActionBean;
 import com.furniture.bean.SelectBean;
 import com.furniture.bean.SocketBean;
-import com.furniture.bean.control.AutoAction;
+import com.furniture.bean.action2.HeatingAction;
 import com.furniture.bean.control.SwitchAction;
 import com.furniture.bean.json.AllState;
+import com.furniture.bean.json.control.DeviceTemp;
+import com.furniture.event.AirConditionerTempBean;
 import com.furniture.injector.components.AppComponent;
 import com.furniture.injector.components.DaggerActivityComponent;
 import com.furniture.injector.modules.ActivityModule;
 import com.furniture.ui.view.control.HeatingView;
 
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 import lbx.xtoollib.XIntent;
 import lbx.xtoollib.phone.xLogUtil;
@@ -54,11 +58,12 @@ public class HeatingActivity extends BaseControlActivity {
     private static final int MAX = 50;
     private static final int MIN = 16;
 
-    public static XIntent getIntent(Context context, String name, String room, boolean isOpen) {
+    public static XIntent getIntent(Context context, String name, String room, String deviceName, boolean isOpen) {
         XIntent intent = new XIntent(context, HeatingActivity.class);
         intent.putExtra("name", name);
         intent.putExtra("room", room);
         intent.putExtra("isOpen", isOpen);
+        intent.putExtra("deviceName", deviceName);
         return intent;
     }
 
@@ -69,6 +74,14 @@ public class HeatingActivity extends BaseControlActivity {
                 .appComponent(appComponent)
                 .build();
         mActivityComponent.inject(this);
+    }
+
+    @Override
+    public void initListener() {
+        super.initListener();
+        if (!EventBus.getDefault().isRegistered(this)) {
+            EventBus.getDefault().register(this);
+        }
     }
 
     @Override
@@ -88,11 +101,12 @@ public class HeatingActivity extends BaseControlActivity {
     @Override
     public List<ActionBean> getListControlList() {
         List<ActionBean> list = new ArrayList<>();
-        ActionBean bean = new AutoAction(this, room, name);
+        // 自动
+//        ActionBean bean = new AutoAction(this, room, name);
+//        list.add(bean);
         //开关
-        mMainBean = new SwitchAction(this, room, name,"","");
-        list.add(bean);
-        list.add(mMainBean);
+        mMainBean = new SwitchAction(this, room, name, "", "");
+//        list.add(mMainBean);
         return list;
     }
 
@@ -140,7 +154,7 @@ public class HeatingActivity extends BaseControlActivity {
     }
 
     private void setDesc(int temp) {
-        setDescText(String.format(Locale.CHINA, "当前室内温度为%s℃", temp));
+//        setDescText(String.format(Locale.CHINA, "当前室内温度为%s℃", temp));
     }
 
     private HeatingView.OnSeekBarChangeListener mListener = new HeatingView.OnSeekBarChangeListener() {
@@ -162,4 +176,26 @@ public class HeatingActivity extends BaseControlActivity {
 
         }
     };
+
+    /**
+     * 地暖设置页面选择温度
+     */
+    @Subscribe
+    public void onTempSelect(AirConditionerTempBean bean) {
+        int temp = bean.getTemp();
+        xLogUtil.e(this, "地暖设置温度:" + temp);
+        mHeatingView.setCenterText(temp + "");
+        if (isControlOpen()) {
+            saveCircleProgress(temp);
+        }
+        send(new DeviceTemp(room, HeatingAction.NAME, HeatingAction.ID, temp * 10));
+    }
+
+    @Override
+    protected void onDestroy() {
+        if (EventBus.getDefault().isRegistered(this)) {
+            EventBus.getDefault().unregister(this);
+        }
+        super.onDestroy();
+    }
 }

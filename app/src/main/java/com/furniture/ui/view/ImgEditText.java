@@ -73,7 +73,7 @@ public class ImgEditText extends android.support.v7.widget.AppCompatEditText {
     }
 
     private void init(Bitmap bitmap) {
-        float sc = XTools.WindowUtil().dip2px(15) * 1.0F / bitmap.getWidth();
+        float sc = XTools.ResUtil().getDimen(R.dimen.login_input_icon_size) * 1.0F / bitmap.getWidth();
         mOffset = XTools.WindowUtil().dip2px(14);
         Matrix matrix = new Matrix();
         matrix.setScale(sc, sc);

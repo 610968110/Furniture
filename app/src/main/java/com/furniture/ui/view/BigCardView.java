@@ -93,6 +93,12 @@ public class BigCardView extends LinearLayout {
         }
     }
 
+    public void setImagesize(int size) {
+        ViewGroup.LayoutParams params = imageView.getLayoutParams();
+        params.width = params.height = size;
+        imageView.setLayoutParams(params);
+    }
+
     public void setIcon(@DrawableRes int icon) {
         if (icon != -1) {
             imageView.setImageResource(icon);

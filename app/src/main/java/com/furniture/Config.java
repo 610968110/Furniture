@@ -82,7 +82,7 @@ public class Config {
             xLogUtil.e("本地获取用户" + DEFAULT_USER_INFO_MAP.size());
         }
         // TYPE_NORMAL  TYPE_ONE  TYPE_DEMO_SIMPLE  TYPE_DEMO_JINAN
-        APP_TYPE = TYPE_DEMO_JINAN;
+        APP_TYPE = TYPE_DEMO_SHANGHAI;
         roomTopAllAction.init(APP_TYPE);
     }
 
@@ -94,5 +94,11 @@ public class Config {
     public static final int TYPE_DEMO_SIMPLE = 0x012;
     //济南  需要把 fragment_room 中的ToolBar高度改成济南的
     public static final int TYPE_DEMO_JINAN = 0x013;
+    //上海  需要把 fragment_room 中的ToolBar高度改成济南的  济南和上海的一样，只是回家离家按钮的指令不一样
+    public static final int TYPE_DEMO_SHANGHAI = 0x014;
     public static int APP_TYPE = TYPE_DEMO_SIMPLE;
+
+    public static int SCREEN_LANDSCAPE = 0;
+    public static int SCREEN_PORTRAIT = 1;
+    public static int SCREEN_ORIENTATION = SCREEN_LANDSCAPE;
 }

@@ -153,7 +153,7 @@ public class SelectTitleView extends FrameLayout {
         public void dataBinding(ItemConfigSelectBinding binding, int position, String entity, BaseHolder baseHolder) {
             binding.setS(entity);
             binding.setIsShowLine(isEndItem(position));
-            binding.getRoot().getLayoutParams().height = XTools.WindowUtil().dip2px(30);
+            binding.getRoot().getLayoutParams().height = XTools.WindowUtil().dip2px(R.dimen.select_item_height);
         }
 
         private boolean isEndItem(int position) {

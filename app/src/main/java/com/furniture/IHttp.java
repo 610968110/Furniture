@@ -3,6 +3,7 @@ package com.furniture;
 import com.furniture.bean.json.LimitResult;
 import com.furniture.bean.json.PM25Result;
 import com.furniture.bean.json.WeatherResult;
+import com.furniture.bean.json.WeatherShanghaiResult;
 
 import io.reactivex.Observable;
 import retrofit2.http.GET;
@@ -36,6 +37,9 @@ public interface IHttp {
     Observable<WeatherResult> getWeather(@Query("key") String key,
                                          @Query("format") String format,
                                          @Query("cityname") String cityname);
+
+    @GET("data/cityinfo/101020100.html")
+    Observable<WeatherShanghaiResult> getWeatherShanghai();
 
     @GET("environment/air/pm?")
     Observable<PM25Result> getPM25(@Query("key") String key,

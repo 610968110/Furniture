@@ -103,7 +103,7 @@ public class DeviceCus extends IGson {
         }
 
         public class Field {
-            @SerializedName("FB")
+            @SerializedName("Lset")
             private int ctrl;
 
             public Field(int mode) {

@@ -65,4 +65,8 @@
         </attr>
     </declare-styleable>
 
+    <declare-styleable name="TabLayout">
+        <attr name="tabTextSize" format="reference" />
+    </declare-styleable>
+
 </resources>

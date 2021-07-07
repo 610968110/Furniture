@@ -44,12 +44,12 @@ public class AllState extends IGson {
     @SerializedName("params")
     public Params params = new Params();
 
-    public static class Params {
+    public static class Params extends IGson {
 
         @SerializedName("devices")
         public List<Item> devices = new ArrayList<>();
 
-        public static class Item {
+        public static class Item extends IGson{
             @SerializedName("devid")
             public String devid = "";
             @SerializedName("online")
@@ -98,6 +98,10 @@ public class AllState extends IGson {
                 public boolean isStuffyOpen() {
                     return stuffy == Device.OPEN;
                 }
+
+
+                @SerializedName("Warning")
+                public int warning;
 
                 //------------------ 冷热干湿闷 start ------------------
                 @SerializedName("Cold")

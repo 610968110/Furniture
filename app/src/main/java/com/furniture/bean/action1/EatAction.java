@@ -82,7 +82,7 @@ public class EatAction extends ActionBean implements IModeAction {
     @Override
     public void onRefresh(AllState.Params.Item.Field field) {
         super.onRefresh(field);
-        setOpen(field.LM == 2);
+        setOpen(field.LM == getOpen());
     }
 
     @Override

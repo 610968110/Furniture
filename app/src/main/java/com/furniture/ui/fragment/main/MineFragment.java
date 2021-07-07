@@ -4,6 +4,7 @@ import android.databinding.ViewDataBinding;
 import android.os.Bundle;
 import android.view.View;
 
+import com.furniture.Config;
 import com.furniture.R;
 import com.furniture.base.BaseFragment;
 import com.furniture.bean.UserInfo;
@@ -11,8 +12,8 @@ import com.furniture.databinding.FragmentMineBinding;
 import com.furniture.injector.components.ActivityComponent;
 import com.furniture.injector.components.DaggerFragmentComponent;
 import com.furniture.injector.modules.FragmentModule;
-import com.furniture.ui.activity.RoomConfigActivity;
 import com.furniture.ui.activity.FamilyManageActivity;
+import com.furniture.ui.activity.RoomConfigActivity;
 import com.furniture.ui.activity.SettingActivity;
 import com.furniture.ui.activity.UserInfoActivity;
 import com.furniture.ui.activity.UserManageActivity;
@@ -82,7 +83,9 @@ public class MineFragment extends BaseFragment {
 
     @Override
     public void initView(View view) {
-
+        if (Config.SCREEN_ORIENTATION == Config.SCREEN_PORTRAIT) {
+            mBinding.ivMineBg.setImageDrawable(XTools.ResUtil().getDrawable(R.drawable.home_vertical_bg));
+        }
     }
 
     @Override

@@ -15,7 +15,7 @@
 
         </com.furniture.ui.view.TopBar>
 
-        <lbx.xtoollib.view.tablayout.XTabLayout
+        <com.furniture.ui.view.tablayout.XTabLayout
             android:id="@+id/tl_config"
             android:layout_width="match_parent"
             android:layout_height="@dimen/top_bar_height"
@@ -29,7 +29,7 @@
             app:tabTextAppearance="@style/TabCircleTextStyle"
             app:tabTextColor="#717171">
 
-        </lbx.xtoollib.view.tablayout.XTabLayout>
+        </com.furniture.ui.view.tablayout.XTabLayout>
 
         <lbx.xtoollib.view.NoScrollViewPager
             android:id="@+id/vp_config"

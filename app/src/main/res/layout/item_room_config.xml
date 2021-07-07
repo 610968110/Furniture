@@ -9,18 +9,18 @@
     </data>
 
     <LinearLayout
-        android:layout_width="70dp"
+        android:layout_width="@dimen/config_item_size"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
         android:background="@{bean.select?@color/config_item_select_bg:@color/transparent}"
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="@dimen/config_img_size"
+            android:layout_height="@dimen/config_img_size"
             android:layout_gravity="center_horizontal"
             android:paddingBottom="0dp"
-            android:paddingTop="10dp"
+            android:paddingTop="@dimen/config_img_margin_top"
             android:src="@{bean.select?bean.iconOpen:bean.icon}" />
 
         <com.furniture.ui.view.MyEditText
@@ -36,7 +36,7 @@
             android:padding="5dp"
             android:text="@{bean.otherName??bean.name}"
             android:textColor="@{bean.select?@color/config_item_text_select_color:@color/config_item_text_normal_color}"
-            android:textSize="10dp" />
+            android:textSize="@dimen/config_item_text_size" />
 
     </LinearLayout>
 

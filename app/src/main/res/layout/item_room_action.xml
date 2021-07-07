@@ -10,6 +10,7 @@
     </data>
 
     <com.furniture.ui.view.BigCardView
+        android:id="@+id/bcv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:BigCardViewBottomTextSize="@dimen/action_text_size"

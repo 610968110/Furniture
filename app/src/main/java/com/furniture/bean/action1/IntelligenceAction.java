@@ -72,7 +72,11 @@ public class IntelligenceAction extends ActionBean implements IModeAction {
             MainActivity activity = (MainActivity) context;
             xLogUtil.e(this, "智能");
             EventBus.getDefault().post(new ResetOpenAction(1));
-            activity.send(new IntelligenceHome(room, getDeviceName(), "", isOpen), true);
+//            if (Config.APP_TYPE == Config.TYPE_DEMO_SHANGHAI) {
+//                activity.send(new DeviceHome(room, HOME, "", isOpen), true);
+//            } else {
+                activity.send(new IntelligenceHome(room, getDeviceName(), "", isOpen), true);
+//            }
             setOpen(isOpen);
         }
     }

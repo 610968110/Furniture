@@ -108,11 +108,14 @@ public class CurtainsActivity extends BaseControlActivity {
                 super.actionClick(isLongClick);
                 boolean open = bean.isOpen();
                 xLogUtil.e(CurtainsActivity.this, "关闭:" + !open);
-                if (open) {
-                    bean.setOpen(false);
-                } else {
-                    bean.setOpen(true);
-                }
+//                if (open) {
+//                    bean.setOpen(false);
+//                } else {
+//                    bean.setOpen(true);
+//                }
+                DeviceCtrl deviceCtrl = new DeviceCtrl(room, deviceName, "", isOpen);
+                deviceCtrl.getParams().getField().setCtrl(0);
+                send(deviceCtrl);
             }
         });
         ActionBean bean1 = new ActionBean("停止", room, R.drawable.btn_chuanglian_stop, R.drawable.btn_chuanglian_stop_s);
@@ -128,7 +131,7 @@ public class CurtainsActivity extends BaseControlActivity {
 //                    bean1.setOpen(true);
 //                }
                 //isOpen没有用，被替换成了2
-                DeviceCtrl deviceCtrl = new DeviceCtrl(room, CurtainsAction.NAME, "", isOpen);
+                DeviceCtrl deviceCtrl = new DeviceCtrl(room, deviceName, "", isOpen);
                 deviceCtrl.getParams().getField().setCtrl(2);
                 send(deviceCtrl);
             }
@@ -140,16 +143,19 @@ public class CurtainsActivity extends BaseControlActivity {
                 super.actionClick(isLongClick);
                 boolean open = bean2.isOpen();
                 xLogUtil.e(CurtainsActivity.this, "开启:" + !open);
-                if (open) {
-                    bean2.setOpen(false);
-                } else {
-                    bean2.setOpen(true);
-                }
+//                if (open) {
+//                    bean2.setOpen(false);
+//                } else {
+//                    bean2.setOpen(true);
+//                }
+                DeviceCtrl deviceCtrl = new DeviceCtrl(room, deviceName, "", isOpen);
+                deviceCtrl.getParams().getField().setCtrl(1);
+                send(deviceCtrl);
             }
         });
-//        list.add(bean);
+        list.add(bean);
         list.add(bean1);
-//        list.add(bean2);
+        list.add(bean2);
         return list;
     }
 

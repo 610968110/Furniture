@@ -151,7 +151,8 @@ public class RoomConfigActivity extends BaseActivity {
                             Collections.addAll(mList, RoomConfigPager.values());
                         } else if (Config.APP_TYPE == Config.TYPE_ONE) {
                             Collections.addAll(mList, Room2ConfigPager.values());
-                        } else if (Config.APP_TYPE == Config.TYPE_DEMO_JINAN) {
+                        } else if (Config.APP_TYPE == Config.TYPE_DEMO_JINAN ||
+                                Config.APP_TYPE == Config.TYPE_DEMO_SHANGHAI) {
                             Collections.addAll(mList, RoomJinanConfigPager.values());
                         }
                         mBinding.vpConfig.setAdapter(new RoomConfigPagerAdapter(mList, getSupportFragmentManager()));

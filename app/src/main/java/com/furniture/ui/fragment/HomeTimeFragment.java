@@ -110,7 +110,8 @@ public class HomeTimeFragment extends BaseFragment {
         mTempLayout.setTemp("-");
         mLimitTextView.setLimit("-", "-");
         mPmLayout.setPM("-");
-        if (Config.APP_TYPE == Config.TYPE_DEMO_JINAN) {
+        if (Config.APP_TYPE == Config.TYPE_DEMO_JINAN||
+                Config.APP_TYPE == Config.TYPE_DEMO_SHANGHAI) {
             View limit = findView(R.id.limit);
             limit.setVisibility(View.INVISIBLE);
         }

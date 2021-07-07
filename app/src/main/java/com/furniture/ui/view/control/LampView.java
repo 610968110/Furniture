@@ -58,7 +58,9 @@ public class LampView extends HeatingView {
         super(context, attrs, defStyleAttr);
         textView.setVisibility(GONE);
         CircleSeekBar seekBar = getSeekBar();
-        seekBar.setLimit(60, 330);
+        if (seekBar != null) {
+            seekBar.setLimit(60, 330);
+        }
     }
 
     int x = 0;

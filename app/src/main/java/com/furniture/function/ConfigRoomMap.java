@@ -19,6 +19,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static com.furniture.Config.TYPE_DEMO_JINAN;
+import static com.furniture.Config.TYPE_DEMO_SHANGHAI;
 import static com.furniture.Config.TYPE_NORMAL;
 import static com.furniture.Config.TYPE_ONE;
 
@@ -59,6 +60,7 @@ public class ConfigRoomMap {
             case TYPE_NORMAL:
             case TYPE_ONE:
             case TYPE_DEMO_JINAN:
+            case TYPE_DEMO_SHANGHAI:
                 room1.add(new MeetingGuestsAction(null, null, null));
                 room1.add(new EatAction(null, null, null));
                 room1.add(new ReadAction(null, null, null));
